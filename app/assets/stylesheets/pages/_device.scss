@@ -20,3 +20,36 @@
     display: flex;
     justify-content: center;
 }
+
+.greenlogo {
+    vertical-align: middle;
+    border-style: none;
+    width: 26rem;
+    height: 26rem;
+}
+
+.nicelogo {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    display: none;
+    margin-bottom: 0.5rem;
+}
+
+#btnform {
+    border-radius: 2rem;
+}
+
+.form-check-input {
+    display: none;
+}
+
+.newcontact {
+    margin-top: 16rem;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
