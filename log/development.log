@@ -1917,3 +1917,1981 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 8770)
 
 
+Started GET "/admin/dashboard" for ::1 at 2020-12-16 11:42:15 +0100
+Started GET "/admin/dashboard" for ::1 at 2020-12-16 11:42:15 +0100
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/admin/dashboard"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/admin/dashboard"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/admin/dashboard" for ::1 at 2020-12-16 11:42:16 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/admin/dashboard"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-12-16 11:42:48 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 86)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.7ms | Allocations: 85)
+  Rendered shared/_flashes.html.erb (Duration: 0.9ms | Allocations: 169)
+Completed 200 OK in 213ms (Views: 207.1ms | ActiveRecord: 0.0ms | Allocations: 42045)
+
+
+Started GET "/" for ::1 at 2020-12-16 11:42:48 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 29ms (Views: 28.5ms | ActiveRecord: 0.0ms | Allocations: 8701)
+
+
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateOffers (20201216104747)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "offers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "points" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201216104747"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddPhotoToOffers (20201216110106)
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddPhotoToOffers (20201216110106)
+Started GET "/" for ::1 at 2020-12-16 12:11:16 +0100
+Started GET "/" for ::1 at 2020-12-16 12:11:16 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.8ms | Allocations: 697)
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 564)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 121)
+  Rendered shared/_navbar.html.erb (Duration: 1.5ms | Allocations: 238)
+  Rendered shared/_flashes.html.erb (Duration: 1.1ms | Allocations: 198)
+  Rendered shared/_flashes.html.erb (Duration: 1.3ms | Allocations: 237)
+Completed 200 OK in 219ms (Views: 204.5ms | ActiveRecord: 0.0ms | Allocations: 46921)
+
+
+Completed 200 OK in 203ms (Views: 201.5ms | ActiveRecord: 0.0ms | Allocations: 43293)
+
+
+Started GET "/" for ::1 at 2020-12-16 12:11:17 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 131ms (Views: 123.9ms | ActiveRecord: 0.0ms | Allocations: 10278)
+
+
+Started GET "/offers/NEW" for ::1 at 2020-12-16 12:11:26 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"NEW"}
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 0.0ms | Allocations: 45988)
+
+
+  
+NoMethodError (undefined method `set_offer' for #<OffersController:0x00007ff4ebd12788>
+Did you mean?  set_response!):
+  
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:428:in `block in make_lambda'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:181:in `block (2 levels) in halting_and_conditional'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:182:in `block in halting_and_conditional'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `each'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.4) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/offers/NEW" for ::1 at 2020-12-16 12:11:27 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"NEW"}
+Completed 500 Internal Server Error in 120ms (ActiveRecord: 0.0ms | Allocations: 45952)
+
+
+  
+NoMethodError (undefined method `set_offer' for #<OffersController:0x00007ff4ee6a78c8>
+Did you mean?  set_response!):
+  
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:428:in `block in make_lambda'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:181:in `block (2 levels) in halting_and_conditional'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:182:in `block in halting_and_conditional'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `each'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.4) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/offers/new" for ::1 at 2020-12-16 12:11:32 +0100
+Processing by OffersController#new as HTML
+Filter chain halted as #<Proc:0x00007ff4ebcdb760@/Users/felixhermann/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionpack-6.0.3.4/lib/action_controller/metal/http_authentication.rb:73> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 325)
+
+
+Started GET "/offers/new" for ::1 at 2020-12-16 12:12:05 +0100
+Processing by OffersController#new as HTML
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.0ms | Allocations: 5953)
+
+
+  
+NoMethodError (undefined method `has_one_attached' for #<Class:0x00007ff4ef8e71c8>):
+  
+app/models/offer.rb:2:in `<class:Offer>'
+app/models/offer.rb:1:in `<main>'
+app/controllers/offers_controller.rb:19:in `new'
+Started GET "/offers/new" for ::1 at 2020-12-16 12:12:05 +0100
+Processing by OffersController#new as HTML
+  Rendering offers/new.html.erb within layouts/application
+  Rendered offers/new.html.erb within layouts/application (Duration: 75.6ms | Allocations: 16871)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 122ms (Views: 101.7ms | ActiveRecord: 1.7ms | Allocations: 29930)
+
+
+Started POST "/offers" for ::1 at 2020-12-16 12:13:13 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"authenticity_token"=>"mPBJGrIVPnKNwjEGztXfoM4Ef6v8jfrfx+J6EagRTV1Jck8ZcPzrgl0CwJq1QQ9hukgpz2sAQfLTgeoxwYQXJA==", "offer"=>{"title"=>"Airpods", "points"=>"20", "photo"=>#<ActionDispatch::Http::UploadedFile:0x00007ff4ef94e328 @tempfile=#<Tempfile:/var/folders/w2/0_m_55qn1hvd0zyg7nqj7j4m0000gn/T/RackMultipart20201216-81602-18bxhef.jpeg>, @original_filename="7E145CF5-E0D8-4781-B87E-CA30D6CDFDA8.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"offer[photo]\"; filename=\"7E145CF5-E0D8-4781-B87E-CA30D6CDFDA8.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"sexy airpods for you"}, "commit"=>"Submit offer"}
+[31mUnpermitted parameter: :photo[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/offers_controller.rb:28:in `create'
+  [1m[36mOffer Create (4.7ms)[0m  [1m[32mINSERT INTO "offers" ("title", "description", "points", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Airpods"], ["description", "sexy airpods for you"], ["points", 20], ["created_at", "2020-12-16 11:13:13.851639"], ["updated_at", "2020-12-16 11:13:13.851639"]]
+  ↳ app/controllers/offers_controller.rb:28:in `create'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/offers_controller.rb:28:in `create'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 6.2ms | Allocations: 3363)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"offers", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/offers_controller.rb:29:in `create'
+Started GET "/offers" for ::1 at 2020-12-16 12:13:14 +0100
+Processing by OffersController#index as HTML
+  Rendering offers/index.html.erb within layouts/application
+  Rendered offers/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 73)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.0ms | Allocations: 8927)
+
+
+Started GET "/offers" for ::1 at 2020-12-16 12:13:14 +0100
+Processing by OffersController#index as HTML
+  Rendering offers/index.html.erb within layouts/application
+  Rendered offers/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 37ms (Views: 34.3ms | ActiveRecord: 0.0ms | Allocations: 8722)
+
+
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateActiveStorageTables (20201216111714)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "key" varchar NOT NULL, "filename" varchar NOT NULL, "content_type" varchar, "metadata" text, "byte_size" bigint NOT NULL, "checksum" varchar NOT NULL, "created_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "record_type" varchar NOT NULL, "record_id" integer NOT NULL, "blob_id" integer NOT NULL, "created_at" datetime NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201216111714"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/offers/new" for ::1 at 2020-12-16 12:17:52 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OffersController#new as HTML
+  Rendering offers/new.html.erb within layouts/application
+  Rendered offers/new.html.erb within layouts/application (Duration: 37.5ms | Allocations: 17824)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 90)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 169)
+Completed 200 OK in 1018ms (Views: 982.3ms | ActiveRecord: 1.8ms | Allocations: 131137)
+
+
+Started POST "/offers" for ::1 at 2020-12-16 12:18:33 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"authenticity_token"=>"AXuELc3SO2LXtIAWHnIC7u1RQb5AdjKBPQ91Q1JHszbQ+YIuDzvukgd0cYpl5tIvmR0X2tf7iawpbOVjO9LpTw==", "offer"=>{"title"=>"Airpods", "points"=>"20", "photo"=>#<ActionDispatch::Http::UploadedFile:0x00007fc2aa1ce098 @tempfile=#<Tempfile:/var/folders/w2/0_m_55qn1hvd0zyg7nqj7j4m0000gn/T/RackMultipart20201216-82139-1wv5x4a.jpg>, @original_filename="Ring3.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"offer[photo]\"; filename=\"Ring3.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"new airpods to win"}, "commit"=>"Submit offer"}
+[31mUnpermitted parameter: :photo[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/offers_controller.rb:28:in `create'
+  [1m[36mOffer Create (2.0ms)[0m  [1m[32mINSERT INTO "offers" ("title", "description", "points", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Airpods"], ["description", "new airpods to win"], ["points", 20], ["created_at", "2020-12-16 11:18:33.279070"], ["updated_at", "2020-12-16 11:18:33.279070"]]
+  ↳ app/controllers/offers_controller.rb:28:in `create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/offers_controller.rb:28:in `create'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 3.7ms | Allocations: 3578)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"offers", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/offers_controller.rb:29:in `create'
+Started GET "/offers" for ::1 at 2020-12-16 12:18:33 +0100
+Processing by OffersController#index as HTML
+  Rendering offers/index.html.erb within layouts/application
+  Rendered offers/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 73)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 62ms (Views: 60.4ms | ActiveRecord: 0.0ms | Allocations: 9169)
+
+
+Started GET "/offers" for ::1 at 2020-12-16 12:18:33 +0100
+Processing by OffersController#index as HTML
+  Rendering offers/index.html.erb within layouts/application
+  Rendered offers/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 8726)
+
+
+Started GET "/offers/new" for ::1 at 2020-12-16 12:18:36 +0100
+Processing by OffersController#new as HTML
+  Rendering offers/new.html.erb within layouts/application
+  Rendered offers/new.html.erb within layouts/application (Duration: 16.5ms | Allocations: 6355)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.0ms | Allocations: 15055)
+
+
+Started GET "/offers/new" for ::1 at 2020-12-16 12:18:36 +0100
+Processing by OffersController#new as HTML
+  Rendering offers/new.html.erb within layouts/application
+  Rendered offers/new.html.erb within layouts/application (Duration: 20.1ms | Allocations: 6295)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 46ms (Views: 40.5ms | ActiveRecord: 0.0ms | Allocations: 14966)
+
+
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mOffer Load (0.3ms)[0m  [1m[34mSELECT "offers".* FROM "offers" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/offers/show" for ::1 at 2020-12-16 12:26:56 +0100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"show"}
+Completed 500 Internal Server Error in 138ms (ActiveRecord: 0.0ms | Allocations: 51035)
+
+
+  
+NoMethodError (undefined method `set_offer' for #<OffersController:0x00007f838a89cfc8>
+Did you mean?  set_response!):
+  
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:428:in `block in make_lambda'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:181:in `block (2 levels) in halting_and_conditional'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:182:in `block in halting_and_conditional'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `each'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.4) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/offers/show" for ::1 at 2020-12-16 12:26:57 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"show"}
+Completed 500 Internal Server Error in 115ms (ActiveRecord: 0.0ms | Allocations: 50122)
+
+
+  
+NoMethodError (undefined method `set_offer' for #<OffersController:0x00007f83911af4e8>
+Did you mean?  set_response!):
+  
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:428:in `block in make_lambda'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:181:in `block (2 levels) in halting_and_conditional'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:182:in `block in halting_and_conditional'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `each'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.4) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-12-16 12:29:08 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 81)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 90)
+  Rendered shared/_flashes.html.erb (Duration: 0.8ms | Allocations: 169)
+Completed 200 OK in 138ms (Views: 136.6ms | ActiveRecord: 0.0ms | Allocations: 19659)
+
+
+Started GET "/offers/show" for ::1 at 2020-12-16 12:29:19 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"show"}
+Completed 500 Internal Server Error in 121ms (ActiveRecord: 0.0ms | Allocations: 50934)
+
+
+  
+NoMethodError (undefined method `set_offer' for #<OffersController:0x00007f83875d60f8>
+Did you mean?  set_response!):
+  
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:428:in `block in make_lambda'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:181:in `block (2 levels) in halting_and_conditional'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:182:in `block in halting_and_conditional'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `each'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.4) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/offers/show" for ::1 at 2020-12-16 12:29:50 +0100
+Started GET "/offers/show" for ::1 at 2020-12-16 12:29:50 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Completed 404 Not Found in 10ms (ActiveRecord: 0.7ms | Allocations: 4399)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Offer with 'id'=show):
+  
+app/controllers/offers_controller.rb:53:in `set_offer'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mOffer Load (0.1ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Completed 404 Not Found in 12ms (ActiveRecord: 1.2ms | Allocations: 3752)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Offer with 'id'=show):
+  
+app/controllers/offers_controller.rb:53:in `set_offer'
+Started GET "/offers/show" for ::1 at 2020-12-16 12:29:51 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Completed 404 Not Found in 29ms (ActiveRecord: 0.2ms | Allocations: 1190)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Offer with 'id'=show):
+  
+app/controllers/offers_controller.rb:53:in `set_offer'
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mOffer Load (1.1ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Started GET "/offers/new" for ::1 at 2020-12-16 12:32:39 +0100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OffersController#new as HTML
+  Rendering offers/new.html.erb within layouts/application
+  Rendered offers/new.html.erb within layouts/application (Duration: 36.4ms | Allocations: 16941)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 85)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 169)
+Completed 200 OK in 210ms (Views: 178.7ms | ActiveRecord: 0.6ms | Allocations: 45624)
+
+
+Started GET "/offers/new" for ::1 at 2020-12-16 12:32:39 +0100
+Processing by OffersController#new as HTML
+  Rendering offers/new.html.erb within layouts/application
+  Rendered offers/new.html.erb within layouts/application (Duration: 32.4ms | Allocations: 6284)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 60ms (Views: 58.7ms | ActiveRecord: 0.0ms | Allocations: 14961)
+
+
+Started GET "/offers/show" for ::1 at 2020-12-16 12:32:45 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mOffer Load (0.4ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Completed 404 Not Found in 7ms (ActiveRecord: 0.4ms | Allocations: 1689)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Offer with 'id'=show):
+  
+app/controllers/offers_controller.rb:53:in `set_offer'
+Started GET "/offers/show" for ::1 at 2020-12-16 12:32:45 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.2ms | Allocations: 1236)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Offer with 'id'=show):
+  
+app/controllers/offers_controller.rb:53:in `set_offer'
+Started GET "/offers/show" for ::1 at 2020-12-16 12:32:50 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mOffer Load (0.3ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1240)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Offer with 'id'=show):
+  
+app/controllers/offers_controller.rb:53:in `set_offer'
+Started GET "/offers/show" for ::1 at 2020-12-16 12:38:48 +0100
+Started GET "/offers/show" for ::1 at 2020-12-16 12:38:48 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Processing by OffersController#show as HTML
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1236)
+
+
+  Parameters: {"id"=>"show"}
+  
+ActiveRecord::RecordNotFound (Couldn't find Offer with 'id'=show):
+  
+app/controllers/offers_controller.rb:53:in `set_offer'
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Completed 404 Not Found in 121ms (ActiveRecord: 0.2ms | Allocations: 144852)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Offer with 'id'=show):
+  
+app/controllers/offers_controller.rb:53:in `set_offer'
+Started GET "/offers/show" for ::1 at 2020-12-16 12:38:49 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1212)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Offer with 'id'=show):
+  
+app/controllers/offers_controller.rb:53:in `set_offer'
+Started GET "/offers/index" for ::1 at 2020-12-16 12:40:06 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mOffer Load (0.3ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1222)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Offer with 'id'=index):
+  
+app/controllers/offers_controller.rb:53:in `set_offer'
+Started GET "/offers/index" for ::1 at 2020-12-16 12:40:07 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mOffer Load (0.3ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1206)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Offer with 'id'=index):
+  
+app/controllers/offers_controller.rb:53:in `set_offer'
+Started GET "/offers/offer" for ::1 at 2020-12-16 12:40:13 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"offer"}
+  [1m[36mOffer Load (0.3ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.3ms | Allocations: 1208)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Offer with 'id'=offer):
+  
+app/controllers/offers_controller.rb:53:in `set_offer'
+Started GET "/offers/offer" for ::1 at 2020-12-16 12:40:13 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"offer"}
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1206)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Offer with 'id'=offer):
+  
+app/controllers/offers_controller.rb:53:in `set_offer'
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mOffer Load (1.0ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Offer"], ["name", "photo"], ["LIMIT", 1]]
+  [1m[36mOffer Destroy (1.7ms)[0m  [1m[31mDELETE FROM "offers" WHERE "offers"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mOffer Load (0.5ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Offer"], ["name", "photo"], ["LIMIT", 1]]
+  [1m[36mOffer Destroy (1.3ms)[0m  [1m[31mDELETE FROM "offers" WHERE "offers"."id" = ?[0m  [["id", 2]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/offers/new" for ::1 at 2020-12-16 12:41:38 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OffersController#new as HTML
+  Rendering offers/new.html.erb within layouts/application
+  Rendered offers/new.html.erb within layouts/application (Duration: 48.9ms | Allocations: 18486)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 85)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 169)
+Completed 200 OK in 216ms (Views: 192.1ms | ActiveRecord: 0.6ms | Allocations: 45317)
+
+
+Started POST "/offers" for ::1 at 2020-12-16 12:41:59 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"authenticity_token"=>"zt3Scz7HtR1r9tND97FFKP7GxRWKA2OpcMhbotH/9usfX9Rw/C5g7bs2It+MJZXpioqTcR2O2IRkq8uCuGqskg==", "offer"=>{"title"=>"loco", "points"=>"200", "photo"=>#<ActionDispatch::Http::UploadedFile:0x00007fc1fe0eccd0 @tempfile=#<Tempfile:/var/folders/w2/0_m_55qn1hvd0zyg7nqj7j4m0000gn/T/RackMultipart20201216-82843-1uiteta.JPG>, @original_filename="3.2.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"offer[photo]\"; filename=\"3.2.JPG\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"loco ring to win"}, "commit"=>"Submit offer"}
+Completed 500 Internal Server Error in 224ms (ActiveRecord: 0.0ms | Allocations: 99831)
+
+
+  
+NameError (undefined local variable or method `celeb_params' for #<OffersController:0x00007fc1fbaa0f18>
+Did you mean?  @_params):
+  
+app/controllers/offers_controller.rb:26:in `create'
+Started GET "/offers" for ::1 at 2020-12-16 12:42:00 +0100
+Processing by OffersController#index as HTML
+  Rendering offers/index.html.erb within layouts/application
+  Rendered offers/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 73)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 93ms (Views: 90.4ms | ActiveRecord: 0.0ms | Allocations: 8971)
+
+
+Started GET "/offers" for ::1 at 2020-12-16 12:42:00 +0100
+Processing by OffersController#index as HTML
+  Rendering offers/index.html.erb within layouts/application
+  Rendered offers/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 8726)
+
+
+Started GET "/offers/show" for ::1 at 2020-12-16 12:42:08 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mOffer Load (0.6ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Completed 404 Not Found in 17ms (ActiveRecord: 0.6ms | Allocations: 3522)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Offer with 'id'=show):
+  
+app/controllers/offers_controller.rb:53:in `set_offer'
+Started GET "/offers/show" for ::1 at 2020-12-16 12:42:09 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1200)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Offer with 'id'=show):
+  
+app/controllers/offers_controller.rb:53:in `set_offer'
+Started GET "/offers/3" for ::1 at 2020-12-16 12:42:39 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOffer Load (0.3ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1258)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Offer with 'id'=3):
+  
+app/controllers/offers_controller.rb:53:in `set_offer'
+Started GET "/offers/id=3" for ::1 at 2020-12-16 12:42:45 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"id=3"}
+  [1m[36mOffer Load (0.3ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.3ms | Allocations: 1251)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Offer with 'id'=id=3):
+  
+app/controllers/offers_controller.rb:53:in `set_offer'
+Started GET "/offers/show" for ::1 at 2020-12-16 12:42:56 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mOffer Load (0.3ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1239)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Offer with 'id'=show):
+  
+app/controllers/offers_controller.rb:53:in `set_offer'
+Started PUT "/__web_console/repl_sessions/173e8ee5edb9747e39ecaefa4e8fbc4f" for ::1 at 2020-12-16 12:43:00 +0100
+Started PUT "/__web_console/repl_sessions/173e8ee5edb9747e39ecaefa4e8fbc4f" for ::1 at 2020-12-16 12:43:03 +0100
+Started PUT "/__web_console/repl_sessions/173e8ee5edb9747e39ecaefa4e8fbc4f" for ::1 at 2020-12-16 12:43:07 +0100
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Started PUT "/__web_console/repl_sessions/173e8ee5edb9747e39ecaefa4e8fbc4f" for ::1 at 2020-12-16 12:43:14 +0100
+Started PUT "/__web_console/repl_sessions/173e8ee5edb9747e39ecaefa4e8fbc4f" for ::1 at 2020-12-16 12:43:16 +0100
+Started PUT "/__web_console/repl_sessions/173e8ee5edb9747e39ecaefa4e8fbc4f" for ::1 at 2020-12-16 12:43:17 +0100
+  [1m[36mOffer Load (0.5ms)[0m  [1m[34mSELECT "offers".* FROM "offers" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/offers/new" for ::1 at 2020-12-16 12:45:33 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OffersController#new as HTML
+  Rendering offers/new.html.erb within layouts/application
+  Rendered offers/new.html.erb within layouts/application (Duration: 34.0ms | Allocations: 18382)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 85)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 169)
+Completed 200 OK in 243ms (Views: 201.1ms | ActiveRecord: 0.6ms | Allocations: 45187)
+
+
+Started GET "/offers/new" for ::1 at 2020-12-16 12:45:33 +0100
+Processing by OffersController#new as HTML
+  Rendering offers/new.html.erb within layouts/application
+  Rendered offers/new.html.erb within layouts/application (Duration: 52.8ms | Allocations: 6293)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 98ms (Views: 96.8ms | ActiveRecord: 0.0ms | Allocations: 17704)
+
+
+Started POST "/offers" for ::1 at 2020-12-16 12:45:46 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"authenticity_token"=>"/N6DZ8SgfVTrBgUqK9o5II/eLUjnr6KLvAgFvJfr1VMtXIVkBkmopDvG9LZQTunh+5J7LHAiGaaoa5Wc/n6PKg==", "offer"=>{"title"=>"erggerr", "points"=>"22", "photo"=>#<ActionDispatch::Http::UploadedFile:0x00007f98912d8ff8 @tempfile=#<Tempfile:/var/folders/w2/0_m_55qn1hvd0zyg7nqj7j4m0000gn/T/RackMultipart20201216-82946-1yuhzle.JPG>, @original_filename="3.2.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"offer[photo]\"; filename=\"3.2.JPG\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"etgrtgt"}, "commit"=>"Submit offer"}
+Completed 500 Internal Server Error in 207ms (ActiveRecord: 0.0ms | Allocations: 99826)
+
+
+  
+NameError (undefined local variable or method `celeb_params' for #<OffersController:0x00007f98912cb678>
+Did you mean?  @_params):
+  
+app/controllers/offers_controller.rb:26:in `create'
+Started GET "/offers" for ::1 at 2020-12-16 12:45:47 +0100
+Processing by OffersController#index as HTML
+  Rendering offers/index.html.erb within layouts/application
+  Rendered offers/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 78)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 57ms (Views: 55.1ms | ActiveRecord: 0.0ms | Allocations: 8972)
+
+
+Started GET "/offers" for ::1 at 2020-12-16 12:45:47 +0100
+Processing by OffersController#index as HTML
+  Rendering offers/index.html.erb within layouts/application
+  Rendered offers/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.0ms | Allocations: 8736)
+
+
+Started GET "/offers/new" for ::1 at 2020-12-16 12:47:08 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OffersController#new as HTML
+  Rendering offers/new.html.erb within layouts/application
+  Rendered offers/new.html.erb within layouts/application (Duration: 40.5ms | Allocations: 17240)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 85)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 169)
+Completed 200 OK in 207ms (Views: 178.8ms | ActiveRecord: 1.3ms | Allocations: 45457)
+
+
+Started POST "/offers" for ::1 at 2020-12-16 12:47:23 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"authenticity_token"=>"LktITrOJn7iOK6yeEP5GM3d5I/eu4yPmQTfRluTMJ+T/yU5NcWBKSF7rXQJrapbyAzV1kzlumMtVVEG2jVl9nQ==", "offer"=>{"title"=>"New Air Pods", "points"=>"20000", "description"=>""}, "commit"=>"Submit offer"}
+  Rendering offers/new.html.erb within layouts/application
+  Rendered offers/new.html.erb within layouts/application (Duration: 31.0ms | Allocations: 6220)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 52ms (Views: 47.6ms | ActiveRecord: 0.0ms | Allocations: 16020)
+
+
+Started GET "/offers" for ::1 at 2020-12-16 12:47:23 +0100
+Processing by OffersController#index as HTML
+  Rendering offers/index.html.erb within layouts/application
+  Rendered offers/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 78)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 50ms (Views: 46.7ms | ActiveRecord: 0.0ms | Allocations: 8934)
+
+
+Started GET "/offers" for ::1 at 2020-12-16 12:47:23 +0100
+Processing by OffersController#index as HTML
+  Rendering offers/index.html.erb within layouts/application
+  Rendered offers/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 8743)
+
+
+Started GET "/offers/show" for ::1 at 2020-12-16 12:47:33 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mOffer Load (0.6ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Completed 404 Not Found in 7ms (ActiveRecord: 0.6ms | Allocations: 1680)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Offer with 'id'=show):
+  
+app/controllers/offers_controller.rb:53:in `set_offer'
+Started GET "/offers/show" for ::1 at 2020-12-16 12:47:33 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1228)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Offer with 'id'=show):
+  
+app/controllers/offers_controller.rb:53:in `set_offer'
+Started GET "/offers/show" for ::1 at 2020-12-16 12:47:53 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mOffer Load (0.3ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1247)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Offer with 'id'=show):
+  
+app/controllers/offers_controller.rb:53:in `set_offer'
+Started PUT "/__web_console/repl_sessions/c714b282eb4abdd12e4afb09392e5517" for ::1 at 2020-12-16 12:47:56 +0100
+Started PUT "/__web_console/repl_sessions/c714b282eb4abdd12e4afb09392e5517" for ::1 at 2020-12-16 12:47:57 +0100
+Started PUT "/__web_console/repl_sessions/c714b282eb4abdd12e4afb09392e5517" for ::1 at 2020-12-16 12:47:58 +0100
+  [1m[36mOffer Load (1.0ms)[0m  [1m[34mSELECT "offers".* FROM "offers" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mOffer Load (0.3ms)[0m  [1m[34mSELECT "offers".* FROM "offers" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/offers/new" for ::1 at 2020-12-16 12:48:53 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OffersController#new as HTML
+  Rendering offers/new.html.erb within layouts/application
+  Rendered offers/new.html.erb within layouts/application (Duration: 44.2ms | Allocations: 17371)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 85)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 169)
+Completed 200 OK in 236ms (Views: 211.3ms | ActiveRecord: 2.0ms | Allocations: 45691)
+
+
+Started GET "/offers/new" for ::1 at 2020-12-16 12:48:54 +0100
+Processing by OffersController#new as HTML
+  Rendering offers/new.html.erb within layouts/application
+  Rendered offers/new.html.erb within layouts/application (Duration: 27.4ms | Allocations: 6284)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 59ms (Views: 57.4ms | ActiveRecord: 0.0ms | Allocations: 15267)
+
+
+Started POST "/offers" for ::1 at 2020-12-16 12:49:09 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"authenticity_token"=>"VjqlTm0CRR6uxTiqADYUGH2Q8QeiRRpdQgLGHcoCYmiHuKNNr+uQ7n4FyTZ7osTZCdynYzXIoXBWYVY9o5c4EQ==", "offer"=>{"title"=>"yo", "points"=>"1000", "photo"=>#<ActionDispatch::Http::UploadedFile:0x00007fbf278ddf90 @tempfile=#<Tempfile:/var/folders/w2/0_m_55qn1hvd0zyg7nqj7j4m0000gn/T/RackMultipart20201216-83169-36wqjm.JPG>, @original_filename="2.0.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"offer[photo]\"; filename=\"2.0.JPG\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"njkengalg"}, "commit"=>"Submit offer"}
+[31mUnpermitted parameter: :photo[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/offers_controller.rb:28:in `create'
+  [1m[36mOffer Create (1.8ms)[0m  [1m[32mINSERT INTO "offers" ("title", "description", "points", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "yo"], ["description", "njkengalg"], ["points", 1000], ["created_at", "2020-12-16 11:49:09.692394"], ["updated_at", "2020-12-16 11:49:09.692394"]]
+  ↳ app/controllers/offers_controller.rb:28:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/offers_controller.rb:28:in `create'
+Redirected to http://localhost:3000/offers/3
+Completed 302 Found in 8ms (ActiveRecord: 2.8ms | Allocations: 3242)
+
+
+Started GET "/offers/3" for ::1 at 2020-12-16 12:49:09 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendering offers/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Offer"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/offers/show.html.erb:3
+  Rendered offers/show.html.erb within layouts/application (Duration: 14.9ms | Allocations: 6229)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.7ms | Allocations: 7878)
+
+
+  
+ActionView::Template::Error (key delegated to attachment, but attachment is nil):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo.key, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+Started GET "/offers/3" for ::1 at 2020-12-16 12:49:10 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendering offers/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Offer"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/offers/show.html.erb:3
+  Rendered offers/show.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2656)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.1ms | Allocations: 3914)
+
+
+  
+ActionView::Template::Error (key delegated to attachment, but attachment is nil):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo.key, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+Started GET "/offers/3" for ::1 at 2020-12-16 12:49:10 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOffer Load (0.3ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendering offers/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Offer"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/offers/show.html.erb:3
+  Rendered offers/show.html.erb within layouts/application (Duration: 8.4ms | Allocations: 2632)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.3ms | Allocations: 3693)
+
+
+  
+ActionView::Template::Error (key delegated to attachment, but attachment is nil):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo.key, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+Started GET "/offers/show" for ::1 at 2020-12-16 12:49:28 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mOffer Load (0.4ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Completed 404 Not Found in 5ms (ActiveRecord: 0.4ms | Allocations: 1240)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Offer with 'id'=show):
+  
+app/controllers/offers_controller.rb:53:in `set_offer'
+Started GET "/offers/show" for ::1 at 2020-12-16 12:49:32 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.2ms | Allocations: 1253)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Offer with 'id'=show):
+  
+app/controllers/offers_controller.rb:53:in `set_offer'
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddPhotoToOffers (20201216115210)
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddPhotoToOffers (20201216115210)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddPhotoToOffers (20201216115210)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "offers" ADD "photo" varchar[0m
+  [1m[36mprimary::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201216115210"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/offers/3" for ::1 at 2020-12-16 14:12:00 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOffer Load (0.8ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendering offers/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Offer"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/offers/show.html.erb:3
+  Rendered offers/show.html.erb within layouts/application (Duration: 22.5ms | Allocations: 7257)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 3.0ms | Allocations: 18307)
+
+
+  
+ActionView::Template::Error (key delegated to attachment, but attachment is nil):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo.key, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+Started GET "/offers/3" for ::1 at 2020-12-16 14:12:01 +0100
+Started GET "/offers/3" for ::1 at 2020-12-16 14:12:01 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOffer Load (0.3ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendering offers/show.html.erb within layouts/application
+Processing by OffersController#show as HTML
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Offer"], ["name", "photo"], ["LIMIT", 1]]
+  Parameters: {"id"=>"3"}
+  ↳ app/views/offers/show.html.erb:3
+  Rendered offers/show.html.erb within layouts/application (Duration: 9.7ms | Allocations: 4706)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.6ms | Allocations: 6436)
+
+
+  [1m[36mOffer Load (0.4ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendering offers/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Offer"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/offers/show.html.erb:3
+  Rendered offers/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2656)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.7ms | Allocations: 5496)
+
+
+  
+ActionView::Template::Error (key delegated to attachment, but attachment is nil):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo.key, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+  
+ActionView::Template::Error (key delegated to attachment, but attachment is nil):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo.key, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+Started GET "/offers/3" for ::1 at 2020-12-16 14:12:03 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Started GET "/offers/3" for ::1 at 2020-12-16 14:12:03 +0100
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendering offers/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Offer"], ["name", "photo"], ["LIMIT", 1]]
+Processing by OffersController#show as HTML
+  ↳ app/views/offers/show.html.erb:3
+  Parameters: {"id"=>"3"}
+  Rendered offers/show.html.erb within layouts/application (Duration: 7.1ms | Allocations: 3143)
+  [1m[36mOffer Load (0.3ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.4ms | Allocations: 4924)
+
+
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendering offers/show.html.erb within layouts/application
+  
+ActionView::Template::Error (key delegated to attachment, but attachment is nil):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo.key, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Offer"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/offers/show.html.erb:3
+  Rendered offers/show.html.erb within layouts/application (Duration: 255.6ms | Allocations: 306028)
+Completed 500 Internal Server Error in 263ms (ActiveRecord: 0.5ms | Allocations: 308062)
+
+
+  
+ActionView::Template::Error (key delegated to attachment, but attachment is nil):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo.key, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+Started GET "/offers/3" for ::1 at 2020-12-16 14:12:04 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendering offers/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Offer"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/offers/show.html.erb:3
+  Rendered offers/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2632)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms | Allocations: 3693)
+
+
+  
+ActionView::Template::Error (key delegated to attachment, but attachment is nil):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo.key, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+Started GET "/offers/3" for ::1 at 2020-12-16 14:12:19 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+Started GET "/offers/3" for ::1 at 2020-12-16 14:12:19 +0100
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOffer Load (0.1ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendering offers/show.html.erb within layouts/application
+  Rendering offers/show.html.erb within layouts/application
+  Rendered offers/show.html.erb within layouts/application (Duration: 21.0ms | Allocations: 6283)
+  Rendered offers/show.html.erb within layouts/application (Duration: 21.6ms | Allocations: 7257)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.2ms | Allocations: 10680)
+
+
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.1ms | Allocations: 8500)
+
+
+  
+ActionView::Template::Error (Must supply cloud_name in tag or in configuration):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+  
+ActionView::Template::Error (Must supply cloud_name in tag or in configuration):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+Started GET "/offers/3" for ::1 at 2020-12-16 14:12:19 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendering offers/show.html.erb within layouts/application
+  Rendered offers/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 975)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms | Allocations: 2034)
+
+
+  
+ActionView::Template::Error (Must supply cloud_name in tag or in configuration):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+Started GET "/offers/3" for ::1 at 2020-12-16 14:12:33 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOffer Load (0.3ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Started GET "/offers/3" for ::1 at 2020-12-16 14:12:33 +0100
+  Rendering offers/show.html.erb within layouts/application
+Processing by OffersController#show as HTML
+  Rendered offers/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 607)
+  Parameters: {"id"=>"3"}
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendering offers/show.html.erb within layouts/application
+  Rendered offers/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 13)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 117)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 106)
+  Rendered shared/_flashes.html.erb (Duration: 0.4ms | Allocations: 201)
+  Rendered shared/_flashes.html.erb (Duration: 0.4ms | Allocations: 195)
+Completed 200 OK in 143ms (Views: 135.4ms | ActiveRecord: 0.3ms | Allocations: 39921)
+
+
+Completed 200 OK in 114ms (Views: 110.4ms | ActiveRecord: 0.2ms | Allocations: 37023)
+
+
+Started GET "/offers/3" for ::1 at 2020-12-16 14:12:33 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendering offers/show.html.erb within layouts/application
+  Rendered offers/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 13)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 0.2ms | Allocations: 9305)
+
+
+Started GET "/offers/3" for ::1 at 2020-12-16 14:34:23 +0100
+Started GET "/offers/3" for ::1 at 2020-12-16 14:34:23 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+Processing by OffersController#show as HTML
+  [1m[36mOffer Load (0.8ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Parameters: {"id"=>"3"}
+  [1m[36mOffer Load (0.3ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendering offers/show.html.erb within layouts/application
+  Rendering offers/show.html.erb within layouts/application
+  Rendered offers/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1108)
+  Rendered offers/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2095)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms | Allocations: 4227)
+
+
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.8ms | Allocations: 5132)
+
+
+  
+ActionView::Template::Error (Must supply cloud_name in tag or in configuration):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+  
+ActionView::Template::Error (Must supply cloud_name in tag or in configuration):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+Started GET "/offers/3" for ::1 at 2020-12-16 14:34:24 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOffer Load (0.3ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendering offers/show.html.erb within layouts/application
+  Rendered offers/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 975)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms | Allocations: 2052)
+
+
+  
+ActionView::Template::Error (Must supply cloud_name in tag or in configuration):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+Started GET "/offers/show" for ::1 at 2020-12-16 14:34:37 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1240)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Offer with 'id'=show):
+  
+app/controllers/offers_controller.rb:53:in `set_offer'
+Started GET "/offers/show" for ::1 at 2020-12-16 14:34:52 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mOffer Load (0.4ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.4ms | Allocations: 1241)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Offer with 'id'=show):
+  
+app/controllers/offers_controller.rb:53:in `set_offer'
+Started GET "/offers/3" for ::1 at 2020-12-16 14:35:03 +0100
+Started GET "/offers/3" for ::1 at 2020-12-16 14:35:03 +0100
+Processing by OffersController#show as HTML
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+  Parameters: {"id"=>"3"}
+  [1m[36mOffer Load (0.4ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendering offers/show.html.erb within layouts/application
+  Rendering offers/show.html.erb within layouts/application
+  Rendered offers/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 977)
+  Rendered offers/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 977)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.4ms | Allocations: 4102)
+
+
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms | Allocations: 3771)
+
+
+  
+ActionView::Template::Error (Must supply cloud_name in tag or in configuration):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+  
+ActionView::Template::Error (Must supply cloud_name in tag or in configuration):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+Started GET "/offers/3" for ::1 at 2020-12-16 14:35:04 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOffer Load (0.3ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendering offers/show.html.erb within layouts/application
+  Rendered offers/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 975)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms | Allocations: 2051)
+
+
+  
+ActionView::Template::Error (Must supply cloud_name in tag or in configuration):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+Started GET "/offers/3" for ::1 at 2020-12-16 14:39:42 +0100
+Started GET "/offers/3" for ::1 at 2020-12-16 14:39:42 +0100
+Processing by OffersController#show as HTML
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+  Parameters: {"id"=>"3"}
+  [1m[36mOffer Load (0.1ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendering offers/show.html.erb within layouts/application
+  Rendering offers/show.html.erb within layouts/application
+  Rendered offers/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 977)
+  Rendered offers/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 977)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms | Allocations: 4100)
+
+
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms | Allocations: 3771)
+
+
+  
+ActionView::Template::Error (Must supply cloud_name in tag or in configuration):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+  
+ActionView::Template::Error (Must supply cloud_name in tag or in configuration):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+Started GET "/offers/3" for ::1 at 2020-12-16 14:39:43 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOffer Load (0.3ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendering offers/show.html.erb within layouts/application
+  Rendered offers/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 975)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms | Allocations: 2455)
+
+
+  
+ActionView::Template::Error (Must supply cloud_name in tag or in configuration):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+Started GET "/offers/3" for ::1 at 2020-12-16 14:40:03 +0100
+Started GET "/offers/3" for ::1 at 2020-12-16 14:40:03 +0100
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OffersController#show as HTML
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+  Parameters: {"id"=>"3"}
+  [1m[36mOffer Load (0.9ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendering offers/show.html.erb within layouts/application
+  Rendering offers/show.html.erb within layouts/application
+  Rendered offers/show.html.erb within layouts/application (Duration: 10.7ms | Allocations: 3830)
+  Rendered offers/show.html.erb within layouts/application (Duration: 10.3ms | Allocations: 4640)
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 1.5ms | Allocations: 16229)
+
+
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.2ms | Allocations: 12556)
+
+
+  
+ActionView::Template::Error (Must supply cloud_name in tag or in configuration):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+  
+ActionView::Template::Error (Must supply cloud_name in tag or in configuration):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+Started GET "/offers/3" for ::1 at 2020-12-16 14:40:04 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendering offers/show.html.erb within layouts/application
+  Rendered offers/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1020)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms | Allocations: 4829)
+
+
+  
+ActionView::Template::Error (Must supply cloud_name in tag or in configuration):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+Started GET "/offers/3" for ::1 at 2020-12-16 16:44:39 +0100
+Started GET "/offers/3" for ::1 at 2020-12-16 16:44:39 +0100
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OffersController#show as HTML
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+  Parameters: {"id"=>"3"}
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mOffer Load (0.8ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendering offers/show.html.erb within layouts/application
+  Rendering offers/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Offer"], ["name", "photo"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Offer"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/offers/show.html.erb:3
+  ↳ app/views/offers/show.html.erb:3
+  Rendered offers/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 3566)
+  Rendered offers/show.html.erb within layouts/application (Duration: 29.5ms | Allocations: 9344)
+Completed 500 Internal Server Error in 103ms (ActiveRecord: 2.4ms | Allocations: 21682)
+
+
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 1.5ms | Allocations: 18018)
+
+
+  
+ActionView::Template::Error (key delegated to attachment, but attachment is nil):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo.key, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+  
+ActionView::Template::Error (key delegated to attachment, but attachment is nil):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo.key, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+Started GET "/offers/3" for ::1 at 2020-12-16 16:44:41 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOffer Load (0.4ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendering offers/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Offer"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/offers/show.html.erb:3
+  Rendered offers/show.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2664)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.6ms | Allocations: 3791)
+
+
+  
+ActionView::Template::Error (key delegated to attachment, but attachment is nil):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <%= cl_image_tag @offer.photo.key, crop: :fill, class: "indexpics_nice"%> 
+    4: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+Started GET "/offers/3" for ::1 at 2020-12-16 16:46:28 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+Started GET "/offers/3" for ::1 at 2020-12-16 16:46:28 +0100
+  [1m[36mOffer Load (0.3ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering offers/show.html.erb within layouts/application
+  [1m[36mOffer Load (0.3ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendered offers/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 3053)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.3ms | Allocations: 6033)
+
+
+  Rendering offers/show.html.erb within layouts/application
+  Rendered offers/show.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2425)
+  
+ActionView::Template::Error (undefined method `avatar' for #<Offer:0x00007fb5504fc1a0>):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <% if @offer.avatar.attached? %>
+    4: <%= cl_image_tag @offer.photo.key, crop: :fill, class: "indexpics_nice"%> 
+    5: <% end %>
+    6: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.3ms | Allocations: 7122)
+
+
+  
+ActionView::Template::Error (undefined method `avatar' for #<Offer:0x00007fb54c354248>):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <% if @offer.avatar.attached? %>
+    4: <%= cl_image_tag @offer.photo.key, crop: :fill, class: "indexpics_nice"%> 
+    5: <% end %>
+    6: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+Started GET "/offers/3" for ::1 at 2020-12-16 16:46:29 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOffer Load (0.4ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendering offers/show.html.erb within layouts/application
+  Rendered offers/show.html.erb within layouts/application (Duration: 10.8ms | Allocations: 2423)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.4ms | Allocations: 3499)
+
+
+  
+ActionView::Template::Error (undefined method `avatar' for #<Offer:0x00007fb5505dd178>):
+    1: <%= @offer.title%>
+    2: <%= @offer.points%>
+    3: <% if @offer.avatar.attached? %>
+    4: <%= cl_image_tag @offer.photo.key, crop: :fill, class: "indexpics_nice"%> 
+    5: <% end %>
+    6: <%= @offer.description%>
+  
+app/views/offers/show.html.erb:3
+Started GET "/offers/3" for ::1 at 2020-12-16 16:46:42 +0100
+Started GET "/offers/3" for ::1 at 2020-12-16 16:46:42 +0100
+Processing by OffersController#show as HTML
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+  Parameters: {"id"=>"3"}
+  [1m[36mOffer Load (0.1ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mOffer Load (0.1ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendering offers/show.html.erb within layouts/application
+  Rendering offers/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Offer"], ["name", "photo"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Offer"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/offers/show.html.erb:3
+  ↳ app/views/offers/show.html.erb:3
+  Rendered offers/show.html.erb within layouts/application (Duration: 16.5ms | Allocations: 2179)
+  Rendered offers/show.html.erb within layouts/application (Duration: 16.7ms | Allocations: 2235)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 91)
+  Rendered shared/_flashes.html.erb (Duration: 0.9ms | Allocations: 169)
+Completed 200 OK in 146ms (Views: 141.9ms | ActiveRecord: 0.3ms | Allocations: 38570)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 152ms (Views: 147.7ms | ActiveRecord: 0.3ms | Allocations: 40252)
+
+
+Started GET "/offers/3" for ::1 at 2020-12-16 16:46:42 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers" WHERE "offers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/offers_controller.rb:53:in `set_offer'
+  Rendering offers/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Offer"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/offers/show.html.erb:3
+  Rendered offers/show.html.erb within layouts/application (Duration: 436.2ms | Allocations: 1980)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 451ms (Views: 448.2ms | ActiveRecord: 0.5ms | Allocations: 11266)
+
+
