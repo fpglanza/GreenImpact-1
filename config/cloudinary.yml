@@ -1,6 +1,6 @@
 production:
-  cloud_name: "dn6wh4u2h"
-  api_key: "385325327543649"
-  api_secret: "4rELlRkCKmnzYDFiWKGYWeNxYUU"
+  cloud_name: <%LOUDINARY_CLOUD_NAME%>
+  api_key: <%CLOUDINARY_API_KEY%>
+  api_secret: <%CLOUDINARY_API_SECRET%>
   secure: true
   cdn_subdomain: true
