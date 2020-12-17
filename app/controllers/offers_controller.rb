@@ -4,7 +4,7 @@ class OffersController < ApplicationController
     http_basic_authenticate_with :name => 'FelixxFel', :password => 'Jordanshacker1710.shivflex.2020', only: :new
 
     def index
-      
+        @offers = Offer.all
     end
 
   
