@@ -1,6 +1,26 @@
-<%= @offer.title%>
-<%= @offer.points%>
-<% if @offer.photo.attached? %>
-<%= cl_image_tag @offer.photo.key, crop: :fill, class: "indexpics_nice"%> 
-<% end %>
-<%= @offer.description%>
+
+
+        <%@offers.each do |offer|%>
+       
+ 
+            
+          
+           
+
+           <%=offer.points%>
+           <% if offer.photo.attached? %>
+         <%= cl_image_tag offer.photo.key, crop: :fill, class: "indexpics"%> 
+           <% end %>
+            
+           
+               <%= link_to offer_path(offer) do %>
+                  <%= offer.title %>
+                  <% end %>
+                 
+         
+        
+            <%=offer.description%>
+              
+            
+              <%end%>   
+         
