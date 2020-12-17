@@ -7,7 +7,7 @@
         <%= f.label :points, class: 'text-white' %>
         <%= f.input :points %>
         <%= f.label :photo, class: 'text-white' %>
-        <%= f.file_field :photo, class: 'text-white' %>
+        <%= f.input :photo, as: :file %>
         <%= f.label :description, class: 'text-white' %>
         <%= f.text_field :description %>
       </div>

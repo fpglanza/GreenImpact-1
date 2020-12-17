@@ -1,26 +1,48 @@
 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
+</style>
+
+<h1 class="newcardtitle">What can I win this month?</h1>
 
         <%@offers.each do |offer|%>
        
  
             
-          
-           
+          <div class="container">
+  <div class="card">
+     <div class="card__image-container">
+     <%= cl_image_tag offer.photo.key, :cloud_name => 'dn6wh4u2h', crop: :fill, class: "card__image"%> 
+    </div>
+      
+      <svg class="card__svg" viewBox="0 0 800 500">
 
-           <%=offer.points%>
-           <% if offer.photo.attached? %>
-         <%= cl_image_tag offer.photo.key, crop: :fill, class: "indexpics"%> 
-           <% end %>
+        <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
+        <path class="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
+      </svg>
+    
+     <div class="card__content">
+     <%= link_to offer_path(offer) do %>
+       <h1 class="card__title"><%=offer.points%>PTS</h1>
+       <h2 class="card__title"><%= offer.title %></h2>
+       <% end %>
+     <p><%=offer.description%></p>
+    </div>
+  </div>
+</div>
+<%end%>  
+
+     
+         
+         
+       
             
            
-               <%= link_to offer_path(offer) do %>
-                  <%= offer.title %>
-                  <% end %>
-                 
+               
          
         
-            <%=offer.description%>
+            
               
             
-              <%end%>   
+      
          

@@ -1,6 +1,6 @@
 <%= @offer.title%>
 <%= @offer.points%>
 <% if @offer.photo.attached? %>
-<%= cl_image_tag @offer.photo.key, crop: :fill, class: "indexpics_nice"%> 
+<%= cl_image_tag @offer.photo.key, :cloud_name => 'dn6wh4u2h', crop: :fill, class: "indexpics_nice"%> 
 <% end %>
 <%= @offer.description%>

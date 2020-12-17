@@ -54,7 +54,7 @@ def set_offer
 end
 
 def offer_params
-params.require(:offer).permit(:title, :points, :description, photo: [])
+params.require(:offer).permit(:title, :points, :description, :photo)
 end
 
 end
