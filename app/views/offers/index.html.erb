@@ -1,4 +1,6 @@
-
+<div class="nicelogo">
+<img class="greenlogo" src="https://res.cloudinary.com/dn6wh4u2h/image/upload/v1608031064/Logo_hmynel.png">
+</div>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
 </style>
@@ -24,9 +26,9 @@
      <div class="card__content">
      <%= link_to offer_path(offer) do %>
        <h1 class="card__title"><%=offer.points%>PTS</h1>
-       <h2 class="card__title"><%= offer.title %></h2>
+       <h2 class="card__title2"><%= offer.title %></h2>
        <% end %>
-     <p><%=offer.description%></p>
+     <h2><%=offer.description%></h2>
     </div>
   </div>
 </div>
