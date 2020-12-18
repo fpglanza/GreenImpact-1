@@ -1,3 +1,6 @@
+<div class="nicelogo">
+<img class="greenlogo" src="https://res.cloudinary.com/dn6wh4u2h/image/upload/v1608031064/Logo_hmynel.png">
+</div>
 <div class="newcontact">
   <div class="wrapper">
       <div class="form">
@@ -10,6 +13,13 @@
         placeholder: "Username"
         %>
         
+        <%= f.input :email,
+        required: true,
+        autofocus: true,
+        input_html: { autocomplete: "email" },
+        placeholder: "Email"
+        %>
+
         <%= f.input :password,
         required: true,
         input_html: { autocomplete: "current-password" },

@@ -17,6 +17,7 @@ img {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    margin-top: -18rem;
 }
 
 .card {
@@ -27,9 +28,9 @@ img {
     border-radius: 39px;
     padding: 2rem;
     color: #aaa;
-    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4.25rem 4.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    height: 70rem;
+    height: 46rem;
     width: 52rem;
     &__image-container {
         margin: -2rem -2rem 1rem -2rem;
@@ -47,6 +48,14 @@ img {
         margin-top: 0;
         font-weight: 800;
         letter-spacing: 0.01em;
+        font-size: 4.5rem;
+    }
+    &__title2 {
+        color: white;
+        margin-top: 0;
+        font-weight: 800;
+        letter-spacing: 0.01em;
+        font-size: 2.5rem;
     }
     &__content {
         margin-top: -1rem;
@@ -107,6 +116,19 @@ img {
 }
 
 .newcardtitle {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 9rem;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.indexpics_nice {
+    max-width: 100%;
+    margin-top: -4rem;
+}
+
+.showtitle {
     font-size: 3rem;
     display: flex;
     justify-content: center;

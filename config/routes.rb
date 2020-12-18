@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   resources :offers
   get "/path/users/page", to: "users#show", as: "users"
   get "/path/offersnew/page", to: "offers#new", as: "offersnew"
+  get "/path/scanner/page", to: "pages#scanner", as: "scannerpages"
+
 end
