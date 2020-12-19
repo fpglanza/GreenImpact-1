@@ -9,6 +9,16 @@
       "js.map": [
         "/packs/js/application-4f52420daeea112425fa.js.map"
       ]
+    },
+    "rails-qr-code-reader": {
+      "js": [
+        "/packs/js/rails-qr-code-reader-e0b550f3d90c80f67bb7.js"
+      ],
+      "js.map": [
+        "/packs/js/rails-qr-code-reader-e0b550f3d90c80f67bb7.js.map"
+      ]
     }
-  }
+  },
+  "rails-qr-code-reader.js": "/packs/js/rails-qr-code-reader-e0b550f3d90c80f67bb7.js",
+  "rails-qr-code-reader.js.map": "/packs/js/rails-qr-code-reader-e0b550f3d90c80f67bb7.js.map"
 }
