@@ -1,57 +1,64 @@
+<div class="nicelogo">
+<img class="greenlogo" src="https://res.cloudinary.com/dn6wh4u2h/image/upload/v1608031064/Logo_hmynel.png">
+</div>
+<a href="#menu" id="toggle"><span></span></a>
 
-		<%# <button id="burger" class="open-main-nav">
-			<span class="burger"></span>
-			<span class="burger-text">Menu</span>
-		</button>
-		<nav class="main-nav" id="main-nav">
-			<ul>
-				<li>
-					<a href="#">About me</a>
-				</li>
-				<li>
-					<a href="#">Speaker &amp; Writer</a>
-				</li>
-				<li>
-					<a href="#">Work</a>
-				</li>
-				<li>
-					<a href="#">Contact</a>
-				</li>
-				<li>
-					<a href="#">Blog</a>
-				</li>
-			</ul>
-		</nav>
-
-
+<div id="menu">
+  <ul>
+    <li><a href="/">Home</a></li>
+	<li><a href="/qr_codes/new">QR</a></li>
+	<li><a href="/offers">Price</a></li>
+	 <% unless user_signed_in?%>
+        <li><%= link_to 'Sign up', new_user_registration_path %></li>
+        <li><%= link_to 'Sign in', new_user_session_path %></li>
+        <%else%>
+        <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
+        <li><%= link_to 'Dashboard', users_path(current_user) %></li>
+        <%end%>
+  </ul>
+</div>
 
 <script>
-let burger = document.getElementById('burger'),
-	 nav    = document.getElementById('main-nav'),
-	 slowmo = document.getElementById('slowmo');
+var theToggle = document.getElementById('toggle');
 
-burger.addEventListener('click', function(e){
-	this.classList.toggle('is-open');
-	nav.classList.toggle('is-open');
-});
+// based on Todd Motto functions
+// https://toddmotto.com/labs/reusable-js/
 
-slowmo.addEventListener('click', function(e){
-	this.classList.toggle('is-slowmo');
-});
+// hasClass
+function hasClass(elem, className) {
+	return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+}
+// addClass
+function addClass(elem, className) {
+    if (!hasClass(elem, className)) {
+    	elem.className += ' ' + className;
+    }
+}
+// removeClass
+function removeClass(elem, className) {
+	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
+	if (hasClass(elem, className)) {
+        while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
+            newClass = newClass.replace(' ' + className + ' ', ' ');
+        }
+        elem.className = newClass.replace(/^\s+|\s+$/g, '');
+    }
+}
+// toggleClass
+function toggleClass(elem, className) {
+	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
+    if (hasClass(elem, className)) {
+        while (newClass.indexOf(" " + className + " ") >= 0 ) {
+            newClass = newClass.replace( " " + className + " " , " " );
+        }
+        elem.className = newClass.replace(/^\s+|\s+$/g, '');
+    } else {
+        elem.className += ' ' + className;
+    }
+}
 
-/* Onload demo - dirty timeout */
-let clickEvent = new Event('click');
-
-window.addEventListener('load', function(e) {
-	slowmo.dispatchEvent(clickEvent);
-	burger.dispatchEvent(clickEvent);
-	
-	setTimeout(function(){
-		burger.dispatchEvent(clickEvent);
-		
-		setTimeout(function(){
-			slowmo.dispatchEvent(clickEvent);
-		}, 3500);
-	}, 5500);
-});
-</script> %>
+theToggle.onclick = function() {
+   toggleClass(this, 'on');
+   return false;
+}
+</script>

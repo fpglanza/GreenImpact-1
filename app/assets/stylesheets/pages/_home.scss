@@ -1,5 +1,8 @@
+$color1: rgba(107, 250, 95, 1);
+$color2: rgba(36, 129, 215, 0.9);
 body {
-    background-color: #4E93D3;
+    background-image: linear-gradient(#6bfa5f, rgba(36, 129, 215, 0.9));
+    height: 108rem;
 }
 
 * {
@@ -143,4 +146,12 @@ img {
 
 video {
     margin-top: 6rem;
+}
+
+.newmaptitle {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 9rem;
+    font-family: 'JetBrains Mono', monospace;
 }
