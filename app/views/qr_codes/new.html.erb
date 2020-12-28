@@ -4,7 +4,13 @@
 <h1 class="newcardtitle">QR Code Reader on Rails</h1>
 
 <div class="newloco">
-  <video id="video" width="500" height="400"></video>
+  <video id="video" width="500" height="400">
+  <script>
+  if ('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices) {
+  console.log("Let's get this party started")}
+  navigator.mediaDevices.getUserMedia({video: true})
+  </script>
+  </video>
 </div>
 
 <script>
