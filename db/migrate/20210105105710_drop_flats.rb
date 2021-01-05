@@ -1,0 +1,5 @@
+class DropFlats < ActiveRecord::Migration[6.0]
+  def change
+    drop_table :flats
+  end
+end
