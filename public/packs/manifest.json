@@ -1,24 +1,14 @@
 {
-  "application.js": "/packs/js/application-d5462108acd5a28237a8.js",
-  "application.js.map": "/packs/js/application-d5462108acd5a28237a8.js.map",
+  "application.js": "/packs/js/application-53171bfb61c3b0ff8f83.js",
+  "application.js.map": "/packs/js/application-53171bfb61c3b0ff8f83.js.map",
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-d5462108acd5a28237a8.js"
+        "/packs/js/application-53171bfb61c3b0ff8f83.js"
       ],
       "js.map": [
-        "/packs/js/application-d5462108acd5a28237a8.js.map"
-      ]
-    },
-    "rails-qr-code-reader": {
-      "js": [
-        "/packs/js/rails-qr-code-reader-e0b550f3d90c80f67bb7.js"
-      ],
-      "js.map": [
-        "/packs/js/rails-qr-code-reader-e0b550f3d90c80f67bb7.js.map"
+        "/packs/js/application-53171bfb61c3b0ff8f83.js.map"
       ]
     }
-  },
-  "rails-qr-code-reader.js": "/packs/js/rails-qr-code-reader-e0b550f3d90c80f67bb7.js",
-  "rails-qr-code-reader.js.map": "/packs/js/rails-qr-code-reader-e0b550f3d90c80f67bb7.js.map"
+  }
 }
