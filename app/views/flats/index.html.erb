@@ -4,14 +4,21 @@
 <div id='map'></div>
 <div>
 <script>
-	mapboxgl.accessToken = '<%= ENV['MAPBOX_API_KEY'] %>';
+mapboxgl.accessToken = '<%= ENV['MAPBOX_API_KEY'] %>';
 var map = new mapboxgl.Map({
 container: 'map', // container id
 style: 'mapbox://styles/mapbox/streets-v11',
-center: [-96, 37.8], // starting position
+center: [6.131935, 49.611622], // starting position
 zoom: 3 // starting zoom
 });
- 
+var marker = new mapboxgl.Marker()
+.setLngLat([14.550343, 20.665957])
+.addTo(map);
+
+var marker = new mapboxgl.Marker()
+.setLngLat([14.550343, 55.665957])
+.addTo(map);
+
 // Add geolocate control to the map.
 map.addControl(
 new mapboxgl.GeolocateControl({

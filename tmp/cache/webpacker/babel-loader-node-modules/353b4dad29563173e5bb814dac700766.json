@@ -1,0 +1,1 @@
+{"ast":null,"code":"import mapboxgl from 'mapbox-gl';","map":{"version":3,"sources":["/Users/felixhermann/Documents/GreenImpact/app/javascript/plugins/init_mapbox.js"],"names":["mapboxgl"],"mappings":"AAAA,OAAOA,QAAP,MAAqB,WAArB","sourcesContent":["import mapboxgl from 'mapbox-gl';"]},"metadata":{},"sourceType":"module"}
