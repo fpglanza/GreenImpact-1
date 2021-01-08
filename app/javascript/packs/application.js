@@ -27,6 +27,7 @@ require("channels")
 // require('@zxing/library').start(.)
 // External imports
 import "bootstrap";
+import "@fortawesome/fontawesome-free/js/all";
 import { initMapbox } from '../plugins/init_mapbox';
 
 import { BrowserQRCodeReader } from '@zxing/library';

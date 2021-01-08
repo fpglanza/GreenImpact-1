@@ -1,48 +1,31 @@
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
-</style>
+
 <div class="newback">
-<h1 class="newcardtitle">What can I win this month?</h1>
+<%# <h1 class="newcardtitle">This Month :</h1> %>
 
         <%@offers.each do |offer|%>
-       
- 
             
-          <div class="container">
-  <div class="card">
-     <div class="card__image-container">
-     <%= cl_image_tag offer.photo.key, :cloud_name => 'dn6wh4u2h', crop: :fill, class: "card__image"%> 
-    </div>
       
-      <svg class="card__svg" viewBox="0 0 800 500">
-
-        <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
-        <path class="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
-      </svg>
+         <section class="cards-wrapper">
+  <div class="card2-grid-space">
     
-     <div class="card__content">
-     <%= link_to offer_path(offer) do %>
-       <h1 class="card__title"><%=offer.points%>PTS</h1>
-       <h2 class="card__title2"><%= offer.title %></h2>
-       <% end %>
-     <h2><%=offer.description%></h2>
-    </div>
+    <a class="card2" >
+   
+      <div>
+        <%# <%= link_to offer_path(offer) do %>
+        <h1><%= offer.title %></h1>
+        <p><%=offer.description%></p>
+        <%# <%end%> 
+        <div class="date"></div>
+        <div class="tags">
+          <div class="tag"><%=offer.points%>PTS</div>
+        </div>
+      </div>
+    </a>
   </div>
-</div>
-<%end%>  
-</div>
-     
-         
-         
-       
-            
-           
-               
-         
-        
-            
-              
-            
-      
-         
+  
+    
+  
+</section>
+
+<%end%>
