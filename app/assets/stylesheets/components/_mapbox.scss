@@ -73,3 +73,69 @@ $d-grad-100: dark;
 }
 
 //backbutton
+.btn {
+    margin: 1rem;
+    &-jittery {
+        animation: jittery 4s infinite;
+    }
+    &-icon {
+        position: relative;
+        margin-left: 8px;
+        overflow: hidden;
+        i {
+            position: absolute;
+            top: 41%;
+            left: 48%;
+            transform: scale(0.75) translate(-16%, 400%);
+            transition: 0.2s;
+        }
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.2s;
+        }
+        &:hover {
+            i {
+                transform: scale(0.75) translate(-16%, 0);
+            }
+            span {
+                transform: translateY(-400%);
+            }
+        }
+        @keyframes jittery {
+            5%,
+            50% {
+                transform: scale(1);
+            }
+            10% {
+                transform: scale(0.9);
+            }
+            15% {
+                transform: scale(1.15);
+            }
+            20% {
+                transform: scale(1.15) rotate(-5deg);
+            }
+            25% {
+                transform: scale(1.15) rotate(5deg);
+            }
+            30% {
+                transform: scale(1.15) rotate(-3deg);
+            }
+            35% {
+                transform: scale(1.15) rotate(2deg);
+            }
+            40% {
+                transform: scale(1.15) rotate(0);
+            }
+        }
+    }
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    margin-left: 6rem;
+}
