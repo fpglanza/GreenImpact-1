@@ -40,14 +40,14 @@ $d-grad-100: dark;
 }
 
 .card-w {
-    .card {
+    .card20 {
         display: flex;
         /* flex-direction: column; */
         justify-content: center;
         padding: 60px 30px;
         border-radius: 30px;
         height: 3rem;
-        margin-top: 13rem;
+        margin-top: 10rem;
         margin-left: -23.2rem;
         width: 23rem;
         position: fixed;
@@ -60,14 +60,14 @@ $d-grad-100: dark;
 
 /* inset */
 
-.card.inset {
+.card20.inset {
     box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0.48), inset -3px -3px 7px #FFFFFF;
     i {
         text-shadow: 1px 1px 1px #d6e1ef99, 0 0 0 #000, 1px 1px 1px #d6e1ef00;
     }
 }
 
-.card.active {
+.card20.active {
     box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5), inset 3px 3px 7px rgba(136, 165, 191, 0.48), inset -3px -3px 7px #FFFFFF;
     background: linear-gradient(318.32deg, rgba(163, 177, 198, 0.1) 0%, rgba(163, 177, 198, 0.1) 55%, rgba(163, 177, 198, 0.25) 100%);
 }
@@ -137,5 +137,11 @@ $d-grad-100: dark;
     color: #fff;
     background-color: #007bff;
     border-color: #007bff;
-    margin-left: 6rem;
+    margin-left: 6.5rem;
+    margin-top: 4rem;
+}
+
+.card__text {
+    margin-top: -3 !important;
+    margin-top: -1.5rem;
 }

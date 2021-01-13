@@ -9,21 +9,21 @@
          <section class="cards-wrapper">
   <div class="card2-grid-space">
     
-    <a class="card2" style="--bg-img: url(https://res.cloudinary.com/dn6wh4u2h/image/upload/v1610199729/airpodstest_va9l24.jpg)">
+    <div class="card2" style="--bg-img: url(https://res.cloudinary.com/dn6wh4u2h/image/upload/v1610199729/airpodstest_va9l24.jpg)">
    
-      <div>
-        <%# <%= link_to offer_path(offer) do %>
+    <div>
+        <%= link_to offer_path(offer) do %> 
         <h1><%= offer.title %></h1>
         <p><%=offer.description%></p>
-        <%# <%end%> 
-        <div class="date"></div>
+        <%end%> 
+        
         <div class="tags">
           <div class="tag"><%=offer.points%>PTS</div>
         </div>
-      </div>
-    </a>
   </div>
-  
+    </div>
+  </div>
+ </div> 
     
   
 </section>
