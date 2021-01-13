@@ -1,5 +1,10 @@
 <%# <h1 class="newmaptitle">Find your Ashtray :</h1> %>
-
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+<link
+rel="stylesheet"
+href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
+type="text/css"
+/>
 <div class="mapboss" >
 <div id='map'></div>
 <div>
@@ -28,11 +33,17 @@ enableHighAccuracy: true
 trackUserLocation: true
 })
 );
+map.addControl(
+new MapboxDirections({
+accessToken: mapboxgl.accessToken
+}),
+'top-left'
+);
 </script>
 
 
     <div class="card-w ">
-    <div class="card neumorphism">
+    <div class="card20 neumorphism">
     <div class="card__icon">
    
     </div>

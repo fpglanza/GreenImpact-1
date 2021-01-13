@@ -8,6 +8,9 @@ Rails.application.routes.draw do
 
   get "/path/users/page", to: "users#show", as: "users"
   get "/path/offersnew/page", to: "offers#new", as: "offersnew"
+  get "/path/share", to: "pages#share", as: "pagesshare"
+  get "/path/questions", to: "pages#questions", as: "pagesquestions"
+  get "/path/users/show", to: "users#show", as: "usersshow"
   
 
 end
