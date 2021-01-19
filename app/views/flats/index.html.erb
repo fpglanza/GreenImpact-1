@@ -13,8 +13,8 @@ mapboxgl.accessToken = '<%= ENV['MAPBOX_API_KEY'] %>';
 var map = new mapboxgl.Map({
 container: 'map', // container id
 style: 'mapbox://styles/mapbox/streets-v11',
-center: [5.5729076, 49.8148347], // starting position
-zoom: 3 // starting zoom
+center: [5.9829076, 49.8148347], // starting position
+zoom: 9 // starting zoom
 });
 var marker = new mapboxgl.Marker()
 .setLngLat([14.550343, 20.665957])
@@ -39,6 +39,9 @@ accessToken: mapboxgl.accessToken
 }),
 'top-left'
 );
+map.on('load', function () {
+    map.resize();
+});
 </script>
 
 
@@ -48,7 +51,8 @@ accessToken: mapboxgl.accessToken
    
     </div>
     <div class="card__text">
-      Just locate yourself and find the nearest Ashtray!
+      1. Locate yourself      <br>
+      2. Point your location and the nearest bin
     <button class="btn btn-primary btn-jittery">
     <a href="/">Go Back</a>
     </button>

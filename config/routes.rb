@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   root to: "pages#home"
   resources :flats
   resources :offers
+  resources :sports
+  resources :sneakers
 
   get "/path/users/page", to: "users#show", as: "users"
   get "/path/offersnew/page", to: "offers#new", as: "offersnew"
