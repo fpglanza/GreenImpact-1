@@ -1,7 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
 
-end
     def show
  
     end
@@ -13,7 +11,10 @@ end
      
     end
     
-    
+    def update
+      @user.update(user_params)
+      redirect_to user_path(@sports)
+    end
     
     
     
@@ -24,9 +25,7 @@ end
     end
   
     def user_params
-      params.require(:user).permit(
-        :email, :full_name, :username
-        )
+      params.require(:user).permit(:username, :email, :full_name, :photo)
     end
     
   end
