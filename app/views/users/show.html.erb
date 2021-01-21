@@ -1,37 +1,48 @@
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="carduse user-card">
-                <div class="card-header">
-                    <h5>Profile</h5>
-                </div>
-                <div class="card-block">
-                    <div class="user-image">
-                        <%# <%if @user.photo.attached? || !@user.avatar_url.nil?%>
-                        <%# <%= image_tag @user.avatar_url, class: "profile-pic" %>
-                    <%# <%end%>  
-                    </div>
-                    <h6 class="f-w-600 m-t-25 m-b-10">Username : 
-                    <%= current_user.username %></h6>
-                    <p class="text-muted"></p>
-                    <hr>
-                    <h6 class="f-w-600 m-t-25 m-b-10">Name : 
-                    <%= current_user.full_name %></h6>
-                    <h6 class="f-w-600 m-t-25 m-b-10">Email : 
-                    <%= current_user.email %></h6>
-                    <div class="bg-c-blue counter-block m-t-10 p-20">
-                        Points :
-                    </div>
-                    <p class="m-t-15 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <hr>
-                    <div class="row justify-content-center user-social-link">
-                        <div class="col-auto"><a href="#!"><i class="fa fa-facebook text-facebook"></i></a></div>
-                        <div class="col-auto"><a href="#!"><i class="fa fa-twitter text-twitter"></i></a></div>
-                        <div class="col-auto"><a href="#!"><i class="fa fa-dribbble text-dribbble"></i></a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+<div class="newprofilecard">
+<input id="slider" class="customSlider" type="checkbox">
+
+
+<div class="wrapper2">
+	<div class="top-icons">
+		<a href="/"><i class="fas fa-long-arrow-alt-left"></i></a>
+	
+	</div>
+	
+	<div class="profile">
+    <div class="centerprofile">
+    <% if current_user.photo.attached? %>
+          <%= cl_image_tag current_user.photo.key, class: "rounded-circle" %>
+          <% elsif current_user.avatar_url? %>
+          <%= image_tag current_user.avatar_url, class: "rounded-circle" %>
+          <% else %>
+          <%= image_tag src="https://res.cloudinary.com/dn6wh4u2h/image/upload/v1610914953/IMG_3320_2_p1ux2a.jpg", class: "rounded-circle" %>
+          <% end %>
+	</div>
+		<h4 class="name"><%= current_user.username %></h4>
+		<p class="title"><%= current_user.full_name %></p>
+		<h1 class="description">150 PTS</h1>
+		<a href="/sports"><button type="button" class="btn345">Go Shop</button></a>
+	</div>
+	<div class="social-icons">
+		<div class="icon">
+			<h4 class="newh4">Delivery Info : <br>
+            <%= current_user.city %> <br>
+            <%= current_user.house_number %> <%= current_user.street_name %> <br>
+            <%= current_user.plz %>
+            </h4> 
+			
+			
+		</div>
+		
+
+			
+		</div>
+		
+		
+		
+		</div>
+	</div>
+	
+</div>
 </div>

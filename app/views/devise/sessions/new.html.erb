@@ -2,6 +2,7 @@
 <div class="newcontact">
   <div class="wrapper">
       <div class="form">
+      <h1 class="newcardtitlelogin">Welcome to Scanexc !</h1>
       <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       
       <div class="form-inputs">
@@ -30,12 +31,16 @@
 
       
        <div class="form-actions mt-2">
+       <div class="newseperator">
         <%= f.button :submit, " Log in", class: "btn btn-primary btn-block mb-2", id:"btnform" %>
       </div>
+       </div>
       <% end %>
 
       <div class="separator my-3">Don't have an account?</div>
+      <div class="newseperator">
       <%= render "devise/shared/signup_btn", id:"btnform" %>
+      </div>
     </div>
   </div>
 </div>
