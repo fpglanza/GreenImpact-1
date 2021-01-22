@@ -2,6 +2,7 @@
 <div class="newcontact">
   <div class="wrapper">
       <div class="form">
+      <h1 class="newcardtitlelogin">Welcome to Scanexc !</h1>
       <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= f.error_notification %>
 
@@ -47,17 +48,55 @@
         %>
        <div class="field">
         <%= f.input :photo, label: 'Avatar', as: :file %>
+
+      <h1 class="newcardtitlelogin">Delivery Information</h1>
+      <%= f.input :house_number,
+        required: true,
+        autofocus: true,
+        class: "form control",
+        type: "text",
+        placeholder: "House Number"
+        %>
+        <%= f.input :street_name,
+        required: true,
+        autofocus: true,
+        class: "form control",
+        type: "text",
+        placeholder: "Street"
+        %>
+        <%= f.input :city,
+        required: true,
+        autofocus: true,
+        class: "form control",
+        type: "text",
+        placeholder: "City"
+        %>
+        <%= f.input :plz,
+        required: true,
+        autofocus: true,
+        class: "form control",
+        type: "text",
+        placeholder: "Plz"
+        %>
+        <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
       </div>
+
+      
+      
       
 
       
        <div class="form-actions mt-2">
+       <div class="newseperator">
         <%= f.button :submit, "Sign up", class: "btn btn-primary btn-block", id:"btnform" %>
+        </div>
       </div>
       <% end %>
 
       <div class="separator my-3">Already have an account?</div>
+      <div class="newseperator">
       <%= render "devise/shared/signin_btn" %>
+      </div>
     </div>
   </div>
 </div>

@@ -27,10 +27,6 @@ $l-grad-rgba-100: rgba(179,
 226,
 0.28);
 $d-grad-100: dark;
-.wrapper {
-    margin: 60px auto;
-}
-
 .neumorphism {
     background-color: #e0e5ec;
     //dark
@@ -137,11 +133,108 @@ $d-grad-100: dark;
     color: #fff;
     background-color: #007bff;
     border-color: #007bff;
-    margin-left: 6.5rem;
-    margin-top: 4rem;
+    margin-top: -1rem;
+}
+
+.form-check-label {
+    margin-bottom: 0;
+    margin-left: -1rem;
+}
+
+.newseperator {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    border-radius: 2rem !important;
+}
+
+.my-3 {
+    font-family: 'Fredoka One', cursive !important;
 }
 
 .card__text {
     margin-top: -3 !important;
     margin-top: -1.5rem;
+}
+
+$time: 330ms;
+$btns: ( alpha: ( gstart: #7bf1a8, gend: #7bf1a8, tstart: #f0f4f5, tend: #f0f4f5),
+beta: ( gstart: #08AEEA, gend: #2AF598, tstart: #2AF598, tend: #08AEEA),
+gamma: ( gstart: #FEE140, gend: #FA709A, tstart: #FA709A, tend: #FEE140),
+delta: ( gstart: #3EECAC, gend: #EE74E1, tstart: #EE74E1, tend: #3EECAC));
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.newmapbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.btnnn {
+    font-family: 'Fredoka One', cursive !important;
+    font-weight: 900;
+    padding: 1.25rem 2rem;
+    font-size: 1rem;
+    border-radius: 3.5rem / 100%;
+    position: relative;
+    min-width: 15rem;
+    max-width: 90vw;
+    overflow: hidden;
+    border: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: all $time;
+    &+& {
+        margin-top: 1rem;
+    }
+    span {
+        position: relative;
+        z-index: 1;
+    }
+    &:before {
+        content: "";
+        background-color: #21D4FD;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform: scale(4) translateX(-100%);
+        transition: all $time * 1.5 ease-out;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        &:before {
+            transform: scale(4) translate(37%);
+        }
+    }
+}
+
+@each $bname,
+$bcolors in $btns {
+    .btn--#{$bname} {
+        background-color: map-get($bcolors, gstart);
+        color: map-get($bcolors, tstart);
+        &:before {
+            background-color: map-get($bcolors, gend);
+            background-image: linear-gradient(to right, map-get($bcolors, gend) 30%, map-get($bcolors, gstart) 100%);
+            position: absolute;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            color: map-get($bcolors, tend);
+        }
+    }
 }
