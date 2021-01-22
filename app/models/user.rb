@@ -16,4 +16,8 @@ class User < ApplicationRecord
             # user.skip_confirmation!
           end
         end
+
+        def winpoints
+          @winpoints ||= 0
+        end
 end
