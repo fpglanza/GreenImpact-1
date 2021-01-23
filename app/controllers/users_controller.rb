@@ -8,22 +8,17 @@ class UsersController < ApplicationController
     end
 
     def update
-
-    end
-
-    def update
       @user.update(user_params)
       redirect_to user_path(@sports)
     end
 
-
-    def addpoints
+  def addpoints
       @user = current_user
-      current_user.winpoints = current_user.winpoints + 10
+      current_user.winpoints += 10
       current_user.save
 
-      redirect_to users
-    end
+      redirect_to users_path(show)
+  end
 
     private
 

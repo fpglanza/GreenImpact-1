@@ -49579,3 +49579,374 @@ Started PUT "/__web_console/repl_sessions/221cf1c3ffa012c156983273e1c85bf7" for 
 Started PUT "/__web_console/repl_sessions/221cf1c3ffa012c156983273e1c85bf7" for 127.0.0.1 at 2021-01-22 14:50:05 +0100
 Started PUT "/__web_console/repl_sessions/221cf1c3ffa012c156983273e1c85bf7" for 127.0.0.1 at 2021-01-22 14:50:07 +0100
 Started PUT "/__web_console/repl_sessions/221cf1c3ffa012c156983273e1c85bf7" for 127.0.0.1 at 2021-01-22 14:50:08 +0100
+Started GET "/" for 127.0.0.1 at 2021-01-23 15:25:36 +0100
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.9ms | Allocations: 216)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 75)
+  Rendered shared/_flashes.html.erb (Duration: 1.5ms | Allocations: 169)
+Completed 200 OK in 284ms (Views: 192.2ms | ActiveRecord: 14.1ms | Allocations: 40828)
+
+
+Started GET "/path/users/show" for 127.0.0.1 at 2021-01-23 15:25:42 +0100
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 32.9ms | Allocations: 4684)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 117ms (Views: 105.9ms | ActiveRecord: 5.5ms | Allocations: 17863)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-23 15:25:43 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 624ms (ActiveRecord: 1.0ms | Allocations: 118919)
+
+
+  
+NameError (undefined local variable or method `users' for #<UsersController:0x00007fe905e89b80>
+Did you mean?  @user):
+  
+app/controllers/users_controller.rb:25:in `addpoints'
+Started PUT "/__web_console/repl_sessions/b7e9c97e02bc9566a7956d0fdc269031" for 127.0.0.1 at 2021-01-23 15:25:49 +0100
+Started PUT "/__web_console/repl_sessions/b7e9c97e02bc9566a7956d0fdc269031" for 127.0.0.1 at 2021-01-23 15:25:52 +0100
+Started PUT "/__web_console/repl_sessions/b7e9c97e02bc9566a7956d0fdc269031" for 127.0.0.1 at 2021-01-23 15:25:54 +0100
+Started PUT "/__web_console/repl_sessions/b7e9c97e02bc9566a7956d0fdc269031" for 127.0.0.1 at 2021-01-23 15:26:00 +0100
+Started PUT "/__web_console/repl_sessions/b7e9c97e02bc9566a7956d0fdc269031" for 127.0.0.1 at 2021-01-23 15:26:02 +0100
+Started GET "/path/users/show" for 127.0.0.1 at 2021-01-23 15:30:00 +0100
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 12.4ms | Allocations: 2962)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 121ms (Views: 65.8ms | ActiveRecord: 11.1ms | Allocations: 27322)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-23 15:30:03 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 591ms (ActiveRecord: 0.6ms | Allocations: 118793)
+
+
+  
+NameError (undefined local variable or method `users' for #<UsersController:0x00007fe90658b168>
+Did you mean?  @user):
+  
+app/controllers/users_controller.rb:25:in `addpoints'
+Started PUT "/__web_console/repl_sessions/f49ce9cc96a32f952f2543c70c6ed08a" for 127.0.0.1 at 2021-01-23 15:30:06 +0100
+Started PUT "/__web_console/repl_sessions/f49ce9cc96a32f952f2543c70c6ed08a" for 127.0.0.1 at 2021-01-23 15:30:08 +0100
+Started PUT "/__web_console/repl_sessions/f49ce9cc96a32f952f2543c70c6ed08a" for 127.0.0.1 at 2021-01-23 15:30:12 +0100
+Started PUT "/__web_console/repl_sessions/f49ce9cc96a32f952f2543c70c6ed08a" for 127.0.0.1 at 2021-01-23 15:30:13 +0100
+Started PUT "/__web_console/repl_sessions/f49ce9cc96a32f952f2543c70c6ed08a" for 127.0.0.1 at 2021-01-23 16:05:42 +0100
+Started PUT "/__web_console/repl_sessions/f49ce9cc96a32f952f2543c70c6ed08a" for 127.0.0.1 at 2021-01-23 16:05:43 +0100
+Started PUT "/__web_console/repl_sessions/f49ce9cc96a32f952f2543c70c6ed08a" for 127.0.0.1 at 2021-01-23 16:05:47 +0100
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-23 16:10:05 +0100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 794ms (ActiveRecord: 11.5ms | Allocations: 130124)
+
+
+  
+NameError (undefined local variable or method `users' for #<UsersController:0x00007fcca34b7c70>
+Did you mean?  @user):
+  
+app/controllers/users_controller.rb:20:in `addpoints'
+Started PUT "/__web_console/repl_sessions/1d231cbe6d2437d10cc1a3f04934c1a6" for 127.0.0.1 at 2021-01-23 16:10:10 +0100
+Started PUT "/__web_console/repl_sessions/1d231cbe6d2437d10cc1a3f04934c1a6" for 127.0.0.1 at 2021-01-23 16:10:11 +0100
+Started PUT "/__web_console/repl_sessions/1d231cbe6d2437d10cc1a3f04934c1a6" for 127.0.0.1 at 2021-01-23 16:10:16 +0100
+Started PUT "/__web_console/repl_sessions/1d231cbe6d2437d10cc1a3f04934c1a6" for 127.0.0.1 at 2021-01-23 16:10:17 +0100
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-23 16:11:30 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 522ms (ActiveRecord: 0.5ms | Allocations: 116982)
+
+
+  
+NameError (undefined local variable or method `users' for #<UsersController:0x00007fcca5d029c8>
+Did you mean?  @user):
+  
+app/controllers/users_controller.rb:20:in `addpoints'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-23 16:12:21 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 1186ms (ActiveRecord: 9.5ms | Allocations: 128690)
+
+
+  
+NameError (undefined local variable or method `usersshow' for #<UsersController:0x00007fcca59e1078>
+Did you mean?  usersshow_url):
+  
+app/controllers/users_controller.rb:20:in `addpoints'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-23 16:13:08 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to 
+Completed 500 Internal Server Error in 207ms (ActiveRecord: 27.2ms | Allocations: 14235)
+
+
+  
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  
+app/controllers/users_controller.rb:20:in `addpoints'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-23 16:13:23 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to 
+Completed 500 Internal Server Error in 1660ms (ActiveRecord: 13.6ms | Allocations: 128009)
+
+
+  
+NoMethodError (undefined method `user_url' for #<UsersController:0x00007fcca5ee9a70>
+Did you mean?  users_url):
+  
+app/controllers/users_controller.rb:20:in `addpoints'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-23 16:13:39 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to 
+Completed 500 Internal Server Error in 152ms (ActiveRecord: 10.7ms | Allocations: 14230)
+
+
+  
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  
+app/controllers/users_controller.rb:20:in `addpoints'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-23 16:14:00 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to 
+Completed 500 Internal Server Error in 258ms (ActiveRecord: 11.1ms | Allocations: 14212)
+
+
+  
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  
+app/controllers/users_controller.rb:20:in `addpoints'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-23 16:14:06 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to 
+Completed 500 Internal Server Error in 1518ms (ActiveRecord: 11.9ms | Allocations: 128017)
+
+
+  
+NoMethodError (undefined method `user_url' for #<UsersController:0x00007fcca587be90>
+Did you mean?  users_url):
+  
+app/controllers/users_controller.rb:20:in `addpoints'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-23 16:14:46 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 885ms (ActiveRecord: 13.2ms | Allocations: 72333)
+
+
+  
+NoMethodError (undefined method `user_path' for #<UsersController:0x00007fcca5e2f288>
+Did you mean?  users_path):
+  
+app/controllers/users_controller.rb:20:in `addpoints'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-23 16:15:00 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 1294ms (ActiveRecord: 11.5ms | Allocations: 128522)
+
+
+  
+NameError (undefined local variable or method `user_path' for #<UsersController:0x00007fcca6c14740>
+Did you mean?  users_path):
+  
+app/controllers/users_controller.rb:20:in `addpoints'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-23 16:16:04 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 788ms (ActiveRecord: 13.5ms | Allocations: 72315)
+
+
+  
+NoMethodError (undefined method `user_path' for #<UsersController:0x00007fcca5f11868>
+Did you mean?  users_path):
+  
+app/controllers/users_controller.rb:20:in `addpoints'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-23 16:33:54 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 1378ms (ActiveRecord: 1.5ms | Allocations: 128084)
+
+
+  
+NameError (undefined local variable or method `path_users_show' for #<UsersController:0x00007fcca5dc6008>
+Did you mean?  path_users_addpoints_url):
+  
+app/controllers/users_controller.rb:20:in `addpoints'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-23 16:34:15 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 1271ms (ActiveRecord: 42.9ms | Allocations: 128546)
+
+
+  
+NameError (undefined local variable or method `user_path' for #<UsersController:0x00007fcca6b1fe48>
+Did you mean?  users_path):
+  
+app/controllers/users_controller.rb:20:in `addpoints'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-23 16:35:26 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 1455ms (ActiveRecord: 9.3ms | Allocations: 128463)
+
+
+  
+NameError (undefined local variable or method `path_users_show' for #<UsersController:0x00007fcca6e6e518>
+Did you mean?  path_users_addpoints_url):
+  
+app/controllers/users_controller.rb:20:in `addpoints'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-23 16:36:11 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 504ms (ActiveRecord: 19.9ms | Allocations: 72332)
+
+
+  
+NoMethodError (undefined method `user_path' for #<UsersController:0x00007fcca5dd9838>
+Did you mean?  users_path):
+  
+app/controllers/users_controller.rb:20:in `addpoints'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-23 16:36:24 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/path/users/page
+Completed 302 Found in 175ms (ActiveRecord: 14.4ms | Allocations: 13955)
+
+
+Started GET "/path/users/page" for 127.0.0.1 at 2021-01-23 16:36:25 +0100
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 45.7ms | Allocations: 4735)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 75)
+  Rendered shared/_flashes.html.erb (Duration: 0.6ms | Allocations: 169)
+Completed 200 OK in 180ms (Views: 148.4ms | ActiveRecord: 25.1ms | Allocations: 30019)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-23 16:36:28 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/path/users/page
+Completed 302 Found in 11ms (ActiveRecord: 0.4ms | Allocations: 2184)
+
+
+Started GET "/path/users/page" for 127.0.0.1 at 2021-01-23 16:36:28 +0100
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1138)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 71ms (Views: 65.3ms | ActiveRecord: 1.0ms | Allocations: 13877)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-23 16:37:34 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/path/users/page
+Completed 302 Found in 7ms (ActiveRecord: 0.4ms | Allocations: 2180)
+
+
+Started GET "/path/users/page" for 127.0.0.1 at 2021-01-23 16:37:34 +0100
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1137)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 43ms (Views: 37.3ms | ActiveRecord: 1.0ms | Allocations: 13859)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-23 16:44:54 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/path/users/page
+Completed 302 Found in 25ms (ActiveRecord: 10.6ms | Allocations: 2305)
+
+
+Started GET "/path/users/page" for 127.0.0.1 at 2021-01-23 16:44:54 +0100
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1140)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 72ms (Views: 60.9ms | ActiveRecord: 1.5ms | Allocations: 13878)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-23 16:44:56 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/path/users/page
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms | Allocations: 2178)
+
+
+Started GET "/path/users/page" for 127.0.0.1 at 2021-01-23 16:44:56 +0100
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (2.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1136)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 72ms (Views: 63.4ms | ActiveRecord: 3.6ms | Allocations: 13862)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-23 16:45:58 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/path/users/page
+Completed 302 Found in 7ms (ActiveRecord: 0.5ms | Allocations: 2188)
+
+
+Started GET "/path/users/page" for 127.0.0.1 at 2021-01-23 16:45:58 +0100
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1136)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 91ms (Views: 78.3ms | ActiveRecord: 6.7ms | Allocations: 13858)
+
+
