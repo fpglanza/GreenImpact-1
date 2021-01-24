@@ -47578,3 +47578,17 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 4206ms (Views: 4080.5ms | ActiveRecord: 15.5ms | Allocations: 284942)
 
 
+Started GET "/path/users/page" for 127.0.0.1 at 2021-01-24 13:30:08 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 51.1ms | Allocations: 4790)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 80)
+  Rendered shared/_flashes.html.erb (Duration: 0.6ms | Allocations: 169)
+Completed 200 OK in 384ms (Views: 268.6ms | ActiveRecord: 17.4ms | Allocations: 45369)
+
+
