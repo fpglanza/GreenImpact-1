@@ -15,7 +15,7 @@ class UsersController < ApplicationController
   def addpoints
       @user = current_user
       @user.winpoints += 10
-      current_user.save
+      @user.save
 
       redirect_to users_path(show)
   end
