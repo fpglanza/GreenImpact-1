@@ -50222,3 +50222,195 @@ puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.7) lib/puma/server.rb:472:in `process_client'
 puma (4.3.7) lib/puma/server.rb:328:in `block in run'
 puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2021-01-26 15:36:58 +0100
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (7.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.3ms | Allocations: 216)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 75)
+  Rendered shared/_flashes.html.erb (Duration: 1.3ms | Allocations: 169)
+Completed 200 OK in 618ms (Views: 408.3ms | ActiveRecord: 44.6ms | Allocations: 40826)
+
+
+Started GET "/path/users/show" for 127.0.0.1 at 2021-01-26 15:37:07 +0100
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (13.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 50.4ms | Allocations: 4689)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 97ms (Views: 70.5ms | ActiveRecord: 21.3ms | Allocations: 17874)
+
+
+Started GET "/path/users/:id" for 127.0.0.1 at 2021-01-26 15:37:09 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/path/users/:id"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/path/users/show" for 127.0.0.1 at 2021-01-26 15:38:08 +0100
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1462)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 73)
+  Rendered shared/_flashes.html.erb (Duration: 0.6ms | Allocations: 164)
+Completed 200 OK in 65ms (Views: 53.1ms | ActiveRecord: 1.0ms | Allocations: 15683)
+
+
+Started GET "/path/users/show" for 127.0.0.1 at 2021-01-26 15:38:10 +0100
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1138)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 113ms (Views: 103.0ms | ActiveRecord: 2.9ms | Allocations: 13877)
+
+
+Started GET "/path/users/show" for 127.0.0.1 at 2021-01-26 15:38:15 +0100
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1138)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 45ms (Views: 39.5ms | ActiveRecord: 1.0ms | Allocations: 13872)
+
+
+Started GET "/path/users/show" for 127.0.0.1 at 2021-01-26 15:39:34 +0100
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 61.6ms | Allocations: 4810)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 6.9ms | Allocations: 80)
+  Rendered shared/_flashes.html.erb (Duration: 4.0ms | Allocations: 169)
+Completed 200 OK in 559ms (Views: 379.7ms | ActiveRecord: 18.3ms | Allocations: 45400)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-26 15:39:37 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/path/users/page
+Completed 302 Found in 10ms (ActiveRecord: 1.2ms | Allocations: 2694)
+
+
+Started GET "/path/users/page" for 127.0.0.1 at 2021-01-26 15:39:37 +0100
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (2.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 66ms (Views: 56.1ms | ActiveRecord: 3.3ms | Allocations: 13871)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-26 15:39:39 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/path/users/page
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms | Allocations: 2202)
+
+
+Started GET "/path/users/page" for 127.0.0.1 at 2021-01-26 15:39:39 +0100
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (6.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 9.7ms | Allocations: 1138)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 62ms (Views: 48.6ms | ActiveRecord: 8.6ms | Allocations: 13852)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-26 15:39:41 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/path/users/page
+Completed 302 Found in 7ms (ActiveRecord: 0.5ms | Allocations: 2202)
+
+
+Started GET "/path/users/page" for 127.0.0.1 at 2021-01-26 15:39:41 +0100
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1138)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 61ms (Views: 52.2ms | ActiveRecord: 0.9ms | Allocations: 13856)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-01-26 15:39:55 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/path/users/page
+Completed 302 Found in 7ms (ActiveRecord: 0.4ms | Allocations: 2202)
+
+
+Started GET "/path/users/page" for 127.0.0.1 at 2021-01-26 15:39:55 +0100
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1138)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 60ms (Views: 48.3ms | ActiveRecord: 0.9ms | Allocations: 13862)
+
+
