@@ -51878,3 +51878,356 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 148ms (Views: 124.1ms | ActiveRecord: 4.1ms | Allocations: 14571)
 
 
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-01 15:10:00 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 68.6ms | Allocations: 4936)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 75)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 169)
+Completed 200 OK in 487ms (Views: 245.4ms | ActiveRecord: 39.3ms | Allocations: 46245)
+
+
+Started GET "/path/users/1/points" for 127.0.0.1 at 2021-02-01 15:10:04 +0100
+Processing by WinpointsController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:12:in `update'
+[31mUnpermitted parameter: :id[0m
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 13ms (ActiveRecord: 1.0ms | Allocations: 3660)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-01 15:10:04 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (9.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (22.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 33.9ms | Allocations: 1196)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 224ms (Views: 185.9ms | ActiveRecord: 32.2ms | Allocations: 14562)
+
+
+Started GET "/path/users/1/points" for 127.0.0.1 at 2021-02-01 15:10:09 +0100
+Processing by WinpointsController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:12:in `update'
+[31mUnpermitted parameter: :id[0m
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 16ms (ActiveRecord: 3.8ms | Allocations: 3157)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-01 15:10:09 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (2.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1190)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 97ms (Views: 81.4ms | ActiveRecord: 7.9ms | Allocations: 14567)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-01 15:11:49 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (2.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1190)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 117ms (Views: 102.6ms | ActiveRecord: 8.5ms | Allocations: 14537)
+
+
+Started GET "/path/users/1/points" for 127.0.0.1 at 2021-02-01 15:11:52 +0100
+Processing by WinpointsController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:12:in `update'
+[31mUnpermitted parameter: :id[0m
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 17ms (ActiveRecord: 2.7ms | Allocations: 3185)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-01 15:11:52 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1192)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 96ms (Views: 78.2ms | ActiveRecord: 5.2ms | Allocations: 14667)
+
+
+Started GET "/sports" for 127.0.0.1 at 2021-02-01 15:11:58 +0100
+Processing by SportsController#index as HTML
+  Rendering sports/index.html.erb within layouts/application
+  [1m[36mSport Load (6.6ms)[0m  [1m[34mSELECT "sports".* FROM "sports"[0m
+  ↳ app/views/sports/index.html.erb:11
+  Rendered sports/index.html.erb within layouts/application (Duration: 30.5ms | Allocations: 1558)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 152ms (Views: 112.9ms | ActiveRecord: 19.0ms | Allocations: 14353)
+
+
+Started GET "/path/users/1/points" for 127.0.0.1 at 2021-02-01 15:12:02 +0100
+Processing by WinpointsController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:12:in `update'
+[31mUnpermitted parameter: :id[0m
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 12ms (ActiveRecord: 2.1ms | Allocations: 3148)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-01 15:12:02 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1194)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 52ms (Views: 37.1ms | ActiveRecord: 5.0ms | Allocations: 14565)
+
+
+Started GET "/path/users/1/points" for 127.0.0.1 at 2021-02-01 15:12:05 +0100
+Processing by WinpointsController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:12:in `update'
+[31mUnpermitted parameter: :id[0m
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 11ms (ActiveRecord: 1.7ms | Allocations: 3161)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-01 15:12:05 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1188)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 42ms (Views: 34.2ms | ActiveRecord: 1.7ms | Allocations: 14543)
+
+
+Started GET "/path/users/1/points" for 127.0.0.1 at 2021-02-01 15:12:06 +0100
+Processing by WinpointsController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:12:in `update'
+[31mUnpermitted parameter: :id[0m
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 16ms (ActiveRecord: 1.1ms | Allocations: 3140)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-01 15:12:06 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (24.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (11.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 17.7ms | Allocations: 1188)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 246ms (Views: 150.6ms | ActiveRecord: 36.6ms | Allocations: 14559)
+
+
+Started GET "/path/users/1/points" for 127.0.0.1 at 2021-02-01 15:12:08 +0100
+Processing by WinpointsController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:12:in `update'
+[31mUnpermitted parameter: :id[0m
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 22ms (ActiveRecord: 5.9ms | Allocations: 3146)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-01 15:12:08 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (7.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 13.6ms | Allocations: 1188)
+Started GET "/path/users/1/points" for 127.0.0.1 at 2021-02-01 15:12:08 +0100
+Processing by WinpointsController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (6.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 267ms (Views: 237.2ms | ActiveRecord: 8.7ms | Allocations: 18135)
+
+
+  [1m[36mUser Load (25.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:12:in `update'
+[31mUnpermitted parameter: :id[0m
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 162ms (ActiveRecord: 31.2ms | Allocations: 6727)
+
+
+Started GET "/path/users/1/points" for 127.0.0.1 at 2021-02-01 15:12:08 +0100
+Processing by WinpointsController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:12:in `update'
+[31mUnpermitted parameter: :id[0m
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 13ms (ActiveRecord: 0.7ms | Allocations: 3161)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-01 15:12:08 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1188)
+Started GET "/path/users/1/points" for 127.0.0.1 at 2021-02-01 15:12:08 +0100
+Processing by WinpointsController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (8.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:12:in `update'
+[31mUnpermitted parameter: :id[0m
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 19ms (ActiveRecord: 9.6ms | Allocations: 3256)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-01 15:12:08 +0100
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 192ms (Views: 124.9ms | ActiveRecord: 1.5ms | Allocations: 20564)
+
+
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1188)
+Started GET "/path/users/1/points" for 127.0.0.1 at 2021-02-01 15:12:08 +0100
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 176ms (Views: 162.0ms | ActiveRecord: 6.3ms | Allocations: 15626)
+
+
+Processing by WinpointsController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:12:in `update'
+[31mUnpermitted parameter: :id[0m
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 15ms (ActiveRecord: 1.9ms | Allocations: 3169)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-01 15:12:08 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1190)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 15)
+Completed 200 OK in 57ms (Views: 49.1ms | ActiveRecord: 2.3ms | Allocations: 14552)
+
+
+Started GET "/path/users/1/points" for 127.0.0.1 at 2021-02-01 15:12:09 +0100
+Processing by WinpointsController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:12:in `update'
+[31mUnpermitted parameter: :id[0m
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 14ms (ActiveRecord: 3.8ms | Allocations: 3145)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-01 15:12:09 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1188)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 15)
+Completed 200 OK in 100ms (Views: 67.1ms | ActiveRecord: 2.3ms | Allocations: 14551)
+
+

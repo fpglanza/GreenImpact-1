@@ -10,6 +10,8 @@ end
 
 def update
   @user = User.find(params[:id])
+  @user.winpoints += 10
+  @user.save
   if @user.update(user_params)
     redirect_to usersshow_path, notice: 'Points Updated.'
   else
