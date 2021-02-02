@@ -52231,3 +52231,1867 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 100ms (Views: 67.1ms | ActiveRecord: 2.3ms | Allocations: 14551)
 
 
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-01 18:38:18 +0100
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 283.3ms | Allocations: 4935)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 5.7ms | Allocations: 80)
+  Rendered shared/_flashes.html.erb (Duration: 1.4ms | Allocations: 169)
+Completed 200 OK in 1886ms (Views: 1310.7ms | ActiveRecord: 44.5ms | Allocations: 46249)
+
+
+Started GET "/path/users/1/points" for 127.0.0.1 at 2021-02-01 18:38:24 +0100
+  
+AbstractController::ActionNotFound (The action 'update' could not be found for WinpointsController):
+  
+actionpack (6.0.3.4) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.3.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/path/users/1/points" for 127.0.0.1 at 2021-02-01 18:39:01 +0100
+Processing by WinpointsController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:20:in `set_user'
+  [1m[35m (7.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[36mUser Update (22.6ms)[0m  [1m[33mUPDATE "users" SET "winpoints" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["winpoints", 20], ["updated_at", "2021-02-01 17:39:02.434317"], ["id", 1]]
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 523ms (ActiveRecord: 60.4ms | Allocations: 17139)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-01 18:39:02 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (22.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 18.7ms | Allocations: 3014)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 327ms (Views: 274.4ms | ActiveRecord: 28.1ms | Allocations: 16514)
+
+
+Started GET "/path/users/1/points" for 127.0.0.1 at 2021-02-01 18:39:05 +0100
+Processing by WinpointsController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:20:in `set_user'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "users" SET "winpoints" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["winpoints", 30], ["updated_at", "2021-02-01 17:39:05.799103"], ["id", 1]]
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 37ms (ActiveRecord: 4.2ms | Allocations: 4971)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-01 18:39:05 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1190)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 66ms (Views: 54.9ms | ActiveRecord: 2.5ms | Allocations: 14565)
+
+
+Started GET "/path/users/1/points" for 127.0.0.1 at 2021-02-01 18:39:28 +0100
+Processing by WinpointsController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:20:in `set_user'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[36mUser Update (1.2ms)[0m  [1m[33mUPDATE "users" SET "winpoints" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["winpoints", 40], ["updated_at", "2021-02-01 17:39:28.060705"], ["id", 1]]
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 18ms (ActiveRecord: 3.9ms | Allocations: 4963)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-01 18:39:28 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1190)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 138ms (Views: 125.7ms | ActiveRecord: 2.1ms | Allocations: 14538)
+
+
+Started GET "/path/users/1/points" for 127.0.0.1 at 2021-02-01 18:39:30 +0100
+Processing by WinpointsController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:20:in `set_user'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[36mUser Update (0.9ms)[0m  [1m[33mUPDATE "users" SET "winpoints" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["winpoints", 50], ["updated_at", "2021-02-01 17:39:30.895260"], ["id", 1]]
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 20ms (ActiveRecord: 4.9ms | Allocations: 4941)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-01 18:39:30 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1189)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 68ms (Views: 54.8ms | ActiveRecord: 4.3ms | Allocations: 14589)
+
+
+Started GET "/path/users/1/points" for 127.0.0.1 at 2021-02-01 18:39:32 +0100
+Processing by WinpointsController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:20:in `set_user'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[36mUser Update (1.0ms)[0m  [1m[33mUPDATE "users" SET "winpoints" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["winpoints", 60], ["updated_at", "2021-02-01 17:39:32.614746"], ["id", 1]]
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 50ms (ActiveRecord: 11.4ms | Allocations: 4949)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-01 18:39:32 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (7.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 13.8ms | Allocations: 1188)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 108ms (Views: 87.2ms | ActiveRecord: 9.7ms | Allocations: 14545)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-02 10:12:03 +0100
+  [1m[35m (5.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.8ms | Allocations: 254)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 75)
+  Rendered shared/_flashes.html.erb (Duration: 2.7ms | Allocations: 169)
+Completed 200 OK in 567ms (Views: 443.9ms | ActiveRecord: 17.7ms | Allocations: 40854)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-02 10:12:09 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (3.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 55.4ms | Allocations: 4801)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 125ms (Views: 97.5ms | ActiveRecord: 19.2ms | Allocations: 18713)
+
+
+Started GET "/path/users/1/points" for 127.0.0.1 at 2021-02-02 10:12:16 +0100
+Processing by WinpointsController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:20:in `set_user'
+  [1m[35m (2.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[36mUser Update (2.0ms)[0m  [1m[33mUPDATE "users" SET "winpoints" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["winpoints", 70], ["updated_at", "2021-02-02 09:12:16.962228"], ["id", 1]]
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 27ms (ActiveRecord: 11.8ms | Allocations: 5564)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-02 10:12:16 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (7.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1190)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 332ms (Views: 316.4ms | ActiveRecord: 8.6ms | Allocations: 14547)
+
+
+Started GET "/path/users/1/points" for 127.0.0.1 at 2021-02-02 10:14:28 +0100
+Processing by WinpointsController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:20:in `set_user'
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[36mUser Update (0.6ms)[0m  [1m[33mUPDATE "users" SET "winpoints" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["winpoints", 80], ["updated_at", "2021-02-02 09:14:28.578990"], ["id", 1]]
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[35m (12.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 35ms (ActiveRecord: 18.0ms | Allocations: 4967)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-02 10:14:28 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (2.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1189)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 71ms (Views: 59.8ms | ActiveRecord: 3.5ms | Allocations: 14548)
+
+
+Started GET "/path/users/1/points" for 127.0.0.1 at 2021-02-02 10:23:19 +0100
+Processing by WinpointsController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:20:in `set_user'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[36mUser Update (1.1ms)[0m  [1m[33mUPDATE "users" SET "winpoints" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["winpoints", 90], ["updated_at", "2021-02-02 09:23:19.594584"], ["id", 1]]
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 29ms (ActiveRecord: 4.9ms | Allocations: 5095)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-02 10:23:19 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1193)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.9ms | Allocations: 15)
+Completed 200 OK in 108ms (Views: 83.8ms | ActiveRecord: 5.3ms | Allocations: 14564)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-02 10:43:35 +0100
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 10.6ms | Allocations: 1548)
+Completed 500 Internal Server Error in 148ms (ActiveRecord: 13.6ms | Allocations: 17600)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+    12:    <a href="/path/users/<%= current_user.id %>/show" class="menu-item purple"> <i class="fa fa-user"></i> </a>
+    13:    <a href="/path/questions" class="menu-item orange"> <i class="fa fa-question"></i> </a>
+    14:    <a href="/path/share" class="menu-item lightblue"> <i class="fa fa-share"></i> </a>
+    15:    <%=link_to user_add_points_path(@user), class: "btn-floating btn-large waves-effect waves-light red" do%><svg width="25px" height="25px" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    16:           <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+    17:           <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+    18:           </svg> Add Points
+  
+app/views/pages/home.html.erb:15
+Started GET "/" for 127.0.0.1 at 2021-02-02 10:49:06 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1141)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.0ms | Allocations: 3833)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"update", :controller=>"winpoints"}, missing required keys: [:id]):
+    12:    <a href="/path/users/<%= current_user.id %>/show" class="menu-item purple"> <i class="fa fa-user"></i> </a>
+    13:    <a href="/path/questions" class="menu-item orange"> <i class="fa fa-question"></i> </a>
+    14:    <a href="/path/share" class="menu-item lightblue"> <i class="fa fa-share"></i> </a>
+    15:    <%=link_to user_add_points_path, class: "btn-floating btn-large waves-effect waves-light red" do%><svg width="25px" height="25px" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    16:           <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+    17:           <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+    18:           </svg> Add Points
+  
+app/views/pages/home.html.erb:15
+Started GET "/" for 127.0.0.1 at 2021-02-02 10:49:20 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 126)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 75)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 169)
+Completed 200 OK in 196ms (Views: 189.7ms | ActiveRecord: 0.5ms | Allocations: 27379)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-02 10:49:25 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 30.4ms | Allocations: 4893)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 85ms (Views: 60.0ms | ActiveRecord: 11.0ms | Allocations: 18941)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-02 10:52:26 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 126)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 73)
+  Rendered shared/_flashes.html.erb (Duration: 1.7ms | Allocations: 164)
+Completed 200 OK in 38ms (Views: 33.5ms | ActiveRecord: 0.5ms | Allocations: 14235)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 10:52:30 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/addpoints.html.erb within layouts/application
+  Rendered users/addpoints.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1069)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.7ms | Allocations: 3477)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+    1: <%=link_to user_add_points_path(@user), class: "btn-floating btn-large waves-effect waves-light red" do%><svg width="25px" height="25px" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    2:           <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+    3:           <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+    4:           </svg> Add Points
+  
+app/views/users/addpoints.html.erb:1
+Started PUT "/__web_console/repl_sessions/5aad7347fd9c7b688e2a07ca7cb3581a" for 127.0.0.1 at 2021-02-02 10:52:44 +0100
+Started PUT "/__web_console/repl_sessions/5aad7347fd9c7b688e2a07ca7cb3581a" for 127.0.0.1 at 2021-02-02 10:52:45 +0100
+Started PUT "/__web_console/repl_sessions/5aad7347fd9c7b688e2a07ca7cb3581a" for 127.0.0.1 at 2021-02-02 10:52:49 +0100
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 10:53:42 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/addpoints.html.erb within layouts/application
+  Rendered users/addpoints.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1067)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.3ms | Allocations: 3639)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+    1: <%=link_to user_add_points_path(@user), class: "btn-floating btn-large waves-effect waves-light red" do%><svg width="25px" height="25px" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    2:           <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+    3:           <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+    4:           </svg> Add Points
+  
+app/views/users/addpoints.html.erb:1
+Started GET "/" for 127.0.0.1 at 2021-02-02 10:54:17 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 125)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 73)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 164)
+Completed 200 OK in 46ms (Views: 40.6ms | ActiveRecord: 0.5ms | Allocations: 14236)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 10:54:19 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/addpoints.html.erb within layouts/application
+  Rendered users/addpoints.html.erb within layouts/application (Duration: 0.9ms | Allocations: 184)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 58ms (Views: 48.4ms | ActiveRecord: 3.2ms | Allocations: 13341)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 10:55:54 +0100
+Processing by UsersController#addpoints as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/addpoints.html.erb within layouts/application
+  Rendered users/addpoints.html.erb within layouts/application (Duration: 447.1ms | Allocations: 88897)
+Completed 500 Internal Server Error in 460ms (ActiveRecord: 0.9ms | Allocations: 91471)
+
+
+  
+ActionView::Template::Error (undefined method `redirect_to' for #<#<Class:0x00007f7ee4ebe208>:0x00007f7ee4ebca20>):
+    1: <%=redirect_to user_add_points_path(current_user)%>
+  
+app/views/users/addpoints.html.erb:1
+Started GET "/" for 127.0.0.1 at 2021-02-02 11:01:28 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 126)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 73)
+  Rendered shared/_flashes.html.erb (Duration: 0.6ms | Allocations: 164)
+Completed 200 OK in 178ms (Views: 90.6ms | ActiveRecord: 13.4ms | Allocations: 25695)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:01:31 +0100
+  
+Zeitwerk::NameError (expected file /Users/macbook/code/fpglanza/GreenImpact-1/app/controllers/addpoints_controller.rb to define constant AddpointsController, but didn't):
+  
+zeitwerk (2.4.2) lib/zeitwerk/loader/callbacks.rb:18:in `on_file_autoloaded'
+zeitwerk (2.4.2) lib/zeitwerk/kernel.rb:27:in `block in require'
+zeitwerk (2.4.2) lib/zeitwerk/kernel.rb:26:in `tap'
+zeitwerk (2.4.2) lib/zeitwerk/kernel.rb:26:in `require'
+activesupport (6.0.3.4) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.3.4) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.3.4) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.3.4) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.3.4) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.3.4) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:89:in `controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/parameters.rb:100:in `binary_params_for?'
+actionpack (6.0.3.4) lib/action_dispatch/http/parameters.rb:91:in `set_binary_encoding'
+actionpack (6.0.3.4) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:47:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:16:56 +0100
+  
+ActionController::RoutingError (uninitialized constant AddpointsController):
+  
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2021-02-02 11:21:06 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 20)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 190ms (Views: 63.9ms | ActiveRecord: 16.0ms | Allocations: 24487)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:21:08 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/path/users/addpoints"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:21:20 +0100
+  
+ActionController::RoutingError (uninitialized constant AddpointsController):
+  
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2021-02-02 11:24:46 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 21)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 94ms (Views: 32.6ms | ActiveRecord: 8.3ms | Allocations: 24292)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:24:48 +0100
+  
+ActionController::RoutingError (uninitialized constant AddpointsController):
+  
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started PUT "/__web_console/repl_sessions/7d3e612d60326833de38f3bc2ab726ce" for 127.0.0.1 at 2021-02-02 11:24:55 +0100
+Started PUT "/__web_console/repl_sessions/7d3e612d60326833de38f3bc2ab726ce" for 127.0.0.1 at 2021-02-02 11:24:56 +0100
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:25:15 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 70ms (ActiveRecord: 10.4ms | Allocations: 13584)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/addpoints_controller.rb:22:in `set_user'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:25:38 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 73ms (ActiveRecord: 6.6ms | Allocations: 15078)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/addpoints_controller.rb:22:in `set_user'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:26:20 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 69ms (ActiveRecord: 8.8ms | Allocations: 15080)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/addpoints_controller.rb:22:in `set_user'
+Started PUT "/__web_console/repl_sessions/8e82efc4854268c7aa719cb6606c206f" for 127.0.0.1 at 2021-02-02 11:26:24 +0100
+Started PUT "/__web_console/repl_sessions/8e82efc4854268c7aa719cb6606c206f" for 127.0.0.1 at 2021-02-02 11:26:25 +0100
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:27:13 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 95ms (ActiveRecord: 8.3ms | Allocations: 15078)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/addpoints_controller.rb:22:in `set_user'
+Started PUT "/__web_console/repl_sessions/2bd90e5dd533158e45a86f4b9535bded" for 127.0.0.1 at 2021-02-02 11:27:21 +0100
+Started PUT "/__web_console/repl_sessions/2bd90e5dd533158e45a86f4b9535bded" for 127.0.0.1 at 2021-02-02 11:27:22 +0100
+Started PUT "/__web_console/repl_sessions/2bd90e5dd533158e45a86f4b9535bded" for 127.0.0.1 at 2021-02-02 11:27:22 +0100
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:27:53 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 89ms (ActiveRecord: 21.2ms | Allocations: 15078)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/addpoints_controller.rb:22:in `set_user'
+Started GET "/" for 127.0.0.1 at 2021-02-02 11:27:59 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 20)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 38ms (Views: 32.2ms | ActiveRecord: 0.4ms | Allocations: 12901)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:28:01 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 7ms (ActiveRecord: 0.4ms | Allocations: 2191)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/addpoints_controller.rb:22:in `set_user'
+Started GET "/" for 127.0.0.1 at 2021-02-02 11:29:46 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 20)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 164ms (Views: 63.3ms | ActiveRecord: 6.4ms | Allocations: 24287)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:29:48 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 9ms (ActiveRecord: 2.0ms | Allocations: 2175)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/addpoints_controller.rb:22:in `set_user'
+Started PUT "/__web_console/repl_sessions/417030df5867340a4317f6ed7f7607d9" for 127.0.0.1 at 2021-02-02 11:29:58 +0100
+Started PUT "/__web_console/repl_sessions/417030df5867340a4317f6ed7f7607d9" for 127.0.0.1 at 2021-02-02 11:29:59 +0100
+Started PUT "/__web_console/repl_sessions/417030df5867340a4317f6ed7f7607d9" for 127.0.0.1 at 2021-02-02 11:30:26 +0100
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:31:09 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 150ms (ActiveRecord: 13.3ms | Allocations: 15070)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/addpoints_controller.rb:22:in `set_user'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:31:14 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.3ms | Allocations: 2175)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/addpoints_controller.rb:22:in `set_user'
+Started PUT "/__web_console/repl_sessions/cf6dca36224895f73676e80cb06f2100" for 127.0.0.1 at 2021-02-02 11:31:27 +0100
+Started PUT "/__web_console/repl_sessions/cf6dca36224895f73676e80cb06f2100" for 127.0.0.1 at 2021-02-02 11:31:28 +0100
+Started GET "/" for 127.0.0.1 at 2021-02-02 11:31:55 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 20)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 82ms (Views: 30.0ms | ActiveRecord: 6.7ms | Allocations: 24270)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:31:59 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 6ms (ActiveRecord: 1.1ms | Allocations: 2171)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/addpoints_controller.rb:22:in `set_user'
+Started GET "/" for 127.0.0.1 at 2021-02-02 11:32:52 +0100
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 255)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 75)
+  Rendered shared/_flashes.html.erb (Duration: 0.6ms | Allocations: 169)
+Completed 200 OK in 342ms (Views: 228.3ms | ActiveRecord: 13.7ms | Allocations: 40857)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:32:56 +0100
+  
+Zeitwerk::NameError (expected file /Users/macbook/code/fpglanza/GreenImpact-1/app/controllers/addpoints_controller.rb to define constant AddpointsController, but didn't):
+  
+zeitwerk (2.4.2) lib/zeitwerk/loader/callbacks.rb:18:in `on_file_autoloaded'
+zeitwerk (2.4.2) lib/zeitwerk/kernel.rb:27:in `block in require'
+zeitwerk (2.4.2) lib/zeitwerk/kernel.rb:26:in `tap'
+zeitwerk (2.4.2) lib/zeitwerk/kernel.rb:26:in `require'
+activesupport (6.0.3.4) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.3.4) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.3.4) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.3.4) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.3.4) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.3.4) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:89:in `controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/parameters.rb:100:in `binary_params_for?'
+actionpack (6.0.3.4) lib/action_dispatch/http/parameters.rb:91:in `set_binary_encoding'
+actionpack (6.0.3.4) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:47:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2021-02-02 11:33:25 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 21)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 171ms (Views: 42.9ms | ActiveRecord: 9.5ms | Allocations: 24471)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:33:27 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 5.6ms | Allocations: 2221)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started GET "/" for 127.0.0.1 at 2021-02-02 11:33:41 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 20)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 104ms (Views: 31.6ms | ActiveRecord: 15.5ms | Allocations: 24261)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:33:44 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms | Allocations: 2205)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started PUT "/__web_console/repl_sessions/f6544ec87d6bb80116e67a551442a827" for 127.0.0.1 at 2021-02-02 11:33:50 +0100
+Started PUT "/__web_console/repl_sessions/f6544ec87d6bb80116e67a551442a827" for 127.0.0.1 at 2021-02-02 11:33:51 +0100
+Started GET "/" for 127.0.0.1 at 2021-02-02 11:34:15 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 20)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 85ms (Views: 33.8ms | ActiveRecord: 9.0ms | Allocations: 24268)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-02 11:34:16 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 67ms (Views: 62.0ms | ActiveRecord: 0.3ms | Allocations: 12733)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:34:20 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms | Allocations: 2186)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started PUT "/__web_console/repl_sessions/507b8289cbc68d446389bf2ebbd744d7" for 127.0.0.1 at 2021-02-02 11:34:28 +0100
+Started PUT "/__web_console/repl_sessions/507b8289cbc68d446389bf2ebbd744d7" for 127.0.0.1 at 2021-02-02 11:34:29 +0100
+Started PUT "/__web_console/repl_sessions/507b8289cbc68d446389bf2ebbd744d7" for 127.0.0.1 at 2021-02-02 11:34:37 +0100
+Started GET "/" for 127.0.0.1 at 2021-02-02 11:36:17 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 20)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 125ms (Views: 60.5ms | ActiveRecord: 14.3ms | Allocations: 24270)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:36:19 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms | Allocations: 2209)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started GET "/" for 127.0.0.1 at 2021-02-02 11:36:37 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 20)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 115ms (Views: 34.3ms | ActiveRecord: 7.7ms | Allocations: 24312)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:36:40 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.1ms | Allocations: 2206)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started PUT "/__web_console/repl_sessions/aa4a22b961d41c12ba2936e3977afcfb" for 127.0.0.1 at 2021-02-02 11:37:06 +0100
+Started PUT "/__web_console/repl_sessions/aa4a22b961d41c12ba2936e3977afcfb" for 127.0.0.1 at 2021-02-02 11:37:07 +0100
+Started PUT "/__web_console/repl_sessions/aa4a22b961d41c12ba2936e3977afcfb" for 127.0.0.1 at 2021-02-02 11:37:14 +0100
+Started GET "/" for 127.0.0.1 at 2021-02-02 11:46:54 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 20)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 139ms (Views: 51.8ms | ActiveRecord: 1.5ms | Allocations: 23939)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:46:57 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms | Allocations: 2202)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started PUT "/__web_console/repl_sessions/16ae85c119bed52ae84b4da39b02bcfd" for 127.0.0.1 at 2021-02-02 11:47:06 +0100
+Started PUT "/__web_console/repl_sessions/16ae85c119bed52ae84b4da39b02bcfd" for 127.0.0.1 at 2021-02-02 11:47:06 +0100
+Started GET "/" for 127.0.0.1 at 2021-02-02 11:47:32 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 20)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 129ms (Views: 31.8ms | ActiveRecord: 18.4ms | Allocations: 24314)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:47:34 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.6ms | Allocations: 2182)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started PUT "/__web_console/repl_sessions/3dd3eb2d03b26ecf875c5c308eeb9d94" for 127.0.0.1 at 2021-02-02 11:47:40 +0100
+Started PUT "/__web_console/repl_sessions/3dd3eb2d03b26ecf875c5c308eeb9d94" for 127.0.0.1 at 2021-02-02 11:47:45 +0100
+Started PUT "/__web_console/repl_sessions/3dd3eb2d03b26ecf875c5c308eeb9d94" for 127.0.0.1 at 2021-02-02 11:50:33 +0100
+Started GET "/" for 127.0.0.1 at 2021-02-02 11:51:16 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 20)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 126ms (Views: 40.3ms | ActiveRecord: 22.1ms | Allocations: 24263)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:51:18 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms | Allocations: 2200)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started GET "/" for 127.0.0.1 at 2021-02-02 11:51:39 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 20)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 136ms (Views: 64.1ms | ActiveRecord: 10.3ms | Allocations: 24298)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:51:41 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms | Allocations: 2184)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:52:20 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 8.1ms | Allocations: 15080)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started PUT "/__web_console/repl_sessions/4d40d30f09f0b636721065bac0475e3b" for 127.0.0.1 at 2021-02-02 11:52:31 +0100
+Started PUT "/__web_console/repl_sessions/4d40d30f09f0b636721065bac0475e3b" for 127.0.0.1 at 2021-02-02 11:52:32 +0100
+Started PUT "/__web_console/repl_sessions/4d40d30f09f0b636721065bac0475e3b" for 127.0.0.1 at 2021-02-02 11:52:52 +0100
+Started PUT "/__web_console/repl_sessions/4d40d30f09f0b636721065bac0475e3b" for 127.0.0.1 at 2021-02-02 11:53:36 +0100
+Started PUT "/__web_console/repl_sessions/4d40d30f09f0b636721065bac0475e3b" for 127.0.0.1 at 2021-02-02 11:53:37 +0100
+Started PUT "/__web_console/repl_sessions/4d40d30f09f0b636721065bac0475e3b" for 127.0.0.1 at 2021-02-02 11:53:39 +0100
+Started PUT "/__web_console/repl_sessions/4d40d30f09f0b636721065bac0475e3b" for 127.0.0.1 at 2021-02-02 11:53:40 +0100
+Started PUT "/__web_console/repl_sessions/4d40d30f09f0b636721065bac0475e3b" for 127.0.0.1 at 2021-02-02 11:53:41 +0100
+Started PUT "/__web_console/repl_sessions/4d40d30f09f0b636721065bac0475e3b" for 127.0.0.1 at 2021-02-02 11:53:42 +0100
+Started GET "/" for 127.0.0.1 at 2021-02-02 11:54:36 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 20)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 138ms (Views: 72.3ms | ActiveRecord: 10.2ms | Allocations: 24282)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:54:38 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 2.1ms | Allocations: 2188)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-02 11:54:48 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 20.9ms | Allocations: 4792)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 65ms (Views: 51.0ms | ActiveRecord: 5.0ms | Allocations: 18685)
+
+
+Started GET "/path/users/1/points" for 127.0.0.1 at 2021-02-02 11:54:50 +0100
+Processing by WinpointsController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[36mUser Update (3.0ms)[0m  [1m[33mUPDATE "users" SET "winpoints" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["winpoints", 100], ["updated_at", "2021-02-02 10:54:50.472515"], ["id", 1]]
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 22ms (ActiveRecord: 9.2ms | Allocations: 4928)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-02 11:54:50 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1190)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 47ms (Views: 40.5ms | ActiveRecord: 1.2ms | Allocations: 14542)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-02 11:55:14 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 20)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 176ms (Views: 85.4ms | ActiveRecord: 8.7ms | Allocations: 24290)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:55:16 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 2.2ms | Allocations: 2196)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started GET "/" for 127.0.0.1 at 2021-02-02 11:57:08 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 20)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 80ms (Views: 28.1ms | ActiveRecord: 8.8ms | Allocations: 24276)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-02 11:57:10 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 24.1ms | Allocations: 3007)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 8.7ms | Allocations: 11)
+Completed 200 OK in 274ms (Views: 253.1ms | ActiveRecord: 7.9ms | Allocations: 16563)
+
+
+Started GET "/path/users/1/points" for 127.0.0.1 at 2021-02-02 11:57:13 +0100
+Processing by WinpointsController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[36mUser Update (0.6ms)[0m  [1m[33mUPDATE "users" SET "winpoints" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["winpoints", 110], ["updated_at", "2021-02-02 10:57:13.463246"], ["id", 1]]
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 21ms (ActiveRecord: 8.5ms | Allocations: 4719)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-02 11:57:13 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1190)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 15)
+Completed 200 OK in 212ms (Views: 202.8ms | ActiveRecord: 2.6ms | Allocations: 14544)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:57:18 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.5ms | Allocations: 2195)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started GET "/" for 127.0.0.1 at 2021-02-02 11:58:41 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 20)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 85ms (Views: 30.7ms | ActiveRecord: 6.6ms | Allocations: 24274)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:58:43 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.8ms | Allocations: 2188)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started PUT "/__web_console/repl_sessions/53c5f22abaaa2df68707eeb83eaa087d" for 127.0.0.1 at 2021-02-02 11:59:05 +0100
+Started PUT "/__web_console/repl_sessions/53c5f22abaaa2df68707eeb83eaa087d" for 127.0.0.1 at 2021-02-02 11:59:08 +0100
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:59:25 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 6.6ms | Allocations: 15084)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 11:59:49 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 133ms (ActiveRecord: 9.1ms | Allocations: 14075)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started PUT "/__web_console/repl_sessions/3b2361e35f28efd364e5ad40863f3113" for 127.0.0.1 at 2021-02-02 12:00:01 +0100
+Started PUT "/__web_console/repl_sessions/3b2361e35f28efd364e5ad40863f3113" for 127.0.0.1 at 2021-02-02 12:00:02 +0100
+Started PUT "/__web_console/repl_sessions/3b2361e35f28efd364e5ad40863f3113" for 127.0.0.1 at 2021-02-02 12:00:09 +0100
+Started PUT "/__web_console/repl_sessions/3b2361e35f28efd364e5ad40863f3113" for 127.0.0.1 at 2021-02-02 12:00:11 +0100
+Started PUT "/__web_console/repl_sessions/3b2361e35f28efd364e5ad40863f3113" for 127.0.0.1 at 2021-02-02 12:00:33 +0100
+Redirected to http://localhost:3000/path/users/1/points
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 12:02:00 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/path/users/addpoints"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 12:06:08 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 202ms (ActiveRecord: 61.0ms | Allocations: 15084)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 12:11:21 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 7.7ms | Allocations: 15084)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started GET "/" for 127.0.0.1 at 2021-02-02 12:11:52 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 126)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 73)
+  Rendered shared/_flashes.html.erb (Duration: 0.6ms | Allocations: 164)
+Completed 200 OK in 131ms (Views: 51.5ms | ActiveRecord: 17.4ms | Allocations: 25614)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 12:11:54 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.7ms | Allocations: 2194)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started PUT "/__web_console/repl_sessions/e62f42a14d62cca5c69367f26b32642f" for 127.0.0.1 at 2021-02-02 12:12:08 +0100
+Started PUT "/__web_console/repl_sessions/e62f42a14d62cca5c69367f26b32642f" for 127.0.0.1 at 2021-02-02 12:12:09 +0100
+Started PUT "/__web_console/repl_sessions/e62f42a14d62cca5c69367f26b32642f" for 127.0.0.1 at 2021-02-02 12:12:11 +0100
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 12:13:09 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (10.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 183ms (ActiveRecord: 34.5ms | Allocations: 15090)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 12:13:40 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (42.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 208ms (ActiveRecord: 112.7ms | Allocations: 15091)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 12:13:43 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (7.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 7.8ms | Allocations: 2192)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 12:13:54 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 7.9ms | Allocations: 14065)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 12:14:08 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 138ms (ActiveRecord: 13.1ms | Allocations: 14067)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 12:14:18 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 187ms (ActiveRecord: 50.7ms | Allocations: 15090)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 12:17:42 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 8.3ms | Allocations: 15092)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started GET "/" for 127.0.0.1 at 2021-02-02 12:18:04 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 20)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 247ms (Views: 109.3ms | ActiveRecord: 12.2ms | Allocations: 24281)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 12:18:07 +0100
+Processing by AddpointsController#redirect as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 2.0ms | Allocations: 2188)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"update", :controller=>"winpoints", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/addpoints_controller.rb:9:in `redirect'
+Started PUT "/__web_console/repl_sessions/5a71440c1b33cff8257197b1004fb12f" for 127.0.0.1 at 2021-02-02 12:18:13 +0100
+Started PUT "/__web_console/repl_sessions/5a71440c1b33cff8257197b1004fb12f" for 127.0.0.1 at 2021-02-02 12:18:14 +0100
+Started PUT "/__web_console/repl_sessions/5a71440c1b33cff8257197b1004fb12f" for 127.0.0.1 at 2021-02-02 12:18:17 +0100
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 12:49:29 +0100
+Processing by WinpointsController#update as HTML
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (9.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[36mUser Update (8.3ms)[0m  [1m[33mUPDATE "users" SET "winpoints" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["winpoints", 120], ["updated_at", "2021-02-02 11:49:29.929825"], ["id", 1]]
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[35m (9.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 32.0ms | Allocations: 16014)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+  
+app/controllers/winpoints_controller.rb:11:in `update'
+Started PUT "/__web_console/repl_sessions/e55b67fe9aa8bf11ec7a7c7a4abc50bc" for 127.0.0.1 at 2021-02-02 12:50:11 +0100
+Started PUT "/__web_console/repl_sessions/e55b67fe9aa8bf11ec7a7c7a4abc50bc" for 127.0.0.1 at 2021-02-02 12:50:11 +0100
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 12:51:00 +0100
+Processing by WinpointsController#update as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "users" SET "winpoints" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["winpoints", 130], ["updated_at", "2021-02-02 11:51:00.337106"], ["id", 1]]
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 127ms (ActiveRecord: 17.5ms | Allocations: 16159)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-02 12:51:00 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 20.9ms | Allocations: 3413)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 75)
+  Rendered shared/_flashes.html.erb (Duration: 0.6ms | Allocations: 173)
+Completed 200 OK in 194ms (Views: 131.1ms | ActiveRecord: 4.9ms | Allocations: 18261)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-02 12:57:22 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 129)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 73)
+  Rendered shared/_flashes.html.erb (Duration: 0.6ms | Allocations: 164)
+Completed 200 OK in 56ms (Views: 45.9ms | ActiveRecord: 1.4ms | Allocations: 14357)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-02 12:57:56 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 126)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 73)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 164)
+Completed 200 OK in 60ms (Views: 51.6ms | ActiveRecord: 0.5ms | Allocations: 14228)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 12:57:59 +0100
+Processing by WinpointsController#update as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[36mUser Update (1.4ms)[0m  [1m[33mUPDATE "users" SET "winpoints" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["winpoints", 140], ["updated_at", "2021-02-02 11:57:59.720233"], ["id", 1]]
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 24ms (ActiveRecord: 8.7ms | Allocations: 4325)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-02 12:57:59 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 23.7ms | Allocations: 1582)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 184ms (Views: 174.3ms | ActiveRecord: 2.6ms | Allocations: 15424)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-02 12:58:28 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 132)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 73)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 164)
+Completed 200 OK in 74ms (Views: 64.9ms | ActiveRecord: 1.4ms | Allocations: 14251)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-02 12:58:40 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (7.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 127)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 73)
+  Rendered shared/_flashes.html.erb (Duration: 0.7ms | Allocations: 164)
+Completed 200 OK in 59ms (Views: 46.8ms | ActiveRecord: 7.2ms | Allocations: 14237)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-02 12:59:09 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (8.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 127)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 73)
+  Rendered shared/_flashes.html.erb (Duration: 2.0ms | Allocations: 164)
+Completed 200 OK in 67ms (Views: 52.4ms | ActiveRecord: 8.6ms | Allocations: 14229)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 13:06:58 +0100
+Processing by WinpointsController#update as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[36mUser Update (1.4ms)[0m  [1m[33mUPDATE "users" SET "winpoints" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["winpoints", 150], ["updated_at", "2021-02-02 12:06:58.076059"], ["id", 1]]
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 19ms (ActiveRecord: 3.9ms | Allocations: 4432)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-02 13:06:58 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1583)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 15)
+Completed 200 OK in 52ms (Views: 42.1ms | ActiveRecord: 2.2ms | Allocations: 15435)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-02 13:13:59 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1217)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 79ms (Views: 66.4ms | ActiveRecord: 2.5ms | Allocations: 14677)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 13:14:05 +0100
+Processing by WinpointsController#update as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[36mUser Update (0.9ms)[0m  [1m[33mUPDATE "users" SET "winpoints" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["winpoints", 160], ["updated_at", "2021-02-02 12:14:05.794118"], ["id", 1]]
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 26ms (ActiveRecord: 8.0ms | Allocations: 4313)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-02 13:14:05 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1213)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 15)
+Completed 200 OK in 45ms (Views: 35.2ms | ActiveRecord: 3.1ms | Allocations: 14582)
+
+

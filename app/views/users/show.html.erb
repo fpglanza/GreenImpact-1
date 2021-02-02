@@ -22,7 +22,7 @@
 		<p class="title"><%= current_user.full_name %></p>
 		<h1 class="description"><%= current_user.winpoints %></h1>
 		<a href="/sports"><button type="button" class="btn345">Go Shop</button></a>
-    <%=link_to user_add_points_path(@user), class: "btn-floating btn-large waves-effect waves-light red" do%><svg width="25px" height="25px" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <%=link_to user_add_points_path(current_user), class: "btn-floating btn-large waves-effect waves-light red" do%><svg width="25px" height="25px" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
           <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
           </svg> Add Points

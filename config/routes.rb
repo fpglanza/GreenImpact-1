@@ -13,6 +13,6 @@ Rails.application.routes.draw do
   get "/path/questions", to: "pages#questions", as: "pagesquestions"
   get "/path/users/:id/show", to: "users#show", as: "usersshow"
 
-  get "/path/users/addpoints", to: "users#addpoints"
-  get "/path/users/:id/points", to: "winpoints#update", as: :user_add_points
+  get "/path/users/addpoints", to: "winpoints#update", as: :user_add_points
+  # get "/path/users/:id/points", to: "winpoints#update", as: :user_add_points
 end
