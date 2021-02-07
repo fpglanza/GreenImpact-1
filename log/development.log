@@ -54095,3 +54095,2442 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 45ms (Views: 35.2ms | ActiveRecord: 3.1ms | Allocations: 14582)
 
 
+Started GET "/" for 127.0.0.1 at 2021-02-02 14:01:40 +0100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 256)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 75)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 169)
+Completed 200 OK in 256ms (Views: 159.0ms | ActiveRecord: 15.6ms | Allocations: 40872)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-02 14:01:44 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 24.2ms | Allocations: 4825)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 73ms (Views: 51.3ms | ActiveRecord: 9.7ms | Allocations: 18737)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 14:01:48 +0100
+Processing by WinpointsController#update as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "winpoints" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["winpoints", 170], ["updated_at", "2021-02-02 13:01:48.204240"], ["id", 1]]
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 20ms (ActiveRecord: 3.0ms | Allocations: 4926)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-02 14:01:48 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1215)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 15)
+Completed 200 OK in 58ms (Views: 46.8ms | ActiveRecord: 1.5ms | Allocations: 14580)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-02 14:02:09 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1215)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 46ms (Views: 34.0ms | ActiveRecord: 5.3ms | Allocations: 14576)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-02 14:02:18 +0100
+Processing by WinpointsController#update as HTML
+  [1m[36mUser Load (12.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[36mUser Update (1.5ms)[0m  [1m[33mUPDATE "users" SET "winpoints" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["winpoints", 180], ["updated_at", "2021-02-02 13:02:18.544404"], ["id", 1]]
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 41ms (ActiveRecord: 19.1ms | Allocations: 4313)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-02 14:02:18 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 15)
+Completed 200 OK in 102ms (Views: 78.3ms | ActiveRecord: 1.7ms | Allocations: 14591)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-04 16:13:32 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.8ms | Allocations: 256)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 80)
+  Rendered shared/_flashes.html.erb (Duration: 0.9ms | Allocations: 169)
+Completed 200 OK in 516ms (Views: 399.8ms | ActiveRecord: 13.1ms | Allocations: 40872)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 16:13:40 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (13.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 47.9ms | Allocations: 4825)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 106ms (Views: 78.1ms | ActiveRecord: 18.7ms | Allocations: 18739)
+
+
+Started GET "/sports" for 127.0.0.1 at 2021-02-04 16:13:46 +0100
+Processing by SportsController#index as HTML
+  Rendering sports/index.html.erb within layouts/application
+  [1m[36mSport Load (1.0ms)[0m  [1m[34mSELECT "sports".* FROM "sports"[0m
+  ↳ app/views/sports/index.html.erb:11
+  Rendered sports/index.html.erb within layouts/application (Duration: 17.8ms | Allocations: 1487)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 111ms (Views: 91.5ms | ActiveRecord: 6.4ms | Allocations: 14254)
+
+
+Started GET "/path/questions" for 127.0.0.1 at 2021-02-04 16:14:01 +0100
+Processing by PagesController#questions as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/questions.html.erb within layouts/application
+  Rendered pages/questions.html.erb within layouts/application (Duration: 1.0ms | Allocations: 81)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 79ms (Views: 70.1ms | ActiveRecord: 1.0ms | Allocations: 12906)
+
+
+Started GET "/path/share" for 127.0.0.1 at 2021-02-04 16:14:05 +0100
+Processing by PagesController#share as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/share.html.erb within layouts/application
+  Rendered pages/share.html.erb within layouts/application (Duration: 1.2ms | Allocations: 84)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 58ms (Views: 48.3ms | ActiveRecord: 0.6ms | Allocations: 12893)
+
+
+Started GET "/offers" for 127.0.0.1 at 2021-02-04 16:14:14 +0100
+Processing by OffersController#index as HTML
+  Rendering offers/index.html.erb within layouts/application
+  [1m[36mOffer Load (3.2ms)[0m  [1m[34mSELECT "offers".* FROM "offers"[0m
+  ↳ app/views/offers/index.html.erb:13
+  Rendered offers/index.html.erb within layouts/application (Duration: 16.7ms | Allocations: 1358)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 58ms (Views: 36.7ms | ActiveRecord: 12.2ms | Allocations: 14140)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-04 16:35:08 +0100
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/pages/home.html.erb:21
+  Rendered pages/home.html.erb within layouts/application (Duration: 41.3ms | Allocations: 9195)
+Completed 500 Internal Server Error in 136ms (ActiveRecord: 17.1ms | Allocations: 25232)
+
+
+  
+ActionView::Template::Error (The asset "3376.jpg" is not present in the asset pipeline.
+):
+    18:       <% if user_signed_in? %>
+    19:       <!-- avatar dropleft button -->
+    20:         <div class="dropleft">
+    21:           <img src="<%= current_user.photo.attached? ? cl_image_path(current_user.photo.key) : image_path("3376.jpg")%>" class="dropdown-toggle circle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 60px; height: 60px;">
+    22:           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    23:             <a class="dropdown-item" href="/users/<%= current_user.id %>">My Profile</a>
+    24:             <%= link_to "Sign out", destroy_user_session_path, :method => :delete, class: "dropdown-item" %>
+  
+app/views/pages/home.html.erb:21
+Started GET "/" for 127.0.0.1 at 2021-02-04 16:35:46 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 386)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 80)
+  Rendered shared/_flashes.html.erb (Duration: 1.9ms | Allocations: 169)
+Completed 200 OK in 361ms (Views: 354.4ms | ActiveRecord: 1.0ms | Allocations: 27661)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-04 16:35:47 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 83)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 180ms (Views: 136.6ms | ActiveRecord: 5.0ms | Allocations: 12807)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-04 16:37:07 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 338)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 73)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 164)
+Completed 200 OK in 59ms (Views: 53.4ms | ActiveRecord: 0.5ms | Allocations: 14465)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2021-02-04 16:37:11 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2021-02-04 16:41:40 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 5.5ms | Allocations: 84)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 172ms (Views: 90.5ms | ActiveRecord: 8.9ms | Allocations: 24426)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2021-02-04 16:41:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2021-02-04 16:41:56 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 73)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 48ms (Views: 41.3ms | ActiveRecord: 0.6ms | Allocations: 12810)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2021-02-04 16:41:59 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2021-02-04 16:44:22 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 72)
+[Webpacker] Compiling...
+Started GET "/" for 127.0.0.1 at 2021-02-04 16:44:30 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 72)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: a84d978ad58de4c784b8
+Version: webpack 4.44.2
+Time: 2288ms
+Built at: 02/04/2021 4:44:29 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-a7500f4ce21833a51fe4.js   7.29 KiB  application  [emitted] [immutable]  application
+js/application-a7500f4ce21833a51fe4.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-a7500f4ce21833a51fe4.js js/application-a7500f4ce21833a51fe4.js.map
+[./app/javascript/packs/application.js] 3.4 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/macbook/code/fpglanza/GreenImpact-1/app/javascript/packs/application.js: Unexpected token, expected ";" (10:8)
+
+   8 | require("@rails/activestorage").start()
+   9 | require("channels")
+> 10 | require jquery
+     |         ^
+  11 | require jquery_ujs
+  12 | 
+  13 | 
+    at Parser._raise (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/parser/lib/index.js:748:17)
+    at Parser.raiseWithData (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/parser/lib/index.js:741:17)
+    at Parser.raise (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/parser/lib/index.js:735:17)
+    at Parser.unexpected (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/parser/lib/index.js:9101:16)
+    at Parser.semicolon (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/parser/lib/index.js:9083:40)
+    at Parser.parseExpressionStatement (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/parser/lib/index.js:12216:10)
+    at Parser.parseStatementContent (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/parser/lib/index.js:11812:19)
+    at Parser.parseStatement (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/parser/lib/index.js:11676:17)
+    at Parser.parseBlockOrModuleBlockBody (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/parser/lib/index.js:12258:25)
+    at Parser.parseBlockBody (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/parser/lib/index.js:12244:10)
+    at Parser.parseTopLevel (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/parser/lib/index.js:11607:10)
+    at Parser.parse (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/parser/lib/index.js:13418:10)
+    at parse (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/parser/lib/index.js:13471:38)
+    at parser (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/core/lib/parser/index.js:54:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/core/lib/transformation/normalize-file.js:99:38)
+    at normalizeFile.next (<anonymous>)
+    at run (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/core/lib/transformation/index.js:31:50)
+    at run.next (<anonymous>)
+    at Function.transform (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/core/lib/transform.js:27:41)
+    at transform.next (<anonymous>)
+    at step (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/gensync/index.js:261:32)
+    at /Users/macbook/code/fpglanza/GreenImpact-1/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/gensync/index.js:223:11)
+    at /Users/macbook/code/fpglanza/GreenImpact-1/node_modules/gensync/index.js:189:28
+    at /Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/core/lib/gensync-utils/async.js:72:7
+    at /Users/macbook/code/fpglanza/GreenImpact-1/node_modules/gensync/index.js:113:33
+    at step (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/gensync/index.js:287:14)
+    at /Users/macbook/code/fpglanza/GreenImpact-1/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/gensync/index.js:223:11)
+
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 8079ms (Views: 8053.5ms | ActiveRecord: 0.4ms | Allocations: 30257)
+
+
+[Webpacker] Compilation failed:
+Hash: a84d978ad58de4c784b8
+Version: webpack 4.44.2
+Time: 1277ms
+Built at: 02/04/2021 4:44:35 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-a7500f4ce21833a51fe4.js   7.29 KiB  application  [emitted] [immutable]  application
+js/application-a7500f4ce21833a51fe4.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-a7500f4ce21833a51fe4.js js/application-a7500f4ce21833a51fe4.js.map
+[./app/javascript/packs/application.js] 3.4 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/macbook/code/fpglanza/GreenImpact-1/app/javascript/packs/application.js: Unexpected token, expected ";" (10:8)
+
+   8 | require("@rails/activestorage").start()
+   9 | require("channels")
+> 10 | require jquery
+     |         ^
+  11 | require jquery_ujs
+  12 | 
+  13 | 
+    at Parser._raise (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/parser/lib/index.js:748:17)
+    at Parser.raiseWithData (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/parser/lib/index.js:741:17)
+    at Parser.raise (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/parser/lib/index.js:735:17)
+    at Parser.unexpected (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/parser/lib/index.js:9101:16)
+    at Parser.semicolon (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/parser/lib/index.js:9083:40)
+    at Parser.parseExpressionStatement (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/parser/lib/index.js:12216:10)
+    at Parser.parseStatementContent (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/parser/lib/index.js:11812:19)
+    at Parser.parseStatement (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/parser/lib/index.js:11676:17)
+    at Parser.parseBlockOrModuleBlockBody (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/parser/lib/index.js:12258:25)
+    at Parser.parseBlockBody (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/parser/lib/index.js:12244:10)
+    at Parser.parseTopLevel (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/parser/lib/index.js:11607:10)
+    at Parser.parse (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/parser/lib/index.js:13418:10)
+    at parse (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/parser/lib/index.js:13471:38)
+    at parser (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/core/lib/parser/index.js:54:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/core/lib/transformation/normalize-file.js:99:38)
+    at normalizeFile.next (<anonymous>)
+    at run (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/core/lib/transformation/index.js:31:50)
+    at run.next (<anonymous>)
+    at Function.transform (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/core/lib/transform.js:27:41)
+    at transform.next (<anonymous>)
+    at step (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/gensync/index.js:261:32)
+    at /Users/macbook/code/fpglanza/GreenImpact-1/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/gensync/index.js:223:11)
+    at /Users/macbook/code/fpglanza/GreenImpact-1/node_modules/gensync/index.js:189:28
+    at /Users/macbook/code/fpglanza/GreenImpact-1/node_modules/@babel/core/lib/gensync-utils/async.js:72:7
+    at /Users/macbook/code/fpglanza/GreenImpact-1/node_modules/gensync/index.js:113:33
+    at step (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/gensync/index.js:287:14)
+    at /Users/macbook/code/fpglanza/GreenImpact-1/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/Users/macbook/code/fpglanza/GreenImpact-1/node_modules/gensync/index.js:223:11)
+
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 5466ms (Views: 5447.1ms | ActiveRecord: 6.6ms | Allocations: 16012)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2021-02-04 16:44:39 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2021-02-04 16:46:51 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 72)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 48ms (Views: 40.3ms | ActiveRecord: 3.3ms | Allocations: 12779)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2021-02-04 16:46:54 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2021-02-04 16:48:24 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (7.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 329)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 78)
+  Rendered shared/_flashes.html.erb (Duration: 0.6ms | Allocations: 164)
+Completed 200 OK in 81ms (Views: 67.8ms | ActiveRecord: 7.3ms | Allocations: 14441)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2021-02-04 16:48:27 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2021-02-04 16:49:19 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.5ms | Allocations: 326)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 73)
+  Rendered shared/_flashes.html.erb (Duration: 1.2ms | Allocations: 164)
+Completed 200 OK in 53ms (Views: 46.0ms | ActiveRecord: 0.5ms | Allocations: 14440)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2021-02-04 16:49:21 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2021-02-04 16:51:50 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.6ms | Allocations: 428)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 73)
+  Rendered shared/_flashes.html.erb (Duration: 2.5ms | Allocations: 164)
+Completed 200 OK in 100ms (Views: 85.2ms | ActiveRecord: 1.1ms | Allocations: 14534)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-02-04 16:51:52 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dFYBzDPwYiO6LV6QBCM8lZoj8qESPultUEE4F/yT09dtKGJHRLQ9bdFZfEhXs2op3Tx5knD7wVBEpPP2K/WHIg=="}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 71ms (ActiveRecord: 0.8ms | Allocations: 5443)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-04 16:51:52 +0100
+Processing by PagesController#home as HTML
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms | Allocations: 336)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-02-04 16:51:52 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_signup_btn.html.erb (Duration: 3.3ms | Allocations: 244)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 237.4ms | Allocations: 17783)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 275ms (Views: 273.8ms | ActiveRecord: 0.0ms | Allocations: 29914)
+
+
+Started GET "/users/addpoints" for 127.0.0.1 at 2021-02-04 16:52:38 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/addpoints"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-04 16:52:52 +0100
+Processing by WinpointsController#update as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 425)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-02-04 16:52:52 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_signup_btn.html.erb (Duration: 0.2ms | Allocations: 73)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 56.0ms | Allocations: 10215)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 5)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 151ms (Views: 134.1ms | ActiveRecord: 0.0ms | Allocations: 21683)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-02-04 16:54:03 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dFYBzDPwYiO6LV6QBCM8lZoj8qESPultUEE4F/yT09dtKGJHRLQ9bdFZfEhXs2op3Tx5knD7wVBEpPP2K/WHIg=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 480)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-04 16:54:03 +0100
+Processing by PagesController#home as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 349)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-02-04 16:54:03 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_signup_btn.html.erb (Duration: 0.3ms | Allocations: 73)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 33.7ms | Allocations: 10213)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 15)
+Completed 200 OK in 69ms (Views: 67.7ms | ActiveRecord: 0.0ms | Allocations: 21666)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 16:54:11 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 379)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-02-04 16:54:11 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_signup_btn.html.erb (Duration: 0.3ms | Allocations: 73)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 55.8ms | Allocations: 10198)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 92ms (Views: 90.2ms | ActiveRecord: 0.0ms | Allocations: 21662)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/welance-f10a1accb9f2fe1290e15650da9ce0624303b8de9c96be22a6c75bb62fc2ce38.jpg"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3.4) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3.4) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3.4) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3.4) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-04 16:54:16 +0100
+Processing by WinpointsController#update as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 362)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-02-04 16:54:16 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_signup_btn.html.erb (Duration: 0.3ms | Allocations: 73)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 41.3ms | Allocations: 10213)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 78ms (Views: 75.2ms | ActiveRecord: 0.0ms | Allocations: 21668)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-02-04 16:54:36 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"LCfaNHYoE3BqzMdzGmPFZvrLi5XDem/vCGugBlPGgaih0D3rXZnPYkccvISGFbAfHiXd+t/vG/E8va1lGycbbA==", "user"=>{"username"=>"", "email"=>"filo.filo@filo.filo", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>" Log in"}
+  [1m[36mUser Load (5.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "filo.filo@filo.filo"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/path/users/addpoints
+Completed 302 Found in 507ms (ActiveRecord: 5.9ms | Allocations: 4167)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-04 16:54:36 +0100
+Processing by WinpointsController#update as HTML
+  [1m[36mUser Load (7.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:20:in `set_user'
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[36mUser Update (1.0ms)[0m  [1m[33mUPDATE "users" SET "winpoints" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["winpoints", 190], ["updated_at", "2021-02-04 15:54:36.736133"], ["id", 1]]
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/winpoints_controller.rb:10:in `update'
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 28ms (ActiveRecord: 11.5ms | Allocations: 3969)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 16:54:36 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 21.8ms | Allocations: 3541)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 15)
+Completed 200 OK in 69ms (Views: 55.6ms | ActiveRecord: 6.9ms | Allocations: 17388)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-04 16:54:45 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 169)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 59ms (Views: 54.5ms | ActiveRecord: 0.4ms | Allocations: 12886)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-02-04 16:54:47 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"HladgwYw5Eskxg7pZ2bUZQt4MSgfrP38A9M+kie4AWrbV+AX98OU7ldAdeAd+gHaQj8M9V1MR8onyfH5IZjHKA=="}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 1.3ms | Allocations: 2367)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-04 16:54:48 +0100
+Processing by PagesController#home as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 323)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-02-04 16:54:48 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_signup_btn.html.erb (Duration: 0.3ms | Allocations: 73)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 87.2ms | Allocations: 10246)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 5)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 139ms (Views: 137.1ms | ActiveRecord: 0.0ms | Allocations: 21702)
+
+
+Started GET "/users/addpoints" for 127.0.0.1 at 2021-02-04 16:55:00 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/addpoints"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-04 16:55:12 +0100
+Processing by WinpointsController#update as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 368)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-02-04 16:55:12 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_signup_btn.html.erb (Duration: 0.3ms | Allocations: 73)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 67.0ms | Allocations: 10238)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 125ms (Views: 114.4ms | ActiveRecord: 0.0ms | Allocations: 21697)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-02-04 16:58:14 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_signin_btn.html.erb (Duration: 1.6ms | Allocations: 232)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 75.8ms | Allocations: 19520)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 133ms (Views: 124.9ms | ActiveRecord: 5.3ms | Allocations: 31480)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-02-04 16:59:08 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"GgJVoROgD4/Rym39cVoTZae9KtRQmnXRcD4qvQJjjvhFPBkMxnXLzIXJMvpFfl06aA5QuXnPSON5496EiROLpA==", "user"=>{"username"=>"", "full_name"=>"jack ripper", "email"=>"jack@ripper.rip", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "house_number"=>"12", "street_name"=>"12", "city"=>"12", "plz"=>"12", "remember_me"=>"0"}, "commit"=>"Sign up"}
+[31mUnpermitted parameter: :remember_me[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jack@ripper.rip"], ["LIMIT", 1]]
+  [1m[36mUser Create (4.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "username", "full_name", "house_number", "street_name", "plz", "city", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["email", "jack@ripper.rip"], ["encrypted_password", "$2a$12$Lk7MwEfWEGIuk5ysHh8f8eIdOpo6J.w6i80sk3pZRnvjo2WaDCs3a"], ["username", ""], ["full_name", "jack ripper"], ["house_number", 12], ["street_name", "12"], ["plz", 12], ["city", "12"], ["created_at", "2021-02-04 15:59:09.159026"], ["updated_at", "2021-02-04 15:59:09.159026"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/path/users/addpoints
+Completed 302 Found in 435ms (ActiveRecord: 6.4ms | Allocations: 7802)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-04 16:59:09 +0100
+Processing by WinpointsController#update as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:20:in `set_user'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms | Allocations: 1968)
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/controllers/winpoints_controller.rb:9:in `update'
+Started PUT "/__web_console/repl_sessions/897d35057a41e975feb5a724aad2775a" for 127.0.0.1 at 2021-02-04 16:59:34 +0100
+Started PUT "/__web_console/repl_sessions/897d35057a41e975feb5a724aad2775a" for 127.0.0.1 at 2021-02-04 16:59:35 +0100
+Started PUT "/__web_console/repl_sessions/897d35057a41e975feb5a724aad2775a" for 127.0.0.1 at 2021-02-04 16:59:40 +0100
+Started PUT "/__web_console/repl_sessions/897d35057a41e975feb5a724aad2775a" for 127.0.0.1 at 2021-02-04 16:59:41 +0100
+Started POST "/users" for 127.0.0.1 at 2021-02-04 17:01:26 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"GgJVoROgD4/Rym39cVoTZae9KtRQmnXRcD4qvQJjjvhFPBkMxnXLzIXJMvpFfl06aA5QuXnPSON5496EiROLpA==", "user"=>{"username"=>"", "full_name"=>"jack ripper", "email"=>"jack@ripper.rip", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "house_number"=>"12", "street_name"=>"12", "city"=>"12", "plz"=>"12", "remember_me"=>"0"}, "commit"=>"Sign up"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 3.2ms | Allocations: 1977)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-04 17:01:26 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 169)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 39ms (Views: 33.7ms | ActiveRecord: 0.3ms | Allocations: 12909)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-04 17:02:06 +0100
+Processing by WinpointsController#update as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:20:in `set_user'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.4ms | Allocations: 1945)
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/controllers/winpoints_controller.rb:9:in `update'
+Started GET "/path/users/2/show" for 127.0.0.1 at 2021-02-04 17:02:29 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1215)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 57ms (Views: 45.5ms | ActiveRecord: 5.3ms | Allocations: 14561)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-02-04 17:02:38 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SXpfHi9cSZtwpt7GQ4DDOjr9hfKC195MMWCufTgIGdW2G2O1znFE8UiCautOxglzAzWTDTuf5Stf5p75NmbD1Q=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.7ms | Allocations: 2374)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-04 17:02:38 +0100
+Processing by PagesController#home as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 317)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-02-04 17:02:38 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_signup_btn.html.erb (Duration: 0.3ms | Allocations: 73)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 49.9ms | Allocations: 10247)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 94ms (Views: 92.4ms | ActiveRecord: 0.0ms | Allocations: 21695)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-02-04 17:02:50 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"9izackuzDlTOX9v+opMEOb0zns8sKRVaXlvPxBjdG10RuZqF8LM2nbqsUu7BY4wKc9tinD6LfoflsSjTaeSUXA==", "user"=>{"username"=>"", "email"=>"jack@ripper.rip", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>" Log in"}
+  [1m[36mUser Load (10.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "jack@ripper.rip"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 458ms (ActiveRecord: 10.6ms | Allocations: 2779)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-04 17:02:51 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 165)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 15)
+Completed 200 OK in 53ms (Views: 48.9ms | ActiveRecord: 0.4ms | Allocations: 12896)
+
+
+Started GET "/path/users/2/show" for 127.0.0.1 at 2021-02-04 17:02:54 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1209)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 92ms (Views: 83.3ms | ActiveRecord: 3.1ms | Allocations: 14547)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-02-04 17:02:59 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"y7IKYPtShBksFfdtbOmi//gx/q/VFRkOlAnpazIkA5GKsrs18QqnDQQxVLk6DhWpOH6xk5SfXqWA2ViPMmymyA=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms | Allocations: 2369)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-04 17:02:59 +0100
+Processing by PagesController#home as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms | Allocations: 323)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-02-04 17:02:59 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_signup_btn.html.erb (Duration: 0.2ms | Allocations: 73)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 49.8ms | Allocations: 10237)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 106ms (Views: 103.5ms | ActiveRecord: 0.0ms | Allocations: 21691)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-02-04 17:03:03 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"WQdtIgG3fI6Gvc85FI+WnkzwOdKUWcQnI13x83zVbgYtMmSG4HnWBacYQxj1MaXbf73eFWY3ykSN1br7MOAhPw==", "user"=>{"username"=>"", "email"=>"filo.filo@filo.filo", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>" Log in"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "filo.filo@filo.filo"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 422ms (ActiveRecord: 2.8ms | Allocations: 2800)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-04 17:03:03 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 165)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 15)
+Completed 200 OK in 58ms (Views: 46.8ms | ActiveRecord: 5.0ms | Allocations: 12884)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 17:03:07 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 44ms (Views: 35.7ms | ActiveRecord: 2.3ms | Allocations: 14552)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-02-04 17:03:13 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aHP2QJKSVlXPyYHR6hVBcginxLM93ntlk0IIgHE5NEM8R+KIZyiww1DN5w4hoCaNQVvohYJyi2RoHxhOcyieYQ=="}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 1.8ms | Allocations: 2359)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-04 17:03:13 +0100
+Processing by PagesController#home as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 323)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-02-04 17:03:13 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_signup_btn.html.erb (Duration: 0.2ms | Allocations: 73)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 45.3ms | Allocations: 10209)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 82ms (Views: 80.4ms | ActiveRecord: 0.0ms | Allocations: 21653)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-02-04 17:03:33 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_signin_btn.html.erb (Duration: 0.7ms | Allocations: 71)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 84.1ms | Allocations: 17469)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 127ms (Views: 125.9ms | ActiveRecord: 0.0ms | Allocations: 28856)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-02-04 17:04:19 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"LROlnYTUdQujv1f4a0gyGOtwRzNkL+0aHTjT7TgDoA30AhCsrh9FG56z2rJHifJQynk3EsjZHvvojOrULdau5Q==", "user"=>{"username"=>"", "full_name"=>"abdul", "email"=>"ab@ab.ab", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "house_number"=>"01", "street_name"=>"abdul street", "city"=>"abdullia", "plz"=>"1", "remember_me"=>"0"}, "commit"=>"Sign up"}
+[31mUnpermitted parameter: :remember_me[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ab@ab.ab"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_signin_btn.html.erb (Duration: 0.3ms | Allocations: 71)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 112.0ms | Allocations: 17755)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 627ms (Views: 144.2ms | ActiveRecord: 1.4ms | Allocations: 35315)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-02-04 17:04:37 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"IrFDaUQUq8/qZHMiT7hbqkkr2GZaO3k5PSne0PX6FgL7oPZYbt+b39do/mhjeZviaCKoR/bNitjInefp4C8Y6g==", "user"=>{"username"=>"", "full_name"=>"abdul", "email"=>"ab@ab.ab", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "house_number"=>"01", "street_name"=>"abdul street", "city"=>"abdullia", "plz"=>"1", "remember_me"=>"0"}, "commit"=>"Sign up"}
+[31mUnpermitted parameter: :remember_me[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ab@ab.ab"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "username", "full_name", "house_number", "street_name", "plz", "city", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["email", "ab@ab.ab"], ["encrypted_password", "$2a$12$ZghtUOsaiO9OVHUBZsBlJ.2dfQgJU5wemgNASCj.IY232guzV4rgi"], ["username", ""], ["full_name", "abdul"], ["house_number", 1], ["street_name", "abdul street"], ["plz", 1], ["city", "abdullia"], ["created_at", "2021-02-04 16:04:37.680329"], ["updated_at", "2021-02-04 16:04:37.680329"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 436ms (ActiveRecord: 2.9ms | Allocations: 7472)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-04 17:04:37 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 161)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 15)
+Completed 200 OK in 41ms (Views: 31.1ms | ActiveRecord: 2.9ms | Allocations: 12892)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-04 17:04:41 +0100
+Processing by WinpointsController#update as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:20:in `set_user'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 2.0ms | Allocations: 1932)
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/controllers/winpoints_controller.rb:9:in `update'
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-02-04 17:29:12 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yXU1y9z0f1zozZX0vbLOXaQr+kPNdt6Ke+VAHI/r6TXRKqnaW249V9D3fvnm3m3j0een8wyMx7FKdQ2c7KSLkA=="}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 45ms (ActiveRecord: 2.8ms | Allocations: 13066)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-04 17:29:12 +0100
+Processing by PagesController#home as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 377)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-02-04 17:29:12 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_signup_btn.html.erb (Duration: 0.3ms | Allocations: 84)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 36.4ms | Allocations: 10418)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 15)
+Completed 200 OK in 75ms (Views: 72.9ms | ActiveRecord: 0.0ms | Allocations: 22044)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-02-04 17:29:19 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"JmuHfz3KyRsBa61vQJhQE+HUT9TdpknCAqrXbHhShhB/k6mOMLl6gyU8uLAIneX+RCL2K2NoYRtOY9eessGeqg==", "user"=>{"username"=>"", "email"=>"filo.filo@filo.filo", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>" Log in"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "filo.filo@filo.filo"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 437ms (ActiveRecord: 1.7ms | Allocations: 2808)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-04 17:29:19 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 177)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 15)
+Completed 200 OK in 37ms (Views: 33.3ms | ActiveRecord: 0.5ms | Allocations: 13055)
+
+
+Started GET "/path/users/addpoints" for 127.0.0.1 at 2021-02-04 17:29:22 +0100
+Processing by WinpointsController#update as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:36:in `set_user'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/winpoints_controller.rb:25:in `update'
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "winpoints" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["winpoints", 200], ["updated_at", "2021-02-04 16:29:22.595567"], ["id", 1]]
+  ↳ app/controllers/winpoints_controller.rb:25:in `update'
+  [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/winpoints_controller.rb:25:in `update'
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 19ms (ActiveRecord: 9.0ms | Allocations: 3974)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 17:29:22 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 10.5ms | Allocations: 2839)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 51ms (Views: 42.2ms | ActiveRecord: 2.1ms | Allocations: 16420)
+
+
+Started GET "/path/users/addpoints.1" for 127.0.0.1 at 2021-02-04 17:29:25 +0100
+Processing by WinpointsController#update as 
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:36:in `set_user'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/winpoints_controller.rb:25:in `update'
+  [1m[36mUser Update (0.6ms)[0m  [1m[33mUPDATE "users" SET "winpoints" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["winpoints", 210], ["updated_at", "2021-02-04 16:29:25.559038"], ["id", 1]]
+  ↳ app/controllers/winpoints_controller.rb:25:in `update'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/winpoints_controller.rb:25:in `update'
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 15ms (ActiveRecord: 3.0ms | Allocations: 3737)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 17:29:25 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1213)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 15)
+Completed 200 OK in 46ms (Views: 37.6ms | ActiveRecord: 1.3ms | Allocations: 14576)
+
+
+Started GET "/path/users/addpoints.1" for 127.0.0.1 at 2021-02-04 17:29:44 +0100
+Processing by WinpointsController#update as 
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:36:in `set_user'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/winpoints_controller.rb:25:in `update'
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "winpoints" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["winpoints", 220], ["updated_at", "2021-02-04 16:29:44.845182"], ["id", 1]]
+  ↳ app/controllers/winpoints_controller.rb:25:in `update'
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/winpoints_controller.rb:25:in `update'
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 19ms (ActiveRecord: 5.7ms | Allocations: 3744)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 17:29:44 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 15)
+Completed 200 OK in 59ms (Views: 51.2ms | ActiveRecord: 2.8ms | Allocations: 14571)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-04 17:30:49 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.9ms | Allocations: 426)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 73)
+  Rendered shared/_flashes.html.erb (Duration: 0.6ms | Allocations: 164)
+Completed 200 OK in 62ms (Views: 54.0ms | ActiveRecord: 0.4ms | Allocations: 14522)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 17:30:53 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (10.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (4.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 10.0ms | Allocations: 2051)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 62ms (Views: 39.2ms | ActiveRecord: 16.2ms | Allocations: 15770)
+
+
+Started PUT "/__web_console/repl_sessions/e46ae48d42eed264a8dd00c89b12b902" for 127.0.0.1 at 2021-02-04 17:30:57 +0100
+Started PUT "/__web_console/repl_sessions/e46ae48d42eed264a8dd00c89b12b902" for 127.0.0.1 at 2021-02-04 17:30:59 +0100
+Started PUT "/__web_console/repl_sessions/e46ae48d42eed264a8dd00c89b12b902" for 127.0.0.1 at 2021-02-04 17:31:16 +0100
+Started GET "/path/users/addpoints.1" for 127.0.0.1 at 2021-02-04 17:31:20 +0100
+Processing by WinpointsController#update as 
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:36:in `set_user'
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/winpoints_controller.rb:25:in `update'
+  [1m[36mUser Update (2.2ms)[0m  [1m[33mUPDATE "users" SET "winpoints" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["winpoints", 230], ["updated_at", "2021-02-04 16:31:20.405640"], ["id", 1]]
+  ↳ app/controllers/winpoints_controller.rb:25:in `update'
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/winpoints_controller.rb:25:in `update'
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 18ms (ActiveRecord: 5.5ms | Allocations: 3735)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 17:31:20 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1664)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 15)
+Completed 200 OK in 46ms (Views: 37.1ms | ActiveRecord: 3.5ms | Allocations: 14917)
+
+
+Started PUT "/__web_console/repl_sessions/3039523b930eb574915c34ee22ee9469" for 127.0.0.1 at 2021-02-04 17:31:22 +0100
+Started PUT "/__web_console/repl_sessions/3039523b930eb574915c34ee22ee9469" for 127.0.0.1 at 2021-02-04 17:31:24 +0100
+Started GET "/path/users/addpoints.1" for 127.0.0.1 at 2021-02-04 17:32:06 +0100
+Processing by WinpointsController#update as 
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:36:in `set_user'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/winpoints_controller.rb:25:in `update'
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "users" SET "winpoints" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["winpoints", 240], ["updated_at", "2021-02-04 16:32:06.918890"], ["id", 1]]
+  ↳ app/controllers/winpoints_controller.rb:25:in `update'
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/winpoints_controller.rb:25:in `update'
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 123ms (ActiveRecord: 21.6ms | Allocations: 15549)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 17:32:06 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (3.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 19.2ms | Allocations: 3361)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 159ms (Views: 83.5ms | ActiveRecord: 11.7ms | Allocations: 16952)
+
+
+Started PUT "/__web_console/repl_sessions/5e8ac020510cb1e18c3db92c5bb65761" for 127.0.0.1 at 2021-02-04 17:32:09 +0100
+Started PUT "/__web_console/repl_sessions/5e8ac020510cb1e18c3db92c5bb65761" for 127.0.0.1 at 2021-02-04 17:32:11 +0100
+Started PUT "/__web_console/repl_sessions/5e8ac020510cb1e18c3db92c5bb65761" for 127.0.0.1 at 2021-02-04 17:33:44 +0100
+Started PUT "/__web_console/repl_sessions/5e8ac020510cb1e18c3db92c5bb65761" for 127.0.0.1 at 2021-02-04 17:33:45 +0100
+Started PUT "/__web_console/repl_sessions/5e8ac020510cb1e18c3db92c5bb65761" for 127.0.0.1 at 2021-02-04 17:33:50 +0100
+Started PUT "/__web_console/repl_sessions/5e8ac020510cb1e18c3db92c5bb65761" for 127.0.0.1 at 2021-02-04 17:33:52 +0100
+Started GET "/" for 127.0.0.1 at 2021-02-04 18:03:17 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.9ms | Allocations: 432)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 73)
+  Rendered shared/_flashes.html.erb (Duration: 0.6ms | Allocations: 164)
+Completed 200 OK in 115ms (Views: 61.0ms | ActiveRecord: 1.5ms | Allocations: 25550)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 18:03:26 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 10.3ms | Allocations: 3549)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 124ms (Views: 111.5ms | ActiveRecord: 1.7ms | Allocations: 17432)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 18:04:55 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1294)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 5.5ms | Allocations: 4514)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="newprofilecard">
+<input id="slider" class="customSlider" type="checkbox">
+
+
+<div class="wrapper2">
+	<div class="top-icons">
+		<a href="/"><i class="fas fa-long-arrow-alt-left"></i></a>
+
+	</div>
+
+	<div class="profile">
+    <div class="centerprofile">
+    <% if current_user.photo.attached? %>
+          <%= cl_image_tag current_user.photo.key, class: "rounded-circle" %>
+          <% elsif current_user.avatar_url? %>
+          <%= image_tag current_user.avatar_url, class: "rounded-circle" %>
+          <% else %>
+          <%= image_tag src="https://res.cloudinary.com/dn6wh4u2h/image/upload/v1610914953/IMG_3320_2_p1ux2a.jpg", class: "rounded-circle" %>
+          <% end %>
+	</div>
+		<h4 class="name"><%= current_user.username %></h4>
+		<p class="title"><%= current_user.full_name %></p>
+		<h1 class="description"><%= current_user.winpoints %></h1>
+		<a href="/sports"><button type="button" class="btn345">Go Shop</button></a>
+    <%=link_to user_add_points_path(current_user)%> Add Points
+        <%end%>
+	</div>
+	<div class="social-icons">
+		<div class="icon">
+			<h4 class="newh4">Delivery Info : <br>
+            <%= current_user.city %> <br>
+            <%= current_user.house_number %> <%= current_user.street_name %> <br>
+            <%= current_user.plz %>
+            </h4>
+
+
+		</div>
+
+
+
+		</div>
+
+
+
+		</div>
+	</div>
+  <%console%>
+</div>
+</div>
+
+):
+1:    <div class="newprofilecard">
+2:    <input id="slider" class="customSlider" type="checkbox">
+3:    
+4:    
+5:    <div class="wrapper2">
+6:    	<div class="top-icons">
+7:    		<a href="/"><i class="fas fa-long-arrow-alt-left"></i></a>
+8:    
+9:    	</div>
+10:    
+11:    	<div class="profile">
+12:        <div class="centerprofile">
+13:        <% if current_user.photo.attached? %>
+14:              <%= cl_image_tag current_user.photo.key, class: "rounded-circle" %>
+15:              <% elsif current_user.avatar_url? %>
+16:              <%= image_tag current_user.avatar_url, class: "rounded-circle" %>
+17:              <% else %>
+18:              <%= image_tag src="https://res.cloudinary.com/dn6wh4u2h/image/upload/v1610914953/IMG_3320_2_p1ux2a.jpg", class: "rounded-circle" %>
+19:              <% end %>
+20:    	</div>
+21:    		<h4 class="name"><%= current_user.username %></h4>
+22:    		<p class="title"><%= current_user.full_name %></p>
+23:    		<h1 class="description"><%= current_user.winpoints %></h1>
+24:    		<a href="/sports"><button type="button" class="btn345">Go Shop</button></a>
+25:        <%=link_to user_add_points_path(current_user)%> Add Points
+26:            <%end%>
+27:    	</div>
+28:    	<div class="social-icons">
+29:    		<div class="icon">
+30:    			<h4 class="newh4">Delivery Info : <br>
+31:                <%= current_user.city %> <br>
+32:                <%= current_user.house_number %> <%= current_user.street_name %> <br>
+33:                <%= current_user.plz %>
+34:                </h4>
+35:    
+36:    
+37:    		</div>
+38:    
+39:    
+40:    
+41:    		</div>
+42:    
+43:    
+44:    
+45:    		</div>
+46:    	</div>
+47:      <%console%>
+48:    </div>
+49:    </div>
+  
+app/views/users/show.html.erb:52: syntax error, unexpected end, expecting end-of-input
+app/views/users/show.html.erb:52: syntax error, unexpected end, expecting end-of-input
+app/views/users/show.html.erb:52: syntax error, unexpected end, expecting end-of-input
+app/views/users/show.html.erb:52: syntax error, unexpected end, expecting end-of-input
+app/views/users/show.html.erb:52: syntax error, unexpected end, expecting end-of-input
+app/views/users/show.html.erb:52: syntax error, unexpected end, expecting end-of-input
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 18:05:18 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2686)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 73)
+  Rendered shared/_flashes.html.erb (Duration: 0.7ms | Allocations: 164)
+Completed 200 OK in 64ms (Views: 52.4ms | ActiveRecord: 2.7ms | Allocations: 17324)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 18:05:38 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2075)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 73)
+  Rendered shared/_flashes.html.erb (Duration: 0.6ms | Allocations: 164)
+Completed 200 OK in 74ms (Views: 61.9ms | ActiveRecord: 6.4ms | Allocations: 16699)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 18:05:46 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (20.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (20.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 24.1ms | Allocations: 1725)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 190ms (Views: 137.2ms | ActiveRecord: 46.8ms | Allocations: 14982)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 18:05:59 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (2.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 8.1ms | Allocations: 2075)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 73)
+  Rendered shared/_flashes.html.erb (Duration: 0.6ms | Allocations: 164)
+Completed 200 OK in 92ms (Views: 80.4ms | ActiveRecord: 5.4ms | Allocations: 16701)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 18:06:02 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 11.2ms | Allocations: 1725)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 2.8ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 100ms (Views: 73.9ms | ActiveRecord: 4.0ms | Allocations: 14971)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 18:06:12 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1715)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 54ms (Views: 43.6ms | ActiveRecord: 4.0ms | Allocations: 14970)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 18:06:16 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1715)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 55ms (Views: 44.8ms | ActiveRecord: 4.4ms | Allocations: 14950)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 18:10:55 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 785.9ms | Allocations: 176733)
+Completed 500 Internal Server Error in 795ms (ActiveRecord: 1.3ms | Allocations: 179949)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `timer_done' for #<#<Class:0x00007fbbfdcf4110>:0x00007fbbfdcfe750>
+Did you mean?  time_zone_select):
+    22: 		<p class="title"><%= current_user.full_name %></p>
+    23: 		<h1 class="description"><%= current_user.winpoints %></h1>
+    24: 		<a href="/sports"><button type="button" class="btn345">Go Shop</button></a>
+    25:     <% if timer_done %>
+    26:       <%=link_to user_add_points_path(current_user), class: "showbutton btn-floating btn-large waves-effect waves-light red" do%><svg width="25px" height="25px" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    27:           <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+    28:           <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+  
+app/views/users/show.html.erb:25
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 18:11:17 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (7.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 768.2ms | Allocations: 90715)
+Completed 500 Internal Server Error in 785ms (ActiveRecord: 8.1ms | Allocations: 93933)
+
+
+  
+ActionView::Template::Error (undefined method `timer_done?' for #<#<Class:0x00007fbbfdcf6578>:0x00007fbbfdcf44a8>
+Did you mean?  time_zone_select):
+    22: 		<p class="title"><%= current_user.full_name %></p>
+    23: 		<h1 class="description"><%= current_user.winpoints %></h1>
+    24: 		<a href="/sports"><button type="button" class="btn345">Go Shop</button></a>
+    25:     <% if timer_done? %>
+    26:       <%=link_to user_add_points_path(current_user), class: "showbutton btn-floating btn-large waves-effect waves-light red" do%><svg width="25px" height="25px" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    27:           <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+    28:           <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+  
+app/views/users/show.html.erb:25
+Started PUT "/__web_console/repl_sessions/665a2d38eee332f002567065cba8d3a2" for 127.0.0.1 at 2021-02-04 18:11:25 +0100
+Started PUT "/__web_console/repl_sessions/665a2d38eee332f002567065cba8d3a2" for 127.0.0.1 at 2021-02-04 18:11:26 +0100
+Started PUT "/__web_console/repl_sessions/665a2d38eee332f002567065cba8d3a2" for 127.0.0.1 at 2021-02-04 18:11:29 +0100
+Started PUT "/__web_console/repl_sessions/665a2d38eee332f002567065cba8d3a2" for 127.0.0.1 at 2021-02-04 18:11:32 +0100
+Started PUT "/__web_console/repl_sessions/665a2d38eee332f002567065cba8d3a2" for 127.0.0.1 at 2021-02-04 18:11:34 +0100
+Started PUT "/__web_console/repl_sessions/665a2d38eee332f002567065cba8d3a2" for 127.0.0.1 at 2021-02-04 18:11:38 +0100
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 18:13:36 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (5.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 600.5ms | Allocations: 90723)
+Completed 500 Internal Server Error in 616ms (ActiveRecord: 7.3ms | Allocations: 93941)
+
+
+  
+ActionView::Template::Error (undefined method `timer_done?' for #<#<Class:0x00007fbbfc5e6928>:0x00007fbbfc5e4e20>
+Did you mean?  time_zone_select):
+    22: 		<p class="title"><%= current_user.full_name %></p>
+    23: 		<h1 class="description"><%= current_user.winpoints %></h1>
+    24: 		<a href="/sports"><button type="button" class="btn345">Go Shop</button></a>
+    25:     <% if timer_done? %>
+    26:       <%=link_to user_add_points_path(current_user), class: "showbutton btn-floating btn-large waves-effect waves-light red" do%><svg width="25px" height="25px" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    27:           <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+    28:           <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+  
+app/views/users/show.html.erb:25
+Started PUT "/__web_console/repl_sessions/790a48436b8ff155a3c6ad6736f80512" for 127.0.0.1 at 2021-02-04 18:13:48 +0100
+Started PUT "/__web_console/repl_sessions/790a48436b8ff155a3c6ad6736f80512" for 127.0.0.1 at 2021-02-04 18:13:49 +0100
+Started PUT "/__web_console/repl_sessions/790a48436b8ff155a3c6ad6736f80512" for 127.0.0.1 at 2021-02-04 18:14:00 +0100
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 18:14:16 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (4.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 50.1ms | Allocations: 4689)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 6.8ms | Allocations: 7905)
+
+
+  
+ActionView::Template::Error (undefined method `timer_done?' for #<User:0x00007fbbff04aef8>):
+    22: 		<p class="title"><%= current_user.full_name %></p>
+    23: 		<h1 class="description"><%= current_user.winpoints %></h1>
+    24: 		<a href="/sports"><button type="button" class="btn345">Go Shop</button></a>
+    25:     <% if current_user.timer_done? %>
+    26:       <%=link_to user_add_points_path(current_user), class: "showbutton btn-floating btn-large waves-effect waves-light red" do%><svg width="25px" height="25px" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    27:           <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+    28:           <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+  
+app/views/users/show.html.erb:25
+Started PUT "/__web_console/repl_sessions/f1edcaf1a20f89b3c9c71bae5fdaa26b" for 127.0.0.1 at 2021-02-04 18:14:24 +0100
+Started PUT "/__web_console/repl_sessions/f1edcaf1a20f89b3c9c71bae5fdaa26b" for 127.0.0.1 at 2021-02-04 18:14:26 +0100
+Started PUT "/__web_console/repl_sessions/f1edcaf1a20f89b3c9c71bae5fdaa26b" for 127.0.0.1 at 2021-02-04 18:14:30 +0100
+Started PUT "/__web_console/repl_sessions/f1edcaf1a20f89b3c9c71bae5fdaa26b" for 127.0.0.1 at 2021-02-04 18:14:54 +0100
+Started PUT "/__web_console/repl_sessions/f1edcaf1a20f89b3c9c71bae5fdaa26b" for 127.0.0.1 at 2021-02-04 18:14:54 +0100
+Started PUT "/__web_console/repl_sessions/f1edcaf1a20f89b3c9c71bae5fdaa26b" for 127.0.0.1 at 2021-02-04 18:14:55 +0100
+Started PUT "/__web_console/repl_sessions/f1edcaf1a20f89b3c9c71bae5fdaa26b" for 127.0.0.1 at 2021-02-04 18:15:16 +0100
+Started PUT "/__web_console/repl_sessions/f1edcaf1a20f89b3c9c71bae5fdaa26b" for 127.0.0.1 at 2021-02-04 18:15:34 +0100
+Started PUT "/__web_console/repl_sessions/f1edcaf1a20f89b3c9c71bae5fdaa26b" for 127.0.0.1 at 2021-02-04 18:15:47 +0100
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 18:26:04 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 31.0ms | Allocations: 5820)
+Completed 500 Internal Server Error in 96ms (ActiveRecord: 2.8ms | Allocations: 19750)
+
+
+  
+ActionView::Template::Error (undefined method `timer_done?' for #<User:0x00007fbbfa5f4098>):
+    22: 		<p class="title"><%= current_user.full_name %></p>
+    23: 		<h1 class="description"><%= current_user.winpoints %></h1>
+    24: 		<a href="/sports"><button type="button" class="btn345">Go Shop</button></a>
+    25:     <% if current_user.timer_done? %>
+    26:       <%=link_to user_add_points_path(current_user), class: "showbutton btn-floating btn-large waves-effect waves-light red" do%><svg width="25px" height="25px" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    27:           <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+    28:           <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+  
+app/views/users/show.html.erb:25
+Started GET "/" for 127.0.0.1 at 2021-02-04 18:26:20 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.8ms | Allocations: 426)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 78)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 164)
+Completed 200 OK in 4111ms (Views: 4105.6ms | ActiveRecord: 0.6ms | Allocations: 163216)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 18:26:26 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 24.8ms | Allocations: 4694)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 3.6ms | Allocations: 7748)
+
+
+  
+ActionView::Template::Error (undefined method `timer_done?' for #<User:0x00007fbbfc201bc8>):
+    22: 		<p class="title"><%= current_user.full_name %></p>
+    23: 		<h1 class="description"><%= current_user.winpoints %></h1>
+    24: 		<a href="/sports"><button type="button" class="btn345">Go Shop</button></a>
+    25:     <% if current_user.timer_done? %>
+    26:       <%=link_to user_add_points_path(current_user), class: "showbutton btn-floating btn-large waves-effect waves-light red" do%><svg width="25px" height="25px" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    27:           <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+    28:           <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+  
+app/views/users/show.html.erb:25
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 18:26:36 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1325)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 2.7ms | Allocations: 4542)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="newprofilecard">
+<input id="slider" class="customSlider" type="checkbox">
+
+
+<div class="wrapper2">
+	<div class="top-icons">
+		<a href="/"><i class="fas fa-long-arrow-alt-left"></i></a>
+
+	</div>
+
+	<div class="profile">
+    <div class="centerprofile">
+    <% if current_user.photo.attached? %>
+          <%= cl_image_tag current_user.photo.key, class: "rounded-circle" %>
+          <% elsif current_user.avatar_url? %>
+          <%= image_tag current_user.avatar_url, class: "rounded-circle" %>
+          <% else %>
+          <%= image_tag src="https://res.cloudinary.com/dn6wh4u2h/image/upload/v1610914953/IMG_3320_2_p1ux2a.jpg", class: "rounded-circle" %>
+          <% end %>
+	</div>
+		<h4 class="name"><%= current_user.username %></h4>
+		<p class="title"><%= current_user.full_name %></p>
+		<h1 class="description"><%= current_user.winpoints %></h1>
+		<a href="/sports"><button type="button" class="btn345">Go Shop</button></a>
+      <%=link_to user_add_points_path(current_user), class: "showbutton btn-floating btn-large waves-effect waves-light red" do%><svg width="25px" height="25px" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+          <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+          </svg> Add Points
+        <%end%>
+<% else %>
+ <div class="two">something else</div>
+<% end %>
+	</div>
+	<div class="social-icons">
+		<div class="icon">
+			<h4 class="newh4">Delivery Info : <br>
+            <%= current_user.city %> <br>
+            <%= current_user.house_number %> <%= current_user.street_name %> <br>
+            <%= current_user.plz %>
+            </h4>
+
+
+		</div>
+
+
+
+		</div>
+
+
+
+		</div>
+	</div>
+  <%console%>
+</div>
+</div>
+
+):
+1:    <div class="newprofilecard">
+2:    <input id="slider" class="customSlider" type="checkbox">
+3:    
+4:    
+5:    <div class="wrapper2">
+6:    	<div class="top-icons">
+7:    		<a href="/"><i class="fas fa-long-arrow-alt-left"></i></a>
+8:    
+9:    	</div>
+10:    
+11:    	<div class="profile">
+12:        <div class="centerprofile">
+13:        <% if current_user.photo.attached? %>
+14:              <%= cl_image_tag current_user.photo.key, class: "rounded-circle" %>
+15:              <% elsif current_user.avatar_url? %>
+16:              <%= image_tag current_user.avatar_url, class: "rounded-circle" %>
+17:              <% else %>
+18:              <%= image_tag src="https://res.cloudinary.com/dn6wh4u2h/image/upload/v1610914953/IMG_3320_2_p1ux2a.jpg", class: "rounded-circle" %>
+19:              <% end %>
+20:    	</div>
+21:    		<h4 class="name"><%= current_user.username %></h4>
+22:    		<p class="title"><%= current_user.full_name %></p>
+23:    		<h1 class="description"><%= current_user.winpoints %></h1>
+24:    		<a href="/sports"><button type="button" class="btn345">Go Shop</button></a>
+25:          <%=link_to user_add_points_path(current_user), class: "showbutton btn-floating btn-large waves-effect waves-light red" do%><svg width="25px" height="25px" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+26:              <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+27:              <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+28:              </svg> Add Points
+29:            <%end%>
+30:    <% else %>
+31:     <div class="two">something else</div>
+32:    <% end %>
+33:    	</div>
+34:    	<div class="social-icons">
+35:    		<div class="icon">
+36:    			<h4 class="newh4">Delivery Info : <br>
+37:                <%= current_user.city %> <br>
+38:                <%= current_user.house_number %> <%= current_user.street_name %> <br>
+39:                <%= current_user.plz %>
+40:                </h4>
+41:    
+42:    
+43:    		</div>
+44:    
+45:    
+46:    
+47:    		</div>
+48:    
+49:    
+50:    
+51:    		</div>
+52:    	</div>
+53:      <%console%>
+54:    </div>
+55:    </div>
+  
+app/views/users/show.html.erb:30: else without rescue is useless
+app/views/users/show.html.erb:58: syntax error, unexpected end, expecting end-of-input
+app/views/users/show.html.erb:30: else without rescue is useless
+app/views/users/show.html.erb:58: syntax error, unexpected end, expecting end-of-input
+app/views/users/show.html.erb:30: else without rescue is useless
+app/views/users/show.html.erb:58: syntax error, unexpected end, expecting end-of-input
+app/views/users/show.html.erb:30: else without rescue is useless
+app/views/users/show.html.erb:58: syntax error, unexpected end, expecting end-of-input
+app/views/users/show.html.erb:30: else without rescue is useless
+app/views/users/show.html.erb:58: syntax error, unexpected end, expecting end-of-input
+app/views/users/show.html.erb:30: else without rescue is useless
+app/views/users/show.html.erb:58: syntax error, unexpected end, expecting end-of-input
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 18:26:48 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1317)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 2.4ms | Allocations: 4534)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="newprofilecard">
+<input id="slider" class="customSlider" type="checkbox">
+
+
+<div class="wrapper2">
+	<div class="top-icons">
+		<a href="/"><i class="fas fa-long-arrow-alt-left"></i></a>
+
+	</div>
+
+	<div class="profile">
+    <div class="centerprofile">
+    <% if current_user.photo.attached? %>
+          <%= cl_image_tag current_user.photo.key, class: "rounded-circle" %>
+          <% elsif current_user.avatar_url? %>
+          <%= image_tag current_user.avatar_url, class: "rounded-circle" %>
+          <% else %>
+          <%= image_tag src="https://res.cloudinary.com/dn6wh4u2h/image/upload/v1610914953/IMG_3320_2_p1ux2a.jpg", class: "rounded-circle" %>
+          <% end %>
+	</div>
+		<h4 class="name"><%= current_user.username %></h4>
+		<p class="title"><%= current_user.full_name %></p>
+		<h1 class="description"><%= current_user.winpoints %></h1>
+		<a href="/sports"><button type="button" class="btn345">Go Shop</button></a>
+      <%=link_to user_add_points_path(current_user), class: "showbutton btn-floating btn-large waves-effect waves-light red" do%><svg width="25px" height="25px" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+          <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+          </svg> Add Points
+        <%end%>
+ <div class="two">something else</div>
+<% end %>
+	</div>
+	<div class="social-icons">
+		<div class="icon">
+			<h4 class="newh4">Delivery Info : <br>
+            <%= current_user.city %> <br>
+            <%= current_user.house_number %> <%= current_user.street_name %> <br>
+            <%= current_user.plz %>
+            </h4>
+
+
+		</div>
+
+
+
+		</div>
+
+
+
+		</div>
+	</div>
+  <%console%>
+</div>
+</div>
+
+):
+1:    <div class="newprofilecard">
+2:    <input id="slider" class="customSlider" type="checkbox">
+3:    
+4:    
+5:    <div class="wrapper2">
+6:    	<div class="top-icons">
+7:    		<a href="/"><i class="fas fa-long-arrow-alt-left"></i></a>
+8:    
+9:    	</div>
+10:    
+11:    	<div class="profile">
+12:        <div class="centerprofile">
+13:        <% if current_user.photo.attached? %>
+14:              <%= cl_image_tag current_user.photo.key, class: "rounded-circle" %>
+15:              <% elsif current_user.avatar_url? %>
+16:              <%= image_tag current_user.avatar_url, class: "rounded-circle" %>
+17:              <% else %>
+18:              <%= image_tag src="https://res.cloudinary.com/dn6wh4u2h/image/upload/v1610914953/IMG_3320_2_p1ux2a.jpg", class: "rounded-circle" %>
+19:              <% end %>
+20:    	</div>
+21:    		<h4 class="name"><%= current_user.username %></h4>
+22:    		<p class="title"><%= current_user.full_name %></p>
+23:    		<h1 class="description"><%= current_user.winpoints %></h1>
+24:    		<a href="/sports"><button type="button" class="btn345">Go Shop</button></a>
+25:          <%=link_to user_add_points_path(current_user), class: "showbutton btn-floating btn-large waves-effect waves-light red" do%><svg width="25px" height="25px" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+26:              <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+27:              <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+28:              </svg> Add Points
+29:            <%end%>
+30:     <div class="two">something else</div>
+31:    <% end %>
+32:    	</div>
+33:    	<div class="social-icons">
+34:    		<div class="icon">
+35:    			<h4 class="newh4">Delivery Info : <br>
+36:                <%= current_user.city %> <br>
+37:                <%= current_user.house_number %> <%= current_user.street_name %> <br>
+38:                <%= current_user.plz %>
+39:                </h4>
+40:    
+41:    
+42:    		</div>
+43:    
+44:    
+45:    
+46:    		</div>
+47:    
+48:    
+49:    
+50:    		</div>
+51:    	</div>
+52:      <%console%>
+53:    </div>
+54:    </div>
+  
+app/views/users/show.html.erb:57: syntax error, unexpected end, expecting end-of-input
+app/views/users/show.html.erb:57: syntax error, unexpected end, expecting end-of-input
+app/views/users/show.html.erb:57: syntax error, unexpected end, expecting end-of-input
+app/views/users/show.html.erb:57: syntax error, unexpected end, expecting end-of-input
+app/views/users/show.html.erb:57: syntax error, unexpected end, expecting end-of-input
+app/views/users/show.html.erb:57: syntax error, unexpected end, expecting end-of-input
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 18:26:54 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1304)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.8ms | Allocations: 3888)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="newprofilecard">
+<input id="slider" class="customSlider" type="checkbox">
+
+
+<div class="wrapper2">
+	<div class="top-icons">
+		<a href="/"><i class="fas fa-long-arrow-alt-left"></i></a>
+
+	</div>
+
+	<div class="profile">
+    <div class="centerprofile">
+    <% if current_user.photo.attached? %>
+          <%= cl_image_tag current_user.photo.key, class: "rounded-circle" %>
+          <% elsif current_user.avatar_url? %>
+          <%= image_tag current_user.avatar_url, class: "rounded-circle" %>
+          <% else %>
+          <%= image_tag src="https://res.cloudinary.com/dn6wh4u2h/image/upload/v1610914953/IMG_3320_2_p1ux2a.jpg", class: "rounded-circle" %>
+          <% end %>
+	</div>
+		<h4 class="name"><%= current_user.username %></h4>
+		<p class="title"><%= current_user.full_name %></p>
+		<h1 class="description"><%= current_user.winpoints %></h1>
+		<a href="/sports"><button type="button" class="btn345">Go Shop</button></a>
+      <%=link_to user_add_points_path(current_user), class: "showbutton btn-floating btn-large waves-effect waves-light red" do%><svg width="25px" height="25px" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+          <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+          </svg> Add Points
+        <%end%>
+ <div class="two">something else</div>
+<% end %>
+	</div>
+	<div class="social-icons">
+		<div class="icon">
+			<h4 class="newh4">Delivery Info : <br>
+            <%= current_user.city %> <br>
+            <%= current_user.house_number %> <%= current_user.street_name %> <br>
+            <%= current_user.plz %>
+            </h4>
+
+
+		</div>
+
+
+
+		</div>
+
+
+
+		</div>
+	</div>
+  <%console%>
+</div>
+</div>
+
+):
+1:    <div class="newprofilecard">
+2:    <input id="slider" class="customSlider" type="checkbox">
+3:    
+4:    
+5:    <div class="wrapper2">
+6:    	<div class="top-icons">
+7:    		<a href="/"><i class="fas fa-long-arrow-alt-left"></i></a>
+8:    
+9:    	</div>
+10:    
+11:    	<div class="profile">
+12:        <div class="centerprofile">
+13:        <% if current_user.photo.attached? %>
+14:              <%= cl_image_tag current_user.photo.key, class: "rounded-circle" %>
+15:              <% elsif current_user.avatar_url? %>
+16:              <%= image_tag current_user.avatar_url, class: "rounded-circle" %>
+17:              <% else %>
+18:              <%= image_tag src="https://res.cloudinary.com/dn6wh4u2h/image/upload/v1610914953/IMG_3320_2_p1ux2a.jpg", class: "rounded-circle" %>
+19:              <% end %>
+20:    	</div>
+21:    		<h4 class="name"><%= current_user.username %></h4>
+22:    		<p class="title"><%= current_user.full_name %></p>
+23:    		<h1 class="description"><%= current_user.winpoints %></h1>
+24:    		<a href="/sports"><button type="button" class="btn345">Go Shop</button></a>
+25:          <%=link_to user_add_points_path(current_user), class: "showbutton btn-floating btn-large waves-effect waves-light red" do%><svg width="25px" height="25px" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+26:              <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+27:              <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+28:              </svg> Add Points
+29:            <%end%>
+30:     <div class="two">something else</div>
+31:    <% end %>
+32:    	</div>
+33:    	<div class="social-icons">
+34:    		<div class="icon">
+35:    			<h4 class="newh4">Delivery Info : <br>
+36:                <%= current_user.city %> <br>
+37:                <%= current_user.house_number %> <%= current_user.street_name %> <br>
+38:                <%= current_user.plz %>
+39:                </h4>
+40:    
+41:    
+42:    		</div>
+43:    
+44:    
+45:    
+46:    		</div>
+47:    
+48:    
+49:    
+50:    		</div>
+51:    	</div>
+52:      <%console%>
+53:    </div>
+54:    </div>
+  
+app/views/users/show.html.erb:57: syntax error, unexpected end, expecting end-of-input
+app/views/users/show.html.erb:57: syntax error, unexpected end, expecting end-of-input
+app/views/users/show.html.erb:57: syntax error, unexpected end, expecting end-of-input
+app/views/users/show.html.erb:57: syntax error, unexpected end, expecting end-of-input
+app/views/users/show.html.erb:57: syntax error, unexpected end, expecting end-of-input
+app/views/users/show.html.erb:57: syntax error, unexpected end, expecting end-of-input
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 18:27:20 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1582)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 73)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 164)
+Completed 200 OK in 68ms (Views: 56.5ms | ActiveRecord: 3.0ms | Allocations: 16316)
+
+
+Started GET "/path/users/addpoints.1" for 127.0.0.1 at 2021-02-04 18:27:22 +0100
+Processing by WinpointsController#update as 
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/winpoints_controller.rb:21:in `set_user'
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/winpoints_controller.rb:11:in `update'
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "winpoints" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["winpoints", 250], ["updated_at", "2021-02-04 17:27:22.826259"], ["id", 1]]
+  ↳ app/controllers/winpoints_controller.rb:11:in `update'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/winpoints_controller.rb:11:in `update'
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 63ms (ActiveRecord: 4.4ms | Allocations: 4123)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 18:27:22 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (9.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 17.3ms | Allocations: 1218)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 106ms (Views: 77.9ms | ActiveRecord: 12.2ms | Allocations: 14580)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-04 18:29:39 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.5ms | Allocations: 432)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 4292ms (Views: 4214.2ms | ActiveRecord: 22.6ms | Allocations: 156266)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-04 18:29:44 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (20.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 161)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 54ms (Views: 28.5ms | ActiveRecord: 20.3ms | Allocations: 13168)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-02-04 18:29:46 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"24EiDOF4caPpEGseqoqvLuXcq8CPhZ/zP4GCwfgVLKazsu3NF6Typ7f5SBXjWBXrTFQWlYwu014FLklN4iJATw=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 0.6ms | Allocations: 2721)
+
+
+Started GET "/" for 127.0.0.1 at 2021-02-04 18:29:46 +0100
+Processing by PagesController#home as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 319)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-02-04 18:29:46 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_signup_btn.html.erb (Duration: 4.5ms | Allocations: 210)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 55.5ms | Allocations: 10991)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 15)
+Completed 200 OK in 97ms (Views: 95.5ms | ActiveRecord: 0.0ms | Allocations: 23122)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 18:29:52 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 375)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-02-04 18:29:52 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_signup_btn.html.erb (Duration: 0.3ms | Allocations: 73)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 34.6ms | Allocations: 10207)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 71ms (Views: 69.6ms | ActiveRecord: 0.0ms | Allocations: 21669)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-02-04 18:29:56 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"IjE9+GYEtoF6bUWpwN8R4Z7M3gJFJ45BRRXwG50V8gy8seOiwnwzRxeNGsMT6Ot1c24+qHJdt98f3jIcl3iU8w==", "user"=>{"username"=>"", "email"=>"filo.filo@filo.filo", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>" Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "filo.filo@filo.filo"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/path/users/1/show
+Completed 302 Found in 456ms (ActiveRecord: 0.7ms | Allocations: 3351)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-04 18:29:57 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 12.9ms | Allocations: 3073)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 15)
+Completed 200 OK in 49ms (Views: 37.5ms | ActiveRecord: 6.1ms | Allocations: 16593)
+
+

@@ -1,9 +1,10 @@
 class WinpointsController < ApplicationController
-  before_action :set_user
+  before_action :set_user, :authenticate_user!
 
 def user_params
   params.permit(:username, :email, :full_name, :photo, :winpoints)
 end
+
 
 def update
   @user.winpoints += 10

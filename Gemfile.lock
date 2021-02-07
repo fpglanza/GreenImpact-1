@@ -127,7 +127,7 @@ GEM
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
     minitest (5.14.2)
-    msgpack (1.3.3)
+    msgpack (1.4.2)
     netrc (0.11.0)
     nio4r (2.5.4)
     nokogiri (1.10.10)
@@ -258,6 +258,7 @@ DEPENDENCIES
   jquery-rails
   listen (~> 3.2)
   mapbox-gl-rails
+  msgpack (~> 1.4, >= 1.4.2)
   pg (>= 0.18, < 2.0)
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.4)
@@ -276,4 +277,4 @@ RUBY VERSION
    ruby 2.6.6p146
 
 BUNDLED WITH
-   2.2.4
+   2.2.8
