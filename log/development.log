@@ -56534,3 +56534,106 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 49ms (Views: 37.5ms | ActiveRecord: 6.1ms | Allocations: 16593)
 
 
+Started GET "/" for 127.0.0.1 at 2021-02-07 17:27:41 +0100
+  [1m[35m (7.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 5.3ms | Allocations: 595)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 80)
+  Rendered shared/_flashes.html.erb (Duration: 1.7ms | Allocations: 169)
+Completed 200 OK in 542ms (Views: 456.1ms | ActiveRecord: 12.1ms | Allocations: 66922)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-07 17:27:46 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (12.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 50.2ms | Allocations: 5161)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 11)
+Completed 200 OK in 118ms (Views: 93.5ms | ActiveRecord: 15.9ms | Allocations: 19085)
+
+
+Started PUT "/__web_console/repl_sessions/2b28f1c102f6767334b39a6b3448ba97" for 127.0.0.1 at 2021-02-07 17:27:53 +0100
+Started PUT "/__web_console/repl_sessions/2b28f1c102f6767334b39a6b3448ba97" for 127.0.0.1 at 2021-02-07 17:28:06 +0100
+Started PUT "/__web_console/repl_sessions/2b28f1c102f6767334b39a6b3448ba97" for 127.0.0.1 at 2021-02-07 17:28:09 +0100
+Started PUT "/__web_console/repl_sessions/2b28f1c102f6767334b39a6b3448ba97" for 127.0.0.1 at 2021-02-07 17:29:31 +0100
+Started PUT "/__web_console/repl_sessions/2b28f1c102f6767334b39a6b3448ba97" for 127.0.0.1 at 2021-02-07 17:30:16 +0100
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-07 17:30:58 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 11.8ms | Allocations: 3364)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 11)
+Completed 200 OK in 130ms (Views: 46.4ms | ActiveRecord: 12.1ms | Allocations: 28355)
+
+
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-07 17:31:22 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 636.4ms | Allocations: 91001)
+Completed 500 Internal Server Error in 648ms (ActiveRecord: 2.1ms | Allocations: 94259)
+
+
+  
+ActionView::Template::Error (undefined method `timer_done?' for #<#<Class:0x00007ff269c2e3f0>:0x00007ff269c2c398>
+Did you mean?  time_zone_select):
+    22: 		<p class="title"><%= current_user.full_name %></p>
+    23: 		<h1 class="description"><%= current_user.winpoints %></h1>
+    24: 		<a href="/sports"><button type="button" class="btn345">Go Shop</button></a>
+    25:     <% timer_done? %>
+    26:     <%=link_to user_add_points_path(current_user), class: "btn-floating btn-large waves-effect waves-light red" do%><svg width="25px" height="25px" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    27:           <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+    28:           <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+  
+app/views/users/show.html.erb:25
+Started GET "/path/users/1/show" for 127.0.0.1 at 2021-02-07 17:32:07 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:13
+  Rendered users/show.html.erb within layouts/application (Duration: 404.7ms | Allocations: 91030)
+Completed 500 Internal Server Error in 415ms (ActiveRecord: 2.6ms | Allocations: 94347)
+
+
+  
+ActionView::Template::Error (undefined method `timer_done?' for #<#<Class:0x00007ff2685e9f90>:0x00007ff269beba78>
+Did you mean?  time_zone_select):
+    22: 		<p class="title"><%= current_user.full_name %></p>
+    23: 		<h1 class="description"><%= current_user.winpoints %></h1>
+    24: 		<a href="/sports"><button type="button" class="btn345">Go Shop</button></a>
+    25:     <%= console.log(timer_done?)%>
+    26:     <%=link_to user_add_points_path(current_user), class: "btn-floating btn-large waves-effect waves-light red" do%><svg width="25px" height="25px" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    27:           <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+    28:           <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+  
+app/views/users/show.html.erb:25
+Started PUT "/__web_console/repl_sessions/f573a347e3d03c2d616ac6eca0ef8be4" for 127.0.0.1 at 2021-02-07 17:32:16 +0100
+Started PUT "/__web_console/repl_sessions/f573a347e3d03c2d616ac6eca0ef8be4" for 127.0.0.1 at 2021-02-07 17:32:17 +0100
+Started PUT "/__web_console/repl_sessions/f573a347e3d03c2d616ac6eca0ef8be4" for 127.0.0.1 at 2021-02-07 17:32:19 +0100
+Started PUT "/__web_console/repl_sessions/f573a347e3d03c2d616ac6eca0ef8be4" for 127.0.0.1 at 2021-02-07 17:32:22 +0100
