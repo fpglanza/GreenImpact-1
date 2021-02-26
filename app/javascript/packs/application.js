@@ -43,6 +43,8 @@ document.addEventListener('turbolinks:load', () => {
     //initMapbox();
     // Call your functions here, e.g:
     // initSelect2();
-    startUserTimer();
-    updateUserPoints();
+    if (window.location.href.includes("/users")) { //Only call js on specific pages for efficency
+        startUserTimer();
+        updateUserPoints();
+    }
 });

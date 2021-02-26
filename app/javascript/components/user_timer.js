@@ -22,12 +22,13 @@ const startUserTimer = () => {
  }, 1000);
 
 const stopUserTimer = () => {
-  const winpointsBTN = document.getElementById('increaseWinpointsBTN');
   const timer_clock = document.getElementById('timer_clock');
+  const winpointsBTN = document.getElementById('increaseWinpointsBTN'); //get winpoints BTN
   localStorage.removeItem("endTime"); //Remove time from localStorage
   localStorage.removeItem("timerRunning"); //Remove timerRunning from localStorage
   clearInterval(timer); //Stop the interval function timer
   timer_clock.innerHTML = ""; //Hide the timer clock
-  winpointsBTN.style.display = ""; //Display winpointsBTN again
-};
+  winpointsBTN.style.display = "";
+}
+  
 export { startUserTimer }
