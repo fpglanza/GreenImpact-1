@@ -7,6 +7,8 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+// require jquery
+// require jquery_ujs
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
@@ -29,6 +31,8 @@ require("channels")
 import "bootstrap";
 import "@fortawesome/fontawesome-free/js/all";
 import { initMapbox } from '../plugins/init_mapbox';
+import { startUserTimer } from '../components/user_timer';
+import { updateUserPoints } from '../components/updateUserPoints';
 
 import { BrowserQRCodeReader } from '@zxing/library';
 import Rails from '@rails/ujs'; // Use to make an ajax post request to Rails
@@ -36,7 +40,9 @@ import Rails from '@rails/ujs'; // Use to make an ajax post request to Rails
 // import { initSelect2 } from '../components/init_select2';
 
 document.addEventListener('turbolinks:load', () => {
-    initMapbox();
+    //initMapbox();
     // Call your functions here, e.g:
     // initSelect2();
+    startUserTimer();
+    updateUserPoints();
 });
