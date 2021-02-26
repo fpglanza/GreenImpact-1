@@ -9,7 +9,6 @@ end
 def update
   @user.winpoints += 10
   if @user.save
-    redirect_to usersshow_path(@user), notice: 'Points Updated.'
   else
     render :edit
   end

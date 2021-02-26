@@ -12,19 +12,6 @@ class UsersController < ApplicationController
       redirect_to user_path(@sports)
     end
 
-    def timer_done?
-      end_time = Time.now
-      if defined?(@start_time)
-        if end_time - start_time >= 3600
-          return true
-          @start_time = Time.now
-        end
-      else
-        return true
-        @start_time = Time.now
-      end
-    end
-
     private
 
 
